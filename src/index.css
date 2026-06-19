@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #d0eaf8;
+  color: #0c2d48;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+#root { width: 100%; min-height: 100vh; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #b8dff0; }
+::-webkit-scrollbar-thumb { background: #00b4d8; border-radius: 3px; }
+::selection { background: #00b4d833; color: #0077b6; }
+
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+button { cursor: pointer; font-family: inherit; }
+input, select, textarea { font-family: inherit; }
+* { -webkit-tap-highlight-color: transparent; }
+
+/* ── WMS Color Palette ── */
+:root {
+  --primary: #00b4d8;
+  --primary-dark: #0077b6;
+  --primary-darker: #023e8a;
+  --muted: #4a7fa5;
+  --border: rgba(0,100,160,0.15);
+  --radius: 14px;
+}
+
+/* ════════════════════════════════
+   HERO SECTION
+════════════════════════════════ */
+.hero-section {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px 60px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: clamp(2rem, 5.5vw, 4rem);
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  margin-bottom: 16px;
+}
+
+.hero-subtitle {
+  font-size: clamp(.9rem, 2.5vw, 1.05rem);
+  color: #4a7fa5;
+  max-width: 480px;
+  margin: 0 auto 28px;
+  line-height: 1.65;
+  padding: 0 12px;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 0 8px;
+}
+
+.hero-stat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  border: 1px solid rgba(0,180,216,0.2);
+  border-radius: 12px;
+  padding: 10px 14px;
+  box-shadow: 0 2px 12px rgba(0,100,160,0.07);
+  flex: 1 1 0;
+  max-width: 130px;
+}
+
+/* ════════════════════════════════
+   DEALS GRID — 2 cols on mobile
+════════════════════════════════ */
+.deals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.featured-scroll {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 16px;
+}
+
+.ref-related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+/* ════════════════════════════════
+   DEAL CARD
+════════════════════════════════ */
+.deal-card-title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #023e8a;
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.deal-card-desc {
+  font-size: .88rem;
+  color: #4a7fa5;
+  line-height: 1.55;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.deal-card-price {
+  font-size: 1.15rem;
+  font-weight: 900;
+  color: #0077b6;
+}
+
+.deal-card-title-compact { font-size: .92rem; }
+.deal-card-price-compact { font-size: 1rem; }
+
+/* ════════════════════════════════
+   SCROLL HELPERS
+════════════════════════════════ */
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+
+/* ════════════════════════════════
+   LOADING SHIMMER
+════════════════════════════════ */
+@keyframes shimmer {
+  0%   { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
+
+/* ════════════════════════════════
+   MOBILE BREAKPOINT ≤ 640px
+════════════════════════════════ */
+@media (max-width: 640px) {
+
+  /* Hero */
+  .hero-section {
+    min-height: auto !important;
+    padding: 82px 16px 40px !important;
+  }
+  .hero-title   { font-size: 1.75rem !important; line-height: 1.2 !important; }
+  .hero-subtitle { font-size: .88rem !important; padding: 0 4px !important; }
+  .hero-stat    { padding: 8px 10px !important; max-width: 110px !important; }
+
+  /* 2-column deal grids */
+  .deals-grid,
+  .ref-related-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  /* Bigger card fonts on mobile */
+  .deal-card-title         { font-size: 1rem !important; }
+  .deal-card-title-compact { font-size: .88rem !important; }
+  .deal-card-desc          { font-size: .82rem !important; }
+  .deal-card-price         { font-size: 1.05rem !important; }
+
+  /* Section padding */
+  section > div { padding-left: 12px !important; padding-right: 12px !important; }
+
+  /* Prevent iOS font zoom */
+  input, select, textarea { font-size: 16px !important; }
+}
+
+/* ════════════════════════════════
+   TABLET ≤ 900px
+════════════════════════════════ */
+@media (max-width: 900px) {
+  .deals-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
