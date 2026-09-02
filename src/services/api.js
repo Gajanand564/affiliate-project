@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE = "https://x045ht03-3001.inc1.devtunnels.ms/api";
+const BASE = import.meta.env.VITE_API_BASE || "http://localhost:3001/api";
 
 const api = axios.create({ baseURL: BASE });
 

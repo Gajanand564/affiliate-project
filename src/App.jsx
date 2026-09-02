@@ -14,6 +14,7 @@ import AllDeals from "./components/AllDeals";
 import Newsletter from "./components/Newsletter";
 import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
+import PrivacyPage from "./pages/PrivacyPage";
 
 // Admin pages
 import AdminLogin from "./admin/Login";
@@ -63,6 +64,7 @@ export default function App() {
         <Routes>
           {/* Public */}
           <Route path="/" element={<PublicSite />} />
+          <Route path="/privacy" element={<PrivacyPage />} />
 
           {/* Admin auth */}
           <Route path="/admin/login" element={<AdminLogin />} />
