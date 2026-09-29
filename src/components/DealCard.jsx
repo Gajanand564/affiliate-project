@@ -67,7 +67,7 @@ export default function DealCard({ deal, index = 0, compact = false, isMobile = 
           <img
             src={imgSrc}
             alt={deal.title}
-            style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+            style={{ width: "100%", height: "100%", objectFit: "contain", padding: 10, display: "block" }}
             onError={e => { e.target.style.display = "none"; e.target.nextSibling.style.display = "flex"; }}
           />
         ) : null}
