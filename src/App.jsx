@@ -7,9 +7,6 @@ import AdminLayout from "./admin/AdminLayout";
 // Public pages
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import ReferralSection from "./components/ReferralSection";
-import FeaturedDeals from "./components/FeaturedDeals";
-import Categories from "./components/Categories";
 import AllDeals from "./components/AllDeals";
 import Newsletter from "./components/Newsletter";
 import Footer from "./components/Footer";
@@ -35,9 +32,6 @@ function PublicSite() {
       <Header />
       <main>
         <Hero onSearch={(q) => { setHeroSearch(q); }} />
-        <ReferralSection onCategoryRef={setActiveFilter} />
-        <FeaturedDeals />
-        <Categories activeFilter={activeFilter} setFilter={setActiveFilter} />
         <AllDeals activeFilter={activeFilter} setFilter={setActiveFilter} externalSearch={heroSearch} />
         <Newsletter />
       </main>

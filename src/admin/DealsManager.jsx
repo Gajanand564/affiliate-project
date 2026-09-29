@@ -78,7 +78,7 @@ export default function DealsManager() {
   useEffect(load, []);
 
   const openAdd  = () => { setForm({ ...EMPTY }); setTab("basic"); setImgPreview(null); setModal("add"); };
-  const openEdit = (d) => { setForm({ ...d }); setTab("basic"); setImgPreview(d.image ? IMG_BASE + d.image : null); setModal(d); };
+  const openEdit = (d) => { setForm({ ...d }); setTab("basic"); setImgPreview(d.image ? (/^https?:\/\//.test(d.image) ? d.image : IMG_BASE + d.image) : null); setModal(d); };
   const closeModal = () => setModal(null);
 
   const f = (key) => (e) => setForm({ ...form, [key]: e.target.value });

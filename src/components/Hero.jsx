@@ -103,11 +103,8 @@ export default function Hero({ onSearch }) {
 
         <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 }}
           style={{ display: "flex", gap: 10, justifyContent: "center", flexWrap: "wrap", marginBottom: 36 }}>
-          <a href="#featured" style={{ padding: "12px 24px", borderRadius: 50, background: "linear-gradient(135deg,#00b4d8,#0077b6)", color: "#fff", fontWeight: 700, fontSize: ".95rem", boxShadow: "0 6px 20px rgba(0,180,216,0.4)", display: "flex", alignItems: "center", gap: 7, textDecoration: "none" }}>
+          <a href="#deals" style={{ padding: "12px 24px", borderRadius: 50, background: "linear-gradient(135deg,#00b4d8,#0077b6)", color: "#fff", fontWeight: 700, fontSize: ".95rem", boxShadow: "0 6px 20px rgba(0,180,216,0.4)", display: "flex", alignItems: "center", gap: 7, textDecoration: "none" }}>
             Browse Deals <ArrowDown size={15} />
-          </a>
-          <a href="#categories" style={{ padding: "12px 22px", borderRadius: 50, background: "#fff", border: "2px solid rgba(0,180,216,0.4)", color: "#0077b6", fontWeight: 600, fontSize: ".95rem", textDecoration: "none" }}>
-            Explore Categories
           </a>
         </motion.div>
 

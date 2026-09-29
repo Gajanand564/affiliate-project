@@ -2,9 +2,8 @@ import { motion } from "framer-motion";
 import { Heart, Share2, Camera, PlayCircle } from "lucide-react";
 
 const cols = {
-  "Quick Links": [{ label: "Featured Deals", href: "#featured" }, { label: "Categories", href: "#categories" }, { label: "All Deals", href: "#deals" }, { label: "Newsletter", href: "#newsletter" }],
+  "Quick Links": [{ label: "All Deals", href: "#deals" }, { label: "Newsletter", href: "#newsletter" }],
   "Legal":       [{ label: "Privacy Policy", href: "/privacy" }, { label: "Affiliate Disclosure", href: "#" }, { label: "Terms of Use", href: "#" }],
-  "Categories":  [{ label: "Tech & Gadgets", href: "#" }, { label: "Gaming", href: "#" }, { label: "Fashion", href: "#" }, { label: "Health", href: "#" }],
 };
 const socials = [
   { icon: <Share2 size={17} />, label: "Twitter", href: "#" },

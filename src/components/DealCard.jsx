@@ -32,6 +32,7 @@ const GRAD_MAP = {
 
 export default function DealCard({ deal, index = 0, compact = false, isMobile = false }) {
   const grad = GRAD_MAP[deal.gradient] || "#00b4d8,#0077b6";
+  const imgSrc = deal.image ? (/^https?:\/\//.test(deal.image) ? deal.image : IMG_BASE + deal.image) : null;
 
   // On mobile, always use compact sizing regardless of prop
   const isCompact = compact || isMobile;
@@ -62,9 +63,9 @@ export default function DealCard({ deal, index = 0, compact = false, isMobile = 
         display: "flex", alignItems: "center", justifyContent: "center",
         overflow: "hidden",
       }}>
-        {deal.image ? (
+        {imgSrc ? (
           <img
-            src={IMG_BASE + deal.image}
+            src={imgSrc}
             alt={deal.title}
             style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
             onError={e => { e.target.style.display = "none"; e.target.nextSibling.style.display = "flex"; }}

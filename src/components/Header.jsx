@@ -3,8 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { label: "Featured", href: "#featured" },
-  { label: "Categories", href: "#categories" },
   { label: "All Deals", href: "#deals" },
 ];
 
@@ -58,11 +56,6 @@ export default function Header() {
             onMouseLeave={e => e.currentTarget.style.transform = "translateY(0)"}>
             Subscribe ✉
           </a>
-          <a href="/admin" style={{ padding: "9px 18px", borderRadius: 50, background: "#fff", border: "1.5px solid #00b4d8", color: "#0077b6", fontWeight: 700, fontSize: ".9rem", marginLeft: 4, transition: "all .2s" }}
-            onMouseEnter={e => { e.currentTarget.style.background = "#00b4d8"; e.currentTarget.style.color = "#fff"; }}
-            onMouseLeave={e => { e.currentTarget.style.background = "#fff"; e.currentTarget.style.color = "#0077b6"; }}>
-            Admin ⚙
-          </a>
         </nav>
 
         <button onClick={() => setOpen(!open)} className="ham-btn"
@@ -83,10 +76,6 @@ export default function Header() {
               <a href="#newsletter" onClick={() => setOpen(false)}
                 style={{ padding: "11px 16px", borderRadius: 10, background: "linear-gradient(135deg,#00b4d8,#0077b6)", color: "#fff", fontWeight: 700, textAlign: "center", marginTop: 4 }}>
                 Subscribe ✉
-              </a>
-              <a href="/admin" onClick={() => setOpen(false)}
-                style={{ padding: "11px 16px", borderRadius: 10, border: "1.5px solid #00b4d8", color: "#0077b6", fontWeight: 700, textAlign: "center" }}>
-                Admin ⚙
               </a>
             </div>
           </motion.div>
