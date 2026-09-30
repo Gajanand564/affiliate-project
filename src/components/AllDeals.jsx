@@ -19,7 +19,7 @@ const SORT_OPTIONS = [
   { id: "price_high", label: "Price: High to Low" },
 ];
 
-export default function AllDeals({ activeFilter, setFilter, externalSearch = "" }) {
+export default function AllDeals({ activeFilter, setFilter, externalSearch = "", lockCategory }) {
   const [deals, setDeals] = useState([]);
   const [cats, setCats]   = useState([]);
   const [search, setSearch] = useState("");
@@ -130,18 +130,20 @@ export default function AllDeals({ activeFilter, setFilter, externalSearch = "" 
           </div>
         </div>
 
-        {/* Filter chips — horizontal scroll on mobile */}
-        <div style={{ overflowX: "auto", WebkitOverflowScrolling: "touch", marginBottom: isMobile ? 12 : 24, paddingBottom: 4, msOverflowStyle: "none", scrollbarWidth: "none" }}>
-          <div style={{ display: "flex", gap: 7, flexWrap: isMobile ? "nowrap" : "wrap", minWidth: isMobile ? "max-content" : "unset" }}>
-            {allCats.map((cat) => (
-              <motion.button key={cat.id} whileTap={{ scale: 0.95 }}
-                onClick={() => setFilter(cat.id)}
-                style={{ padding: isMobile ? "6px 12px" : "7px 14px", borderRadius: 50, border: activeFilter === cat.id ? "1.5px solid #00b4d8" : "1.5px solid rgba(0,180,216,0.2)", background: activeFilter === cat.id ? "rgba(0,180,216,0.12)" : "#fff", color: activeFilter === cat.id ? "#0077b6" : "#4a7fa5", fontSize: isMobile ? ".75rem" : ".8rem", fontWeight: 600, cursor: "pointer", whiteSpace: "nowrap", flexShrink: 0, transition: "all .18s" }}>
-                {cat.icon} {cat.name}
-              </motion.button>
-            ))}
+        {/* Filter chips — hidden when this page is locked to one category (e.g. /kitchen) */}
+        {!lockCategory && (
+          <div style={{ overflowX: "auto", WebkitOverflowScrolling: "touch", marginBottom: isMobile ? 12 : 24, paddingBottom: 4, msOverflowStyle: "none", scrollbarWidth: "none" }}>
+            <div style={{ display: "flex", gap: 7, flexWrap: isMobile ? "nowrap" : "wrap", minWidth: isMobile ? "max-content" : "unset" }}>
+              {allCats.map((cat) => (
+                <motion.button key={cat.id} whileTap={{ scale: 0.95 }}
+                  onClick={() => setFilter(cat.id)}
+                  style={{ padding: isMobile ? "6px 12px" : "7px 14px", borderRadius: 50, border: activeFilter === cat.id ? "1.5px solid #00b4d8" : "1.5px solid rgba(0,180,216,0.2)", background: activeFilter === cat.id ? "rgba(0,180,216,0.12)" : "#fff", color: activeFilter === cat.id ? "#0077b6" : "#4a7fa5", fontSize: isMobile ? ".75rem" : ".8rem", fontWeight: 600, cursor: "pointer", whiteSpace: "nowrap", flexShrink: 0, transition: "all .18s" }}>
+                  {cat.icon} {cat.name}
+                </motion.button>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
 
         {/* Cards Grid */}
         <AnimatePresence mode="wait">

@@ -24,15 +24,23 @@ import AdminNewsletter from "./admin/Subscribers"; // reuse for now
 import Settings from "./admin/Settings";
 
 // ── Public site ──────────────────────────────────────
-function PublicSite() {
-  const [activeFilter, setActiveFilter] = useState("all");
+// lockCategory pins the deals feed to one category and hides the category
+// chips, so a route like /kitchen feels like its own dedicated site while
+// reusing the exact same design/backend as the main site.
+function PublicSite({ lockCategory }) {
+  const [activeFilter, setActiveFilter] = useState(lockCategory || "all");
   const [heroSearch, setHeroSearch] = useState("");
   return (
     <>
       <Header />
       <main>
         <Hero onSearch={(q) => { setHeroSearch(q); }} />
-        <AllDeals activeFilter={activeFilter} setFilter={setActiveFilter} externalSearch={heroSearch} />
+        <AllDeals
+          activeFilter={activeFilter}
+          setFilter={lockCategory ? () => {} : setActiveFilter}
+          externalSearch={heroSearch}
+          lockCategory={lockCategory}
+        />
         <Newsletter />
       </main>
       <Footer />
@@ -58,6 +66,7 @@ export default function App() {
         <Routes>
           {/* Public */}
           <Route path="/" element={<PublicSite />} />
+          <Route path="/kitchen" element={<PublicSite lockCategory="kitchen" />} />
           <Route path="/privacy" element={<PrivacyPage />} />
 
           {/* Admin auth */}
