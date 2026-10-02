@@ -1,10 +1,23 @@
-import { motion } from "framer-motion";
-import { Heart, Share2, Camera, PlayCircle } from "lucide-react";
+import { Camera, Heart, PlayCircle, Share2, Zap } from "lucide-react";
 
 const cols = {
-  "Quick Links": [{ label: "All Deals", href: "#deals" }, { label: "Newsletter", href: "#newsletter" }],
-  "Legal":       [{ label: "Privacy Policy", href: "/privacy" }, { label: "Affiliate Disclosure", href: "#" }, { label: "Terms of Use", href: "#" }],
+  Shop: [
+    { label: "All Deals", href: "/#deals" },
+    { label: "Newsletter", href: "/#newsletter" },
+  ],
+  Trending: [
+    { label: "Home Decor Inspo", href: "/trends/home-decor-inspo-finds" },
+    { label: "Fish Wallpaper", href: "/trends/fish-wallpaper-ideas" },
+    { label: "Floating Shelves", href: "/trends/floating-shelf-decor-ideas" },
+    { label: "Wainscoting", href: "/trends/wainscoting-and-beadboard-styles" },
+  ],
+  Legal: [
+    { label: "Privacy Policy", href: "/privacy" },
+    { label: "Affiliate Disclosure", href: "#" },
+    { label: "Terms of Use", href: "#" },
+  ],
 };
+
 const socials = [
   { icon: <Share2 size={17} />, label: "Twitter", href: "#" },
   { icon: <Camera size={17} />, label: "Instagram", href: "#" },
@@ -13,39 +26,38 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer style={{ background: "#023e8a", color: "#90c4dd", padding: "56px 24px 0" }}>
-      <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr auto", gap: 40, paddingBottom: 40, borderBottom: "1px solid rgba(255,255,255,0.1)" }} className="footer-grid">
-          {/* Brand */}
-          <div style={{ maxWidth: 280 }}>
-            <a href="/" style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14 }}>
-              <div style={{ width: 38, height: 38, borderRadius: 10, background: "rgba(255,255,255,0.15)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.2rem" }}>⚡</div>
-              <div>
-                <div style={{ fontSize: "1.1rem", fontWeight: 800, color: "#fff" }}>DealZone</div>
-                <div style={{ fontSize: ".6rem", color: "#90c4dd", letterSpacing: ".05em" }}>Affiliate Deals Hub</div>
-              </div>
+    <footer style={{ background: "#023e8a", color: "#90c4dd", padding: "58px 22px 0" }}>
+      <div style={{ maxWidth: 1180, margin: "0 auto" }}>
+        <div className="footer-grid" style={{ display: "grid", gridTemplateColumns: "1fr auto", gap: 42, paddingBottom: 40, borderBottom: "1px solid rgba(255,255,255,.1)" }}>
+          <div style={{ maxWidth: 330 }}>
+            <a href="/" style={{ display: "flex", alignItems: "center", gap: 11, marginBottom: 14 }}>
+              <span style={{ width: 40, height: 40, borderRadius: 10, background: "linear-gradient(135deg,#00b4d8,#0077b6)", color: "#fff", display: "grid", placeItems: "center" }}>
+                <Zap size={21} fill="currentColor" />
+              </span>
+              <span>
+                <span style={{ display: "block", color: "#fff", fontWeight: 950, fontSize: "1.12rem", lineHeight: 1 }}>DealZone</span>
+                <span style={{ display: "block", color: "#90c4dd", fontWeight: 700, fontSize: ".68rem", marginTop: 3 }}>Affiliate Deals Hub</span>
+              </span>
             </a>
-            <p style={{ fontSize: ".85rem", lineHeight: 1.7, marginBottom: 20, color: "#7db5cf" }}>Your trusted source for the best affiliate deals and honest product reviews.</p>
+            <p style={{ fontSize: ".88rem", lineHeight: 1.75, color: "#7db5cf", marginBottom: 18 }}>
+              Home decor and kitchen deals selected around real shopping intent, seasonal trends, and practical use.
+            </p>
             <div style={{ display: "flex", gap: 8 }}>
               {socials.map((s) => (
-                <motion.a key={s.label} href={s.href} whileHover={{ scale: 1.1, y: -2 }} whileTap={{ scale: 0.95 }}
-                  style={{ width: 36, height: 36, borderRadius: 8, background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.12)", display: "flex", alignItems: "center", justifyContent: "center", color: "#7db5cf", transition: "color .2s, border-color .2s" }}
-                  onMouseEnter={e => { e.currentTarget.style.color = "#00b4d8"; e.currentTarget.style.borderColor = "rgba(0,180,216,0.5)"; }}
-                  onMouseLeave={e => { e.currentTarget.style.color = "#7db5cf"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.12)"; }}>
+                <a key={s.label} href={s.href} aria-label={s.label}
+                  style={{ width: 38, height: 38, borderRadius: 8, background: "rgba(255,255,255,.08)", border: "1px solid rgba(255,255,255,.12)", display: "grid", placeItems: "center", color: "#90c4dd" }}>
                   {s.icon}
-                </motion.a>
+                </a>
               ))}
             </div>
           </div>
-          {/* Links */}
-          <div style={{ display: "flex", gap: 40, flexWrap: "wrap" }} className="footer-links">
+
+          <div className="footer-links" style={{ display: "flex", gap: 42, flexWrap: "wrap" }}>
             {Object.entries(cols).map(([title, items]) => (
-              <div key={title} style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-                <h4 style={{ color: "#fff", fontSize: ".85rem", fontWeight: 700, marginBottom: 4 }}>{title}</h4>
+              <div key={title} style={{ display: "flex", flexDirection: "column", gap: 10, minWidth: 132 }}>
+                <h4 style={{ color: "#fff", fontSize: ".86rem", fontWeight: 950, marginBottom: 4 }}>{title}</h4>
                 {items.map((item) => (
-                  <a key={item.label} href={item.href} style={{ color: "#7db5cf", fontSize: ".83rem", transition: "color .2s" }}
-                    onMouseEnter={e => e.currentTarget.style.color = "#00b4d8"}
-                    onMouseLeave={e => e.currentTarget.style.color = "#7db5cf"}>
+                  <a key={item.label} href={item.href} style={{ color: "#90c4dd", fontSize: ".84rem", fontWeight: 650 }}>
                     {item.label}
                   </a>
                 ))}
@@ -54,9 +66,9 @@ export default function Footer() {
           </div>
         </div>
         <div style={{ padding: "20px 0", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 10 }}>
-          <p style={{ fontSize: ".78rem", color: "#4a7fa5" }}>© 2026 DealZone. All rights reserved. | This site contains affiliate links.</p>
-          <p style={{ fontSize: ".78rem", color: "#4a7fa5", display: "flex", alignItems: "center", gap: 4 }}>
-            Made with <Heart size={12} color="#00b4d8" fill="#00b4d8" /> for deal hunters
+          <p style={{ fontSize: ".78rem", color: "#4a7fa5" }}>© 2026 DealZone. This site contains affiliate links.</p>
+          <p style={{ fontSize: ".78rem", color: "#4a7fa5", display: "flex", alignItems: "center", gap: 5 }}>
+            Made with <Heart size={12} color="#00b4d8" fill="#00b4d8" /> for smart shoppers
           </p>
         </div>
       </div>

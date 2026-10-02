@@ -12,6 +12,7 @@ import Newsletter from "./components/Newsletter";
 import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
 import PrivacyPage from "./pages/PrivacyPage";
+import TrendPage from "./pages/TrendPage";
 
 // Admin pages
 import AdminLogin from "./admin/Login";
@@ -67,6 +68,8 @@ export default function App() {
           {/* Public */}
           <Route path="/" element={<PublicSite />} />
           <Route path="/kitchen" element={<PublicSite lockCategory="kitchen" />} />
+          <Route path="/trends" element={<Navigate to="/trends/wainscoting-and-beadboard-styles" replace />} />
+          <Route path="/trends/:slug" element={<TrendPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
 
           {/* Admin auth */}

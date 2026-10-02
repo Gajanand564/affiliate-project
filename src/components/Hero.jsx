@@ -1,131 +1,71 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowDown, Star, TrendingUp, Shield, Zap, Search } from "lucide-react";
+import { ArrowDown, Shield, Star, TrendingUp, Zap } from "lucide-react";
 import { useIsMobile } from "../hooks/useIsMobile";
 
 const stats = [
-  { icon: <Star size={14} />, num: "500+", label: "Deals" },
-  { icon: <TrendingUp size={14} />, num: "50K+", label: "Readers" },
-  { icon: <Shield size={14} />, num: "100%", label: "Trusted" },
+  { icon: <Star size={20} />, num: "500+", label: "Deals" },
+  { icon: <TrendingUp size={20} />, num: "50K+", label: "Readers" },
+  { icon: <Shield size={20} />, num: "100%", label: "Trusted" },
 ];
 
-export default function Hero({ onSearch }) {
+export default function Hero() {
   const isMobile = useIsMobile();
-  const [q, setQ] = useState("");
 
-  const handleSearch = (e) => {
-    e.preventDefault();
-    if (onSearch) onSearch(q);
-    setTimeout(() => document.getElementById("deals")?.scrollIntoView({ behavior: "smooth" }), 80);
-  };
-
-  /* ── MOBILE: compact strip ── */
-  if (isMobile) {
-    return (
-      <section style={{
-        background: "linear-gradient(135deg, #e0f4fd 0%, #cceeff 100%)",
-        padding: "68px 16px 20px",
-        textAlign: "center",
-        borderBottom: "1px solid rgba(0,180,216,0.2)",
-      }}>
-        {/* Brand badge */}
-        <motion.div initial={{ opacity: 0, y: -8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35 }}
-          style={{ display: "inline-flex", alignItems: "center", gap: 5, background: "rgba(0,180,216,0.15)", border: "1px solid rgba(0,180,216,0.35)", borderRadius: 50, padding: "3px 12px", fontSize: ".7rem", fontWeight: 700, color: "#0077b6", marginBottom: 8 }}>
-          <Zap size={11} fill="#00b4d8" color="#00b4d8" /> 🔥 Top Affiliate Deals
-        </motion.div>
-
-        {/* Title */}
-        <motion.h1 initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35, delay: 0.05 }}
-          style={{ fontSize: "1.5rem", fontWeight: 900, color: "#023e8a", lineHeight: 1.2, marginBottom: 10 }}>
-          Best Deals &amp; Discounts
-        </motion.h1>
-
-        {/* Search bar */}
-        <motion.form initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35, delay: 0.1 }}
-          onSubmit={handleSearch}
-          style={{ display: "flex", gap: 8, maxWidth: 400, margin: "0 auto" }}>
-          <div style={{ position: "relative", flex: 1 }}>
-            <Search size={15} style={{ position: "absolute", left: 12, top: "50%", transform: "translateY(-50%)", color: "#93b4c8", pointerEvents: "none" }} />
-            <input
-              type="text" value={q} onChange={e => setQ(e.target.value)}
-              placeholder="Search deals..."
-              style={{ width: "100%", padding: "10px 12px 10px 36px", borderRadius: 50, border: "1.5px solid rgba(0,180,216,0.3)", background: "#fff", color: "#023e8a", fontSize: "16px", outline: "none" }}
-            />
-          </div>
-          <button type="submit"
-            style={{ padding: "10px 16px", borderRadius: 50, background: "linear-gradient(135deg,#00b4d8,#0077b6)", color: "#fff", fontWeight: 700, fontSize: ".82rem", border: "none", whiteSpace: "nowrap", boxShadow: "0 3px 12px rgba(0,180,216,0.35)" }}>
-            Search
-          </button>
-        </motion.form>
-      </section>
-    );
-  }
-
-  /* ── DESKTOP: full hero ── */
   return (
     <section style={{
-      minHeight: "100svh",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      padding: "100px 20px 60px",
+      minHeight: isMobile ? "auto" : "620px",
+      padding: isMobile ? "96px 18px 34px" : "118px 24px 48px",
+      background: "linear-gradient(180deg,#d9f1fc 0%,#c9ebfa 100%)",
+      borderBottom: "1px solid rgba(0,119,182,.08)",
       position: "relative",
       overflow: "hidden",
       textAlign: "center",
     }}>
-      {/* Background blobs */}
       <div style={{ position: "absolute", inset: 0, pointerEvents: "none" }}>
-        <motion.div animate={{ scale: [1,1.15,1], x:[0,20,0] }} transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-          style={{ position: "absolute", top: "-5%", right: "-5%", width: "clamp(200px,50vw,480px)", height: "clamp(200px,50vw,480px)", borderRadius: "50%", background: "radial-gradient(circle, rgba(0,180,216,0.2) 0%, transparent 70%)", filter: "blur(40px)" }} />
-        <motion.div animate={{ scale: [1.1,1,1.1], y:[0,20,0] }} transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-          style={{ position: "absolute", bottom: "5%", left: "-5%", width: "clamp(160px,40vw,400px)", height: "clamp(160px,40vw,400px)", borderRadius: "50%", background: "radial-gradient(circle, rgba(0,119,182,0.18) 0%, transparent 70%)", filter: "blur(40px)" }} />
-        <div style={{ position: "absolute", inset: 0, backgroundImage: "radial-gradient(rgba(0,180,216,0.07) 1px, transparent 1px)", backgroundSize: "28px 28px" }} />
+        <div style={{ position: "absolute", inset: 0, backgroundImage: "radial-gradient(rgba(0,119,182,.12) 1px, transparent 1px)", backgroundSize: "40px 40px", opacity: .36 }} />
+        <motion.div animate={{ scale: [1, 1.12, 1] }} transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
+          style={{ position: "absolute", top: 60, right: "8%", width: 360, height: 360, borderRadius: "50%", background: "rgba(0,180,216,.18)", filter: "blur(60px)" }} />
+        <motion.div animate={{ scale: [1.08, 1, 1.08] }} transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+          style={{ position: "absolute", bottom: 40, left: "4%", width: 280, height: 280, borderRadius: "50%", background: "rgba(0,119,182,.12)", filter: "blur(60px)" }} />
       </div>
 
-      <div style={{ position: "relative", zIndex: 2, maxWidth: 720, width: "100%" }}>
-        <motion.div initial={{ opacity: 0, scale: 0.85 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }}
-          style={{ display: "inline-flex", alignItems: "center", gap: 6, background: "rgba(0,180,216,0.12)", border: "1px solid rgba(0,180,216,0.35)", borderRadius: 50, padding: "5px 14px", fontSize: ".78rem", fontWeight: 600, color: "#0077b6", marginBottom: 20 }}>
-          <Zap size={13} fill="#00b4d8" color="#00b4d8" /> 🔥 Top Affiliate Deals — Updated Daily
+      <div style={{ position: "relative", zIndex: 1, maxWidth: 1180, margin: "0 auto" }}>
+        <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .4 }}
+          style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "7px 16px", borderRadius: 999, background: "rgba(0,180,216,.12)", border: "1px solid rgba(0,180,216,.3)", color: "#0077b6", fontWeight: 800, fontSize: isMobile ? ".76rem" : ".86rem", marginBottom: isMobile ? 18 : 26 }}>
+          <Zap size={15} fill="currentColor" /> Top Affiliate Deals - Updated Daily
         </motion.div>
 
-        <motion.h1 initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }}
-          style={{ fontSize: "clamp(2rem, 5.5vw, 4rem)", fontWeight: 900, lineHeight: 1.15, letterSpacing: "-0.025em", marginBottom: 16 }}>
-          <span style={{ color: "#023e8a" }}>Discover the </span>
-          <span style={{ background: "linear-gradient(135deg, #00b4d8, #0077b6)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Best Deals</span>
+        <motion.h1 initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .48, delay: .05 }}
+          style={{ margin: "0 auto", maxWidth: 860, color: "#023e8a", fontSize: isMobile ? "2rem" : "clamp(2.8rem,5vw,4.6rem)", lineHeight: 1.1, letterSpacing: 0, fontWeight: 900 }}>
+          Discover the <span style={{ color: "#00a6d6" }}>Best Deals</span>
           <br />
-          <span style={{ color: "#023e8a" }}>& Save More Today</span>
+          &amp; Save More Today
         </motion.h1>
 
-        <motion.p initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}
-          style={{ fontSize: "clamp(.9rem, 2.5vw, 1.05rem)", color: "#4a7fa5", maxWidth: 480, margin: "0 auto 28px", lineHeight: 1.65 }}>
+        <motion.p initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .48, delay: .12 }}
+          style={{ color: "#467ba4", fontSize: isMobile ? ".95rem" : "1.08rem", lineHeight: 1.55, maxWidth: 560, margin: isMobile ? "16px auto 24px" : "22px auto 30px" }}>
           Handpicked affiliate offers, honest reviews, and exclusive discounts.
         </motion.p>
 
-        <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 }}
-          style={{ display: "flex", gap: 10, justifyContent: "center", flexWrap: "wrap", marginBottom: 36 }}>
-          <a href="#deals" style={{ padding: "12px 24px", borderRadius: 50, background: "linear-gradient(135deg,#00b4d8,#0077b6)", color: "#fff", fontWeight: 700, fontSize: ".95rem", boxShadow: "0 6px 20px rgba(0,180,216,0.4)", display: "flex", alignItems: "center", gap: 7, textDecoration: "none" }}>
-            Browse Deals <ArrowDown size={15} />
-          </a>
-        </motion.div>
+        <motion.a initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .48, delay: .18 }}
+          href="#deals"
+          style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: isMobile ? "12px 22px" : "13px 26px", borderRadius: 999, background: "linear-gradient(135deg,#00b4d8,#0077b6)", color: "#fff", fontWeight: 850, fontSize: isMobile ? ".92rem" : ".98rem", boxShadow: "0 10px 24px rgba(0,180,216,.3)" }}>
+          Browse Deals <ArrowDown size={16} />
+        </motion.a>
 
-        <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.5 }}
-          style={{ display: "flex", gap: 8, justifyContent: "center" }}>
-          {stats.map((s, i) => (
-            <div key={i} style={{ display: "flex", alignItems: "center", gap: 8, background: "#fff", border: "1px solid rgba(0,180,216,0.2)", borderRadius: 12, padding: "10px 14px", boxShadow: "0 2px 12px rgba(0,100,160,0.07)", flex: "1 1 0", maxWidth: 130 }}>
-              <span style={{ color: "#00b4d8" }}>{s.icon}</span>
-              <div style={{ textAlign: "left" }}>
-                <div style={{ fontSize: "1.1rem", fontWeight: 800, color: "#023e8a", lineHeight: 1 }}>{s.num}</div>
-                <div style={{ fontSize: ".7rem", color: "#4a7fa5", marginTop: 2 }}>{s.label}</div>
-              </div>
+        <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .48, delay: .25 }}
+          style={{ display: "flex", justifyContent: "center", gap: isMobile ? 10 : 12, flexWrap: "wrap", marginTop: isMobile ? 28 : 38 }}>
+          {stats.map((item) => (
+            <div key={item.label} style={{ minWidth: isMobile ? 118 : 150, background: "#fff", border: "1px solid rgba(255,255,255,.9)", borderRadius: 12, padding: isMobile ? "10px 12px" : "12px 16px", display: "flex", alignItems: "center", justifyContent: "center", gap: 10, boxShadow: "0 8px 22px rgba(0,77,128,.08)" }}>
+              <span style={{ color: "#00a6d6", display: "flex" }}>{item.icon}</span>
+              <span style={{ textAlign: "left" }}>
+                <strong style={{ display: "block", color: "#023e8a", fontSize: isMobile ? "1.05rem" : "1.22rem", lineHeight: 1, fontWeight: 900 }}>{item.num}</strong>
+                <span style={{ display: "block", color: "#467ba4", fontSize: isMobile ? ".74rem" : ".78rem", marginTop: 3 }}>{item.label}</span>
+              </span>
             </div>
           ))}
         </motion.div>
       </div>
-
-      <motion.div animate={{ y: [0,-7,0] }} transition={{ duration: 2.5, repeat: Infinity }}
-        style={{ position: "absolute", bottom: 20, left: "50%", transform: "translateX(-50%)", color: "#4a7fa5", fontSize: ".7rem", display: "flex", flexDirection: "column", alignItems: "center", gap: 5 }}>
-        <span>Scroll</span><ArrowDown size={14} />
-      </motion.div>
     </section>
   );
 }

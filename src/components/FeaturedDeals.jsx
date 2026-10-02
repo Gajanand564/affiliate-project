@@ -9,9 +9,9 @@ export function SectionHeader({ tag, title, sub }) {
   return (
     <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}
       style={{ textAlign: "center", marginBottom: 32 }}>
-      <span style={{ display: "inline-block", background: "rgba(0,180,216,0.12)", border: "1px solid rgba(0,180,216,0.3)", color: "#0077b6", padding: "4px 14px", borderRadius: 50, fontSize: ".72rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: ".1em", marginBottom: 10 }}>{tag}</span>
-      <h2 style={{ fontSize: "clamp(1.4rem,3vw,2.2rem)", fontWeight: 900, color: "#023e8a", marginBottom: 6, letterSpacing: "-0.02em" }}>{title}</h2>
-      {sub && <p style={{ color: "#4a7fa5", fontSize: ".9rem" }}>{sub}</p>}
+      <span style={{ display: "inline-block", background: "rgba(0,180,216,.12)", border: "1px solid rgba(0,180,216,.3)", color: "#0077b6", padding: "5px 12px", borderRadius: 999, fontSize: ".72rem", fontWeight: 900, textTransform: "uppercase", letterSpacing: ".08em", marginBottom: 10 }}>{tag}</span>
+      <h2 style={{ fontSize: "clamp(1.55rem,3vw,2.45rem)", fontWeight: 950, color: "#023e8a", marginBottom: 6, letterSpacing: 0 }}>{title}</h2>
+      {sub && <p style={{ color: "#4a7fa5", fontSize: ".92rem" }}>{sub}</p>}
     </motion.div>
   );
 }
@@ -71,11 +71,11 @@ export default function FeaturedDeals() {
             {isMobile && deals.length > 1 && (
               <>
                 <button onClick={() => scroll(-1)}
-                  style={{ position: "absolute", left: -6, top: "50%", transform: "translateY(-50%)", zIndex: 5, width: 32, height: 32, borderRadius: "50%", background: "#fff", border: "1px solid rgba(0,180,216,0.3)", color: "#0077b6", boxShadow: "0 2px 10px rgba(0,100,160,0.15)", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  style={{ position: "absolute", left: -6, top: "50%", transform: "translateY(-50%)", zIndex: 5, width: 32, height: 32, borderRadius: "50%", background: "#fff", border: "1px solid rgba(0,180,216,.3)", color: "#0077b6", boxShadow: "0 2px 10px rgba(0,100,160,.15)", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center" }}>
                   <ChevronLeft size={16} />
                 </button>
                 <button onClick={() => scroll(1)}
-                  style={{ position: "absolute", right: -6, top: "50%", transform: "translateY(-50%)", zIndex: 5, width: 32, height: 32, borderRadius: "50%", background: "#fff", border: "1px solid rgba(0,180,216,0.3)", color: "#0077b6", boxShadow: "0 2px 10px rgba(0,100,160,0.15)", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  style={{ position: "absolute", right: -6, top: "50%", transform: "translateY(-50%)", zIndex: 5, width: 32, height: 32, borderRadius: "50%", background: "#fff", border: "1px solid rgba(0,180,216,.3)", color: "#0077b6", boxShadow: "0 2px 10px rgba(0,100,160,.15)", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center" }}>
                   <ChevronRight size={16} />
                 </button>
               </>

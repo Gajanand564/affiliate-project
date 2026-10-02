@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { Mail, Menu, X, Zap } from "lucide-react";
 
 const links = [
-  { label: "All Deals", href: "#deals" },
+  { label: "All Deals", href: "/#deals" },
 ];
 
 export default function Header() {
@@ -11,78 +11,78 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const fn = () => setScrolled(window.scrollY > 30);
+    const fn = () => setScrolled(window.scrollY > 24);
     window.addEventListener("scroll", fn);
+    fn();
     return () => window.removeEventListener("scroll", fn);
   }, []);
 
   return (
     <motion.header
-      initial={{ y: -80, opacity: 0 }}
+      initial={{ y: -70, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
+      transition={{ duration: 0.35, ease: "easeOut" }}
       style={{
-        position: "fixed", top: 0, left: 0, right: 0, zIndex: 1000,
-        background: scrolled ? "rgba(255,255,255,0.96)" : "rgba(255,255,255,0.85)",
+        position: "fixed",
+        top: 0,
+        left: 0,
+        right: 0,
+        zIndex: 1000,
+        background: scrolled ? "rgba(248,253,255,.96)" : "rgba(248,253,255,.9)",
         backdropFilter: "blur(16px)",
-        borderBottom: `1px solid ${scrolled ? "rgba(0,180,216,0.25)" : "transparent"}`,
-        boxShadow: scrolled ? "0 2px 20px rgba(0,100,160,0.1)" : "none",
-        transition: "all 0.3s ease",
+        borderBottom: "1px solid rgba(0,119,182,.08)",
+        boxShadow: scrolled ? "0 10px 28px rgba(0,77,128,.08)" : "none",
       }}
     >
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px", height: 68, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-        {/* Logo */}
+      <div style={{ maxWidth: 1180, margin: "0 auto", height: 66, padding: "0 22px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 16 }}>
         <a href="/" style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          <div style={{ width: 40, height: 40, borderRadius: 10, background: "linear-gradient(135deg, #00b4d8, #0077b6)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.2rem" }}>
-            ⚡
-          </div>
-          <div>
-            <div style={{ fontSize: "1.1rem", fontWeight: 800, color: "#023e8a", lineHeight: 1 }}>DealZone</div>
-            <div style={{ fontSize: ".65rem", color: "#4a7fa5", fontWeight: 500, letterSpacing: ".05em" }}>Affiliate Deals Hub</div>
-          </div>
+          <span style={{ width: 42, height: 42, borderRadius: 10, background: "linear-gradient(135deg,#00b4d8,#0077b6)", color: "#fff", display: "grid", placeItems: "center", boxShadow: "0 8px 20px rgba(0,180,216,.24)" }}>
+            <Zap size={21} fill="currentColor" />
+          </span>
+          <span>
+            <span style={{ display: "block", color: "#023e8a", fontWeight: 900, lineHeight: 1, fontSize: "1.12rem" }}>DealZone</span>
+            <span style={{ display: "block", color: "#467ba4", fontWeight: 650, fontSize: ".68rem", marginTop: 3 }}>Affiliate Deals Hub</span>
+          </span>
         </a>
 
-        {/* Desktop Nav */}
-        <nav style={{ display: "flex", alignItems: "center", gap: 4 }} className="desk-nav">
-          {links.map((l) => (
-            <a key={l.label} href={l.href} style={{ padding: "8px 18px", borderRadius: 50, fontSize: ".9rem", fontWeight: 500, color: "#4a7fa5", transition: "all .2s" }}
-              onMouseEnter={e => { e.currentTarget.style.color = "#0077b6"; e.currentTarget.style.background = "rgba(0,180,216,0.1)"; }}
-              onMouseLeave={e => { e.currentTarget.style.color = "#4a7fa5"; e.currentTarget.style.background = "transparent"; }}>
-              {l.label}
+        <nav className="desk-nav" style={{ display: "flex", alignItems: "center", gap: 18 }}>
+          {links.map((link) => (
+            <a key={link.label} href={link.href} style={{ color: "#467ba4", fontWeight: 750, fontSize: ".95rem" }}>
+              {link.label}
             </a>
           ))}
-          <a href="#newsletter" style={{ padding: "9px 22px", borderRadius: 50, background: "linear-gradient(135deg,#00b4d8,#0077b6)", color: "#fff", fontWeight: 700, fontSize: ".9rem", boxShadow: "0 4px 14px rgba(0,180,216,0.35)", transition: "all .2s" }}
-            onMouseEnter={e => e.currentTarget.style.transform = "translateY(-2px)"}
-            onMouseLeave={e => e.currentTarget.style.transform = "translateY(0)"}>
-            Subscribe ✉
+          <a href="/#newsletter" style={{ display: "inline-flex", alignItems: "center", gap: 7, padding: "10px 18px", borderRadius: 999, background: "linear-gradient(135deg,#00b4d8,#0077b6)", color: "#fff", fontWeight: 850, fontSize: ".92rem", boxShadow: "0 10px 24px rgba(0,180,216,.28)" }}>
+            Subscribe <Mail size={16} />
           </a>
         </nav>
 
-        <button onClick={() => setOpen(!open)} className="ham-btn"
-          style={{ display: "none", background: "rgba(0,180,216,0.12)", border: "none", borderRadius: 8, padding: 8, color: "#0077b6" }}>
-          {open ? <X size={22} /> : <Menu size={22} />}
+        <button onClick={() => setOpen((v) => !v)} className="ham-btn" aria-label="Menu"
+          style={{ display: "none", width: 44, height: 44, border: "1px solid rgba(0,119,182,.14)", borderRadius: 10, background: "#fff", color: "#023e8a", placeItems: "center" }}>
+          {open ? <X size={23} /> : <Menu size={23} />}
         </button>
       </div>
 
       <AnimatePresence>
         {open && (
           <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }}
-            style={{ overflow: "hidden", background: "#fff", borderTop: "1px solid rgba(0,180,216,0.2)", padding: "0 24px" }}>
-            <div style={{ display: "flex", flexDirection: "column", gap: 4, padding: "16px 0" }}>
-              {links.map((l) => (
-                <a key={l.label} href={l.href} onClick={() => setOpen(false)}
-                  style={{ padding: "11px 16px", borderRadius: 10, color: "#4a7fa5", fontWeight: 500 }}>{l.label}</a>
+            style={{ overflow: "hidden", background: "#f8fdff", borderTop: "1px solid rgba(0,119,182,.1)" }}>
+            <div style={{ padding: "12px 20px 18px", display: "grid", gap: 8 }}>
+              {links.map((link) => (
+                <a key={link.label} href={link.href} onClick={() => setOpen(false)}
+                  style={{ padding: "12px 10px", borderRadius: 8, color: "#023e8a", fontWeight: 850 }}>
+                  {link.label}
+                </a>
               ))}
-              <a href="#newsletter" onClick={() => setOpen(false)}
-                style={{ padding: "11px 16px", borderRadius: 10, background: "linear-gradient(135deg,#00b4d8,#0077b6)", color: "#fff", fontWeight: 700, textAlign: "center", marginTop: 4 }}>
-                Subscribe ✉
+              <a href="/#newsletter" onClick={() => setOpen(false)}
+                style={{ padding: "12px 10px", borderRadius: 10, color: "#fff", background: "linear-gradient(135deg,#00b4d8,#0077b6)", fontWeight: 900, textAlign: "center" }}>
+                Subscribe
               </a>
             </div>
           </motion.div>
         )}
       </AnimatePresence>
 
-      <style>{`@media(max-width:768px){.desk-nav{display:none!important}.ham-btn{display:flex!important}}`}</style>
+      <style>{`@media(max-width:768px){.desk-nav{display:none!important}.ham-btn{display:grid!important}}`}</style>
     </motion.header>
   );
 }
