@@ -7,9 +7,49 @@
     <title>DealZone - Affordable Home Decor Finds and Amazon Picks</title>
     <meta name="description" content="Shop affordable home decor finds, wall decor, lighting, storage, kitchen picks, and practical Amazon buying guides from DealZone." />
     <link rel="canonical" href="https://www.freedealzone.biz/" />
+    <link rel="preconnect" href="https://affiliate-backend-pi.vercel.app" crossorigin />
+    <style>
+      *{box-sizing:border-box}
+      body{margin:0;background:#f8fdff;color:#023e8a;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+      .boot-header{height:66px;display:flex;align-items:center;justify-content:space-between;padding:0 22px;background:rgba(248,253,255,.96);border-bottom:1px solid rgba(0,119,182,.08)}
+      .boot-logo{display:flex;align-items:center;gap:10px;font-weight:900}
+      .boot-mark{width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg,#00b4d8,#0077b6);box-shadow:0 8px 20px rgba(0,180,216,.24)}
+      .boot-hero{min-height:520px;display:grid;place-items:center;text-align:center;padding:78px 18px 42px;background:#d9f1fc;border-bottom:1px solid rgba(0,119,182,.08)}
+      .boot-shell{width:min(860px,100%)}
+      .boot-pill{display:inline-block;width:250px;height:34px;border-radius:999px;background:rgba(0,180,216,.16);margin-bottom:26px}
+      .boot-title{height:58px;width:min(680px,92%);border-radius:14px;background:#bde7f7;margin:0 auto 16px}
+      .boot-copy{height:18px;width:min(520px,82%);border-radius:999px;background:#c8eefb;margin:0 auto 10px}
+      .boot-button{height:48px;width:160px;border-radius:999px;background:linear-gradient(135deg,#00b4d8,#0077b6);margin:26px auto 0}
+      .boot-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;max-width:1180px;margin:0 auto;padding:42px 20px}
+      .boot-card{height:250px;border-radius:8px;background:#fff;border:1px solid rgba(0,180,216,.15);box-shadow:0 14px 34px rgba(0,100,160,.08);overflow:hidden}
+      .boot-card:before{content:"";display:block;height:150px;background:linear-gradient(90deg,#e0f2fe,#bae6fd,#e0f2fe);background-size:200%;animation:boot-shimmer 1.4s infinite}
+      @keyframes boot-shimmer{0%{background-position:200%}100%{background-position:-200%}}
+      @media(max-width:640px){.boot-hero{min-height:420px}.boot-title{height:94px}.boot-grid{grid-template-columns:repeat(2,1fr);gap:10px;padding:28px 12px}.boot-card{height:210px}.boot-card:before{height:120px}}
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <header class="boot-header">
+        <div class="boot-logo"><span class="boot-mark"></span><span>DealZone</span></div>
+      </header>
+      <main>
+        <section class="boot-hero">
+          <div class="boot-shell">
+            <div class="boot-pill"></div>
+            <div class="boot-title"></div>
+            <div class="boot-copy"></div>
+            <div class="boot-copy" style="width:min(430px,74%)"></div>
+            <div class="boot-button"></div>
+          </div>
+        </section>
+        <section class="boot-grid" aria-label="Loading deals">
+          <div class="boot-card"></div>
+          <div class="boot-card"></div>
+          <div class="boot-card"></div>
+          <div class="boot-card"></div>
+        </section>
+      </main>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

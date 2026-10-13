@@ -14,31 +14,72 @@ const SORT_OPTIONS = [
   { id: "price_high", label: "Price: High to Low" },
 ];
 
+const DEFAULT_CATEGORIES = [
+  { id: "decor", name: "Home Decor" },
+  { id: "wall-decor", name: "Wall Decor" },
+  { id: "lighting", name: "Lighting" },
+  { id: "bathroom", name: "Bathroom" },
+  { id: "kitchen", name: "Kitchen" },
+];
+
+const readCache = (key, fallback) => {
+  if (typeof window === "undefined") return fallback;
+  try {
+    const raw = window.sessionStorage.getItem(key);
+    return raw ? JSON.parse(raw) : fallback;
+  } catch {
+    return fallback;
+  }
+};
+
+const writeCache = (key, value) => {
+  try {
+    window.sessionStorage.setItem(key, JSON.stringify(value));
+  } catch {
+    // Ignore private-mode and storage quota failures.
+  }
+};
+
 const parsePrice = (p) => {
   const n = parseFloat(String(p || "").replace(/[^0-9.]/g, ""));
   return Number.isFinite(n) ? n : null;
 };
 
 export default function AllDeals({ activeFilter, setFilter, externalSearch = "", lockCategory }) {
-  const [deals, setDeals] = useState([]);
-  const [cats, setCats] = useState([]);
-  const [search, setSearch] = useState("");
+  const [deals, setDeals] = useState(() => readCache("dealzone:deals", []));
+  const [cats, setCats] = useState(() => readCache("dealzone:categories", DEFAULT_CATEGORIES));
+  const [search, setSearch] = useState(externalSearch);
   const [sortBy, setSortBy] = useState("newest");
-  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
-  const [loading, setLoading] = useState(true);
+  const [pagination, setPagination] = useState({ key: "", count: PAGE_SIZE });
+  const [loading, setLoading] = useState(() => readCache("dealzone:deals", []).length === 0);
   const isMobile = useIsMobile();
 
-  useEffect(() => { setSearch(externalSearch); }, [externalSearch]);
-  useEffect(() => { setVisibleCount(PAGE_SIZE); }, [activeFilter, search, sortBy]);
-
   useEffect(() => {
-    Promise.all([getDeals({ active: true }), getCategories()])
-      .then(([d, c]) => {
-        setDeals([...d].sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)));
-        setCats(c);
+    let alive = true;
+
+    getDeals({ active: true })
+      .then((d) => {
+        if (!alive) return;
+        const sorted = [...d].sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+        setDeals(sorted);
+        writeCache("dealzone:deals", sorted);
       })
       .catch(() => {})
-      .finally(() => setLoading(false));
+      .finally(() => {
+        if (alive) setLoading(false);
+      });
+
+    getCategories()
+      .then((c) => {
+        if (!alive || !Array.isArray(c) || c.length === 0) return;
+        setCats(c);
+        writeCache("dealzone:categories", c);
+      })
+      .catch(() => {});
+
+    return () => {
+      alive = false;
+    };
   }, []);
 
   const filtered = useMemo(() => {
@@ -59,6 +100,8 @@ export default function AllDeals({ activeFilter, setFilter, externalSearch = "",
     return r;
   }, [deals, activeFilter, search, sortBy]);
 
+  const pageKey = `${activeFilter}|${search}|${sortBy}`;
+  const visibleCount = pagination.key === pageKey ? pagination.count : PAGE_SIZE;
   const visible = filtered.slice(0, visibleCount);
   const allCats = [{ id: "all", name: "All" }, ...cats];
 
@@ -192,7 +235,7 @@ export default function AllDeals({ activeFilter, setFilter, externalSearch = "",
             <motion.button
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
-              onClick={() => setVisibleCount((v) => v + PAGE_SIZE)}
+              onClick={() => setPagination({ key: pageKey, count: visibleCount + PAGE_SIZE })}
               style={{
                 padding: isMobile ? "10px 22px" : "13px 32px",
                 borderRadius: 10,

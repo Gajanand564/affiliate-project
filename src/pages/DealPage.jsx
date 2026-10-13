@@ -60,25 +60,43 @@ function displayPrice(price) {
   return price || "Check live price";
 }
 
+function cachedDeal(asin) {
+  try {
+    const items = JSON.parse(window.sessionStorage.getItem("dealzone:deals") || "[]");
+    return items.find((item) => String(item.asin || "").toUpperCase() === String(asin || "").toUpperCase()) || null;
+  } catch {
+    return null;
+  }
+}
+
 export default function DealPage() {
   const { asin } = useParams();
   const [searchParams] = useSearchParams();
-  const [deal, setDeal] = useState(null);
+  const [deal, setDeal] = useState(() => cachedDeal(asin));
   const [related, setRelated] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(() => !cachedDeal(asin));
   const [missing, setMissing] = useState(false);
   const isMobile = useIsMobile();
 
   useEffect(() => {
+    let alive = true;
     getDealByAsin(asin)
       .then((item) => {
+        if (!alive) return;
         setDeal(item);
         document.title = `${item.title} | DealZone`;
         setMeta("description", cleanDescription(item.desc).slice(0, 155) || `Shop ${item.title} with DealZone.`);
         setCanonical(`${siteUrl}/deal/${item.asin || asin}`);
       })
-      .catch(() => setMissing(true))
-      .finally(() => setLoading(false));
+      .catch(() => {
+        if (alive) setMissing(true);
+      })
+      .finally(() => {
+        if (alive) setLoading(false);
+      });
+    return () => {
+      alive = false;
+    };
   }, [asin]);
 
   useEffect(() => {

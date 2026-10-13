@@ -1,29 +1,35 @@
-import { useState } from "react";
+import { lazy, Suspense, useState } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext";
 import PrivateRoute from "./admin/PrivateRoute";
-import AdminLayout from "./admin/AdminLayout";
 
 // Public pages
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import AllDeals from "./components/AllDeals";
-import Newsletter from "./components/Newsletter";
 import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
-import DealPage from "./pages/DealPage";
-import PrivacyPage from "./pages/PrivacyPage";
-import TrendPage from "./pages/TrendPage";
 
-// Admin pages
-import AdminLogin from "./admin/Login";
-import Dashboard from "./admin/Dashboard";
-import DealsManager from "./admin/DealsManager";
-import CategoriesManager from "./admin/CategoriesManager";
-import FeaturedManager from "./admin/FeaturedManager";
-import Subscribers from "./admin/Subscribers";
-import AdminNewsletter from "./admin/Subscribers"; // reuse for now
-import Settings from "./admin/Settings";
+const Newsletter = lazy(() => import("./components/Newsletter"));
+const DealPage = lazy(() => import("./pages/DealPage"));
+const PrivacyPage = lazy(() => import("./pages/PrivacyPage"));
+const TrendPage = lazy(() => import("./pages/TrendPage"));
+const AdminLayout = lazy(() => import("./admin/AdminLayout"));
+const AdminLogin = lazy(() => import("./admin/Login"));
+const Dashboard = lazy(() => import("./admin/Dashboard"));
+const DealsManager = lazy(() => import("./admin/DealsManager"));
+const CategoriesManager = lazy(() => import("./admin/CategoriesManager"));
+const FeaturedManager = lazy(() => import("./admin/FeaturedManager"));
+const Subscribers = lazy(() => import("./admin/Subscribers"));
+const Settings = lazy(() => import("./admin/Settings"));
+
+function PageFallback() {
+  return (
+    <main style={{ minHeight: "70vh", display: "grid", placeItems: "center", background: "#f8fdff", color: "#0077b6", fontWeight: 850 }}>
+      Loading...
+    </main>
+  );
+}
 
 // ── Public site ──────────────────────────────────────
 // lockCategory pins the deals feed to one category and hides the category
@@ -38,12 +44,15 @@ function PublicSite({ lockCategory }) {
       <main>
         <Hero onSearch={(q) => { setHeroSearch(q); }} />
         <AllDeals
+          key={`${lockCategory || "all"}:${heroSearch}`}
           activeFilter={activeFilter}
           setFilter={lockCategory ? () => {} : setActiveFilter}
           externalSearch={heroSearch}
           lockCategory={lockCategory}
         />
-        <Newsletter />
+        <Suspense fallback={null}>
+          <Newsletter />
+        </Suspense>
       </main>
       <Footer />
       <BackToTop />
@@ -55,7 +64,9 @@ function PublicSite({ lockCategory }) {
 function AdminPage({ children }) {
   return (
     <PrivateRoute>
-      <AdminLayout>{children}</AdminLayout>
+      <Suspense fallback={<PageFallback />}>
+        <AdminLayout>{children}</AdminLayout>
+      </Suspense>
     </PrivateRoute>
   );
 }
@@ -69,13 +80,13 @@ export default function App() {
           {/* Public */}
           <Route path="/" element={<PublicSite />} />
           <Route path="/kitchen" element={<PublicSite lockCategory="kitchen" />} />
-          <Route path="/deal/:asin" element={<DealPage />} />
+          <Route path="/deal/:asin" element={<Suspense fallback={<PageFallback />}><DealPage /></Suspense>} />
           <Route path="/trends" element={<Navigate to="/trends/wainscoting-and-beadboard-styles" replace />} />
-          <Route path="/trends/:slug" element={<TrendPage />} />
-          <Route path="/privacy" element={<PrivacyPage />} />
+          <Route path="/trends/:slug" element={<Suspense fallback={<PageFallback />}><TrendPage /></Suspense>} />
+          <Route path="/privacy" element={<Suspense fallback={<PageFallback />}><PrivacyPage /></Suspense>} />
 
           {/* Admin auth */}
-          <Route path="/admin/login" element={<AdminLogin />} />
+          <Route path="/admin/login" element={<Suspense fallback={<PageFallback />}><AdminLogin /></Suspense>} />
           <Route path="/admin" element={<Navigate to="/admin/dashboard" replace />} />
 
           {/* Admin pages */}
