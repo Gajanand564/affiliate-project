@@ -7,7 +7,7 @@ import DealCard from "../components/DealCard";
 import Newsletter from "../components/Newsletter";
 import { getDeals } from "../services/api";
 import { useIsMobile } from "../hooks/useIsMobile";
-import { AMAZON_STOREFRONT_URL, hasAmazonStorefront } from "../config/storefront";
+import { AMAZON_STOREFRONT_NAME, AMAZON_STOREFRONT_URL, hasAmazonStorefront } from "../config/storefront";
 
 const siteUrl = "https://www.freedealzone.biz";
 
@@ -53,10 +53,10 @@ export default function StorefrontPage() {
   const isMobile = useIsMobile();
 
   useEffect(() => {
-    document.title = "Amazon Influencer Storefront | DealZone";
+    document.title = `${AMAZON_STOREFRONT_NAME}'s Amazon Storefront | DealZone`;
     setMeta(
       "description",
-      "Browse DealZone's Amazon Influencer Storefront style collections for affordable home decor, lighting, wall decor, bathroom, and kitchen finds."
+      `Browse ${AMAZON_STOREFRONT_NAME}'s Amazon Influencer Storefront style collections for affordable home decor, lighting, wall decor, bathroom, and kitchen finds.`
     );
     setCanonical(`${siteUrl}/storefront`);
   }, []);
@@ -98,8 +98,8 @@ export default function StorefrontPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Amazon Influencer Storefront | DealZone",
-    description: "Curated Amazon home decor and kitchen finds from DealZone.",
+    name: `${AMAZON_STOREFRONT_NAME}'s Amazon Storefront | DealZone`,
+    description: `Curated Amazon home decor and kitchen finds by ${AMAZON_STOREFRONT_NAME}.`,
     url: `${siteUrl}/storefront`,
     publisher: { "@type": "Organization", name: "DealZone" },
   };
@@ -114,13 +114,13 @@ export default function StorefrontPage() {
           <div style={{ maxWidth: 1160, margin: "0 auto", display: "grid", gridTemplateColumns: isMobile ? "1fr" : "minmax(0,1.15fr) minmax(310px,.85fr)", gap: 28, alignItems: "center" }}>
             <div>
               <div style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "7px 13px", borderRadius: 999, background: "rgba(0,180,216,.14)", color: "#0077b6", fontWeight: 900, fontSize: ".78rem", marginBottom: 16 }}>
-                <Store size={16} /> Amazon Influencer Storefront
+                <Store size={16} /> {AMAZON_STOREFRONT_NAME}'s Amazon Storefront
               </div>
               <h1 style={{ margin: 0, color: "#023e8a", fontSize: isMobile ? "2rem" : "3.4rem", lineHeight: 1.06, letterSpacing: 0 }}>
-                Curated Amazon finds for budget-friendly rooms
+                {AMAZON_STOREFRONT_NAME}'s curated Amazon finds for budget-friendly rooms
               </h1>
               <p style={{ color: "#467ba4", fontSize: isMobile ? ".98rem" : "1.08rem", lineHeight: 1.72, maxWidth: 650, margin: "18px 0 24px" }}>
-                Shop DealZone collections for home decor, wall accents, lighting, kitchen helpers, and small-space upgrades. Product buttons open detail pages first so pricing and links stay trackable.
+                Shop {AMAZON_STOREFRONT_NAME}'s DealZone collections for home decor, wall accents, lighting, kitchen helpers, and small-space upgrades. Product buttons open detail pages first so pricing and links stay trackable.
               </p>
 
               <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
