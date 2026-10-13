@@ -1,6 +1,14 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Star } from "lucide-react";
+import { ArrowRight, Star } from "lucide-react";
 import { IMG_BASE } from "../services/api";
+
+const categoryLabels = {
+  decor: "Home Decor",
+  "wall-decor": "Wall Decor",
+  lighting: "Lighting",
+  bathroom: "Bathroom",
+  kitchen: "Kitchen",
+};
 
 function StarRating({ rating }) {
   const value = Number(rating) || 4.7;
@@ -17,6 +25,8 @@ function StarRating({ rating }) {
 export default function DealCard({ deal, index = 0, compact = false, isMobile = false }) {
   const imgSrc = deal.image ? (/^https?:\/\//.test(deal.image) ? deal.image : IMG_BASE + deal.image) : null;
   const isCompact = compact || isMobile;
+  const detailsHref = deal.asin ? `/deal/${deal.asin}` : deal.affiliateUrl;
+  const category = categoryLabels[deal.category] || deal.category || "Deal";
 
   return (
     <motion.article
@@ -68,7 +78,7 @@ export default function DealCard({ deal, index = 0, compact = false, isMobile = 
 
       <div style={{ padding: isCompact ? "10px 10px 8px" : "15px 15px 10px", flex: 1, display: "flex", flexDirection: "column", gap: 7 }}>
         <span style={{ color: "#0077b6", fontSize: ".7rem", fontWeight: 950, textTransform: "uppercase", letterSpacing: ".04em" }}>
-          {deal.category || "Deal"}
+          {category}
         </span>
         <h3 style={{
           margin: 0,
@@ -100,9 +110,7 @@ export default function DealCard({ deal, index = 0, compact = false, isMobile = 
 
       <div style={{ padding: isCompact ? "0 10px 10px" : "0 15px 15px" }}>
         <motion.a
-          href={deal.affiliateUrl}
-          target="_blank"
-          rel="noopener noreferrer nofollow"
+          href={detailsHref}
           whileTap={{ scale: 0.97 }}
           style={{
             display: "flex",
@@ -118,7 +126,7 @@ export default function DealCard({ deal, index = 0, compact = false, isMobile = 
             fontSize: isCompact ? ".78rem" : ".9rem",
           }}
         >
-          View Deal <ExternalLink size={13} />
+          See Details <ArrowRight size={13} />
         </motion.a>
       </div>
     </motion.article>

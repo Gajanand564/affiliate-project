@@ -13,8 +13,7 @@ const cols = {
   ],
   Legal: [
     { label: "Privacy Policy", href: "/privacy" },
-    { label: "Affiliate Disclosure", href: "#" },
-    { label: "Terms of Use", href: "#" },
+    { label: "Affiliate Disclosure", href: "/privacy" },
   ],
 };
 
@@ -41,6 +40,9 @@ export default function Footer() {
             </a>
             <p style={{ fontSize: ".88rem", lineHeight: 1.75, color: "#7db5cf", marginBottom: 18 }}>
               Home decor and kitchen deals selected around real shopping intent, seasonal trends, and practical use.
+            </p>
+            <p style={{ fontSize: ".78rem", lineHeight: 1.6, color: "#b8dff0", marginBottom: 18 }}>
+              As an Amazon Associate I earn from qualifying purchases.
             </p>
             <div style={{ display: "flex", gap: 8 }}>
               {socials.map((s) => (

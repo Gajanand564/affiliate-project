@@ -1,21 +1,29 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Shield, Star, TrendingUp, Zap } from "lucide-react";
+import { ArrowDown, Search, Shield, Tag, TrendingUp, Zap } from "lucide-react";
 import { useIsMobile } from "../hooks/useIsMobile";
+import { useState } from "react";
 
 const stats = [
-  { icon: <Star size={20} />, num: "500+", label: "Deals" },
-  { icon: <TrendingUp size={20} />, num: "50K+", label: "Readers" },
-  { icon: <Shield size={20} />, num: "100%", label: "Trusted" },
+  { icon: <TrendingUp size={20} />, num: "Trend", label: "Matched picks" },
+  { icon: <Tag size={20} />, num: "Budget", label: "Decor finds" },
+  { icon: <Shield size={20} />, num: "Clear", label: "Affiliate disclosure" },
 ];
 
-export default function Hero() {
+export default function Hero({ onSearch }) {
   const isMobile = useIsMobile();
+  const [query, setQuery] = useState("");
+
+  const submitSearch = (e) => {
+    e.preventDefault();
+    onSearch?.(query.trim());
+    document.getElementById("deals")?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <section style={{
       minHeight: isMobile ? "auto" : "620px",
       padding: isMobile ? "96px 18px 34px" : "118px 24px 48px",
-      background: "linear-gradient(180deg,#d9f1fc 0%,#c9ebfa 100%)",
+      background: "#d9f1fc",
       borderBottom: "1px solid rgba(0,119,182,.08)",
       position: "relative",
       overflow: "hidden",
@@ -23,29 +31,39 @@ export default function Hero() {
     }}>
       <div style={{ position: "absolute", inset: 0, pointerEvents: "none" }}>
         <div style={{ position: "absolute", inset: 0, backgroundImage: "radial-gradient(rgba(0,119,182,.12) 1px, transparent 1px)", backgroundSize: "40px 40px", opacity: .36 }} />
-        <motion.div animate={{ scale: [1, 1.12, 1] }} transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
-          style={{ position: "absolute", top: 60, right: "8%", width: 360, height: 360, borderRadius: "50%", background: "rgba(0,180,216,.18)", filter: "blur(60px)" }} />
-        <motion.div animate={{ scale: [1.08, 1, 1.08] }} transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-          style={{ position: "absolute", bottom: 40, left: "4%", width: 280, height: 280, borderRadius: "50%", background: "rgba(0,119,182,.12)", filter: "blur(60px)" }} />
       </div>
 
       <div style={{ position: "relative", zIndex: 1, maxWidth: 1180, margin: "0 auto" }}>
         <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .4 }}
           style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "7px 16px", borderRadius: 999, background: "rgba(0,180,216,.12)", border: "1px solid rgba(0,180,216,.3)", color: "#0077b6", fontWeight: 800, fontSize: isMobile ? ".76rem" : ".86rem", marginBottom: isMobile ? 18 : 26 }}>
-          <Zap size={15} fill="currentColor" /> Top Affiliate Deals - Updated Daily
+          <Zap size={15} fill="currentColor" /> Budget home decor and kitchen finds
         </motion.div>
 
         <motion.h1 initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .48, delay: .05 }}
           style={{ margin: "0 auto", maxWidth: 860, color: "#023e8a", fontSize: isMobile ? "2rem" : "clamp(2.8rem,5vw,4.6rem)", lineHeight: 1.1, letterSpacing: 0, fontWeight: 900 }}>
-          Discover the <span style={{ color: "#00a6d6" }}>Best Deals</span>
+          Affordable <span style={{ color: "#00a6d6" }}>Home Decor Finds</span>
           <br />
-          &amp; Save More Today
+          for real rooms
         </motion.h1>
 
         <motion.p initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .48, delay: .12 }}
           style={{ color: "#467ba4", fontSize: isMobile ? ".95rem" : "1.08rem", lineHeight: 1.55, maxWidth: 560, margin: isMobile ? "16px auto 24px" : "22px auto 30px" }}>
-          Handpicked affiliate offers, honest reviews, and exclusive discounts.
+          Trend-led Amazon picks for mirrors, wall decor, lighting, storage, and small-space upgrades.
         </motion.p>
+
+        <motion.form onSubmit={submitSearch} initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .48, delay: .16 }}
+          style={{ maxWidth: 560, margin: "0 auto 18px", display: "flex", gap: 8, background: "#fff", border: "1px solid rgba(0,180,216,.22)", borderRadius: 999, padding: 6, boxShadow: "0 10px 24px rgba(0,100,160,.08)" }}>
+          <Search size={18} style={{ alignSelf: "center", marginLeft: 12, color: "#93b4c8", flexShrink: 0 }} />
+          <input
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Search mirrors, shelves, lamps..."
+            style={{ flex: 1, border: 0, outline: 0, color: "#023e8a", fontSize: isMobile ? ".88rem" : ".96rem", minWidth: 0 }}
+          />
+          <button type="submit" style={{ border: 0, borderRadius: 999, background: "#023e8a", color: "#fff", fontWeight: 900, padding: isMobile ? "10px 14px" : "11px 18px" }}>
+            Search
+          </button>
+        </motion.form>
 
         <motion.a initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .48, delay: .18 }}
           href="#deals"

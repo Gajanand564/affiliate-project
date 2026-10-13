@@ -27,9 +27,16 @@ export const getMe = () => api.get("/auth/me").then((r) => r.data);
 
 // Deals
 export const getDeals = (params) => api.get("/deals", { params }).then((r) => r.data);
+export const getDealByAsin = (asin) => api.get(`/deals/asin/${asin}`).then((r) => r.data);
 export const createDeal = (data) => api.post("/deals", data).then((r) => r.data);
 export const updateDeal = (id, data) => api.put(`/deals/${id}`, data).then((r) => r.data);
 export const deleteDeal = (id) => api.delete(`/deals/${id}`).then((r) => r.data);
+export const trackDealClick = (id, params = {}) => api.post(`/deals/${id}/track-click`, null, { params }).then((r) => r.data);
+export const trackDealClickByAsin = (asin, params = {}) => api.post(`/deals/asin/${asin}/track-click`, null, { params }).then((r) => r.data);
+export const dealRedirectUrl = (asin, params = {}) => {
+  const search = new URLSearchParams(params);
+  return `${BASE}/go/${asin}${search.toString() ? `?${search.toString()}` : ""}`;
+};
 
 // Categories
 export const getCategories = () => api.get("/categories").then((r) => r.data);
