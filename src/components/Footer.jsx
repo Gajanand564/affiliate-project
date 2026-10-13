@@ -3,6 +3,7 @@ import { Camera, Heart, PlayCircle, Share2, Zap } from "lucide-react";
 const cols = {
   Shop: [
     { label: "All Deals", href: "/#deals" },
+    { label: "Amazon Storefront", href: "/storefront" },
     { label: "Newsletter", href: "/#newsletter" },
   ],
   Trending: [

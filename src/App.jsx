@@ -13,6 +13,7 @@ import BackToTop from "./components/BackToTop";
 const Newsletter = lazy(() => import("./components/Newsletter"));
 const DealPage = lazy(() => import("./pages/DealPage"));
 const PrivacyPage = lazy(() => import("./pages/PrivacyPage"));
+const StorefrontPage = lazy(() => import("./pages/StorefrontPage"));
 const TrendPage = lazy(() => import("./pages/TrendPage"));
 const AdminLayout = lazy(() => import("./admin/AdminLayout"));
 const AdminLogin = lazy(() => import("./admin/Login"));
@@ -81,6 +82,7 @@ export default function App() {
           <Route path="/" element={<PublicSite />} />
           <Route path="/kitchen" element={<PublicSite lockCategory="kitchen" />} />
           <Route path="/deal/:asin" element={<Suspense fallback={<PageFallback />}><DealPage /></Suspense>} />
+          <Route path="/storefront" element={<Suspense fallback={<PageFallback />}><StorefrontPage /></Suspense>} />
           <Route path="/trends" element={<Navigate to="/trends/wainscoting-and-beadboard-styles" replace />} />
           <Route path="/trends/:slug" element={<Suspense fallback={<PageFallback />}><TrendPage /></Suspense>} />
           <Route path="/privacy" element={<Suspense fallback={<PageFallback />}><PrivacyPage /></Suspense>} />
