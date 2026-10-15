@@ -9,7 +9,7 @@ const links = [
   { label: "Kitchen", href: "/kitchen" },
 ];
 
-export default function Header() {
+export default function Header({ staticRender = false }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -22,7 +22,7 @@ export default function Header() {
 
   return (
     <motion.header
-      initial={{ y: -70, opacity: 0 }}
+      initial={staticRender ? false : { y: -70, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.35, ease: "easeOut" }}
       style={{

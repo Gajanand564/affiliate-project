@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { CheckCircle, Mail } from "lucide-react";
 import { subscribe } from "../services/api";
 
-export default function Newsletter() {
+export default function Newsletter({ staticRender = false }) {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -26,7 +26,7 @@ export default function Newsletter() {
   return (
     <section id="newsletter" style={{ padding: "74px 20px", background: "#d9f1fc", borderTop: "1px solid rgba(0,180,216,.15)" }}>
       <motion.div
-        initial={{ opacity: 0, y: 24 }}
+        initial={staticRender ? false : { opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.45 }}

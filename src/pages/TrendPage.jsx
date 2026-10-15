@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Navigate, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle2, Search, ShoppingBag, Sparkles } from "lucide-react";
+import { ArrowRight, CheckCircle2, ShoppingBag } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import BackToTop from "../components/BackToTop";
@@ -49,11 +49,12 @@ function scoreDeal(page, deal) {
   ), 0);
 }
 
-export default function TrendPage() {
+export default function TrendPage({ staticRender = false }) {
   const { slug } = useParams();
   const page = trendPageBySlug[slug];
   const [deals, setDeals] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState(false);
   const isMobile = useIsMobile();
 
   useEffect(() => {
@@ -66,7 +67,7 @@ export default function TrendPage() {
   useEffect(() => {
     getDeals({ active: true })
       .then((items) => setDeals(Array.isArray(items) ? items : []))
-      .catch(() => setDeals([]))
+      .catch(() => setLoadError(true))
       .finally(() => setLoading(false));
   }, []);
 
@@ -76,14 +77,7 @@ export default function TrendPage() {
       .filter((deal) => trendMatches(page, deal))
       .sort((a, b) => scoreDeal(page, b) - scoreDeal(page, a));
 
-    if (exact.length >= 4) return exact.slice(0, 12);
-
-    const fallback = deals
-      .filter((deal) => ["decor", "home decor", "kitchen"].includes(String(deal.category || "").toLowerCase()))
-      .filter((deal) => !exact.some((item) => item.id === deal.id))
-      .slice(0, 12 - exact.length);
-
-    return [...exact, ...fallback];
+    return exact.slice(0, 12);
   }, [deals, page]);
 
   if (!page) return <Navigate to="/trends/wainscoting-and-beadboard-styles" replace />;
@@ -111,21 +105,21 @@ export default function TrendPage() {
 
   return (
     <>
-      <Header />
+      <Header staticRender={staticRender} />
       <main style={{ background: "#d9f1fc", minHeight: "100vh" }}>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
         <section style={{ padding: isMobile ? "104px 16px 34px" : "132px 24px 58px", background: "#ffffff" }}>
-          <div style={{ maxWidth: 1160, margin: "0 auto", display: "grid", gridTemplateColumns: isMobile ? "1fr" : "minmax(0, 1.2fr) minmax(300px, .8fr)", gap: 28, alignItems: "center" }}>
+          <div className="trend-hero-grid" style={{ maxWidth: 1160, margin: "0 auto", display: "grid", gridTemplateColumns: isMobile ? "1fr" : "minmax(0, 1.2fr) minmax(300px, .8fr)", gap: 28, alignItems: "center" }}>
             <div>
               <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 16 }}>
-                {[page.eyebrow, page.priority, "Trend-led shopping"].map((label) => (
+                {["Home & kitchen buying guide"].map((label) => (
                   <span key={label} style={{ padding: "7px 11px", borderRadius: 999, background: "rgba(0,180,216,.12)", color: "#0077b6", fontSize: ".78rem", fontWeight: 800 }}>
                     {label}
                   </span>
                 ))}
               </div>
-              <h1 style={{ margin: 0, color: "#023e8a", fontSize: isMobile ? "2rem" : "3.35rem", lineHeight: 1.05, letterSpacing: 0 }}>
+              <h1 className="trend-title" style={{ margin: 0, color: "#023e8a", fontSize: isMobile ? "2rem" : "3.35rem", lineHeight: 1.05, letterSpacing: 0 }}>
                 {page.title}
               </h1>
               <p style={{ color: "#467ba4", fontSize: isMobile ? "1rem" : "1.08rem", lineHeight: 1.75, maxWidth: 700, margin: "18px 0 24px" }}>
@@ -142,7 +136,7 @@ export default function TrendPage() {
             </div>
 
             <div style={{ background: "#f0f9ff", border: "1px solid rgba(0,180,216,.18)", borderRadius: 8, padding: 22 }}>
-              <h2 style={{ margin: "0 0 14px", color: "#023e8a", fontSize: "1.1rem" }}>Best product angles</h2>
+              <h2 style={{ margin: "0 0 14px", color: "#023e8a", fontSize: "1.1rem" }}>What to look for</h2>
               <div style={{ display: "grid", gap: 10 }}>
                 {page.productAngles.map((angle) => (
                   <div key={angle} style={{ display: "flex", alignItems: "center", gap: 10, color: "#467ba4", fontWeight: 700 }}>
@@ -160,10 +154,10 @@ export default function TrendPage() {
               <div>
                 <span style={{ color: "#00a6d6", fontWeight: 900, fontSize: ".78rem", textTransform: "uppercase" }}>Trend-matched deals</span>
                 <h2 style={{ color: "#023e8a", margin: "5px 0 0", fontSize: isMobile ? "1.45rem" : "2rem" }}>
-                  Products people are likely to buy after searching this trend
+                  Related finds for {page.title}
                 </h2>
               </div>
-              <span style={{ color: "#467ba4", fontWeight: 700 }}>{loading ? "Loading deals" : `${selectedDeals.length} finds`}</span>
+              <span style={{ color: "#467ba4", fontWeight: 700 }}>{loading ? "Loading deals" : loadError ? "Products temporarily unavailable" : `${selectedDeals.length} finds`}</span>
             </div>
 
             {selectedDeals.length > 0 ? (
@@ -174,19 +168,23 @@ export default function TrendPage() {
               </div>
             ) : (
               <div style={{ background: "#fff", borderRadius: 8, padding: 26, color: "#467ba4", border: "1px solid rgba(0,180,216,.16)" }}>
-                Deals are loading. Add products with these keywords: {page.productAngles.join(", ")}.
+                {loading
+                  ? "Loading related products. You can read the buying guide below while they load."
+                  : loadError
+                    ? "Products could not be loaded. Please try again later; the buying guide is still available below."
+                    : "No matching products are available right now. Use the buying guide below to plan your search."}
               </div>
             )}
           </div>
         </section>
 
         <section style={{ padding: isMobile ? "24px 16px 42px" : "36px 24px 70px", background: "#fff" }}>
-          <div style={{ maxWidth: 1160, margin: "0 auto", display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: 24 }}>
+          <div style={{ maxWidth: 900, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr", gap: 24 }}>
             <div>
               <h2 style={{ color: "#023e8a", margin: "0 0 14px" }}>Buying guide</h2>
               <div style={{ display: "grid", gap: 12 }}>
                 {page.buyingTips.map((tip) => (
-                  <motion.div key={tip} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
+                  <motion.div key={tip} initial={staticRender ? false : { opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
                     style={{ display: "flex", gap: 10, color: "#467ba4", lineHeight: 1.55 }}>
                     <CheckCircle2 size={18} color="#00a6d6" style={{ marginTop: 2, flexShrink: 0 }} /> {tip}
                   </motion.div>
@@ -194,17 +192,6 @@ export default function TrendPage() {
               </div>
             </div>
 
-            <div>
-              <h2 style={{ color: "#023e8a", margin: "0 0 14px" }}>Search angle</h2>
-              <div style={{ display: "grid", gap: 12 }}>
-                <div style={{ display: "flex", gap: 10, color: "#467ba4", lineHeight: 1.55 }}>
-                  <Search size={18} color="#00a6d6" style={{ marginTop: 2, flexShrink: 0 }} /> {page.searchIntent}
-                </div>
-                <div style={{ display: "flex", gap: 10, color: "#467ba4", lineHeight: 1.55 }}>
-                  <Sparkles size={18} color="#00a6d6" style={{ marginTop: 2, flexShrink: 0 }} /> {page.discoverAngle}
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -235,10 +222,11 @@ export default function TrendPage() {
           </div>
         </section>
 
-        <Newsletter />
+        <Newsletter staticRender={staticRender} />
       </main>
       <Footer />
       <BackToTop />
+      <style>{`@media(max-width:1024px){.trend-hero-grid{grid-template-columns:1fr!important}.trend-title{font-size:2rem!important}}`}</style>
     </>
   );
 }
