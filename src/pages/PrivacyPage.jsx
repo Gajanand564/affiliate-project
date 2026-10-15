@@ -32,7 +32,7 @@ const sections = [
     title: "Third-party services",
     body: ["We use a small set of third-party services to run DealZone, each governed by its own privacy policy:"],
     list: [
-      "Analytics tools - aggregate traffic and usage measurement.",
+      "Google Analytics 4 - measures website visits, traffic sources and interactions such as page views, scrolling and link clicks. Google Analytics may use cookies and browser identifiers for this measurement.",
       "Amazon Associates - affiliate link tracking and commissions.",
       "Pinterest - publishing and distribution of our pins.",
     ],
@@ -59,7 +59,7 @@ export default function PrivacyPage() {
             Privacy Policy
           </h1>
           <p style={{ color: "#467ba4", fontSize: ".95rem", marginBottom: 44 }}>
-            Last updated: September 2, 2026. Effective for this site.
+            Last updated: October 15, 2026. Effective for this site.
           </p>
 
           <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
