@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useAuth } from "../context/AuthContext";
 import { login } from "../services/api";
 import { LogIn, Eye, EyeOff } from "lucide-react";
+import BrandLogo from "../components/BrandLogo";
 
 export default function AdminLogin() {
   const [form, setForm] = useState({ username: "", password: "" });
@@ -39,9 +40,7 @@ export default function AdminLogin() {
         <div style={{ background: "#fff", borderRadius: 20, padding: "32px 36px", boxShadow: "0 8px 40px rgba(0,100,160,0.14)", border: "1px solid rgba(0,180,216,0.15)" }}>
           {/* Header */}
           <div style={{ textAlign: "center", marginBottom: 28 }}>
-            <div style={{ width: 60, height: 60, borderRadius: 16, background: "linear-gradient(135deg,#00b4d8,#0077b6)", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 14px", boxShadow: "0 6px 20px rgba(0,180,216,0.35)" }}>
-              <span style={{ fontSize: "1.6rem" }}>⚡</span>
-            </div>
+            <BrandLogo width={92} style={{ margin: "0 auto 14px" }} />
             <h1 style={{ fontSize: "1.4rem", fontWeight: 900, color: "#023e8a", marginBottom: 4 }}>DealZone Admin</h1>
             <p style={{ fontSize: ".82rem", color: "#4a7fa5" }}>Affiliate Marketing Manager</p>
           </div>

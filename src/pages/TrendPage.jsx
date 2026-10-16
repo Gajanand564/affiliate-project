@@ -90,7 +90,7 @@ export default function TrendPage({ staticRender = false }) {
         headline: page.seoTitle,
         description: page.metaDescription,
         url: `${siteUrl}/trends/${page.slug}`,
-        publisher: { "@type": "Organization", name: "DealZone" },
+        publisher: { "@type": "Organization", "@id": "https://www.freedealzone.biz/#organization", name: "DealZone", logo: "https://www.freedealzone.biz/brand/dz-logo.png" },
       },
       {
         "@type": "FAQPage",

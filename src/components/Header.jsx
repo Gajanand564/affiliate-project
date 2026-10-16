@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Mail, Menu, X, Zap } from "lucide-react";
+import { Mail, Menu, X } from "lucide-react";
+import BrandLogo from "./BrandLogo";
 
 const links = [
   { label: "All Deals", href: "/#deals" },
@@ -40,9 +41,7 @@ export default function Header({ staticRender = false }) {
     >
       <div style={{ maxWidth: 1180, margin: "0 auto", height: 66, padding: "0 22px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 16 }}>
         <a href="/" style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          <span style={{ width: 42, height: 42, borderRadius: 10, background: "linear-gradient(135deg,#00b4d8,#0077b6)", color: "#fff", display: "grid", placeItems: "center", boxShadow: "0 8px 20px rgba(0,180,216,.24)" }}>
-            <Zap size={21} fill="currentColor" />
-          </span>
+          <BrandLogo />
           <span>
             <span style={{ display: "block", color: "#023e8a", fontWeight: 900, lineHeight: 1, fontSize: "1.12rem" }}>DealZone</span>
             <span style={{ display: "block", color: "#467ba4", fontWeight: 650, fontSize: ".68rem", marginTop: 3 }}>Affiliate Deals Hub</span>

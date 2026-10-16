@@ -101,7 +101,7 @@ export default function StorefrontPage() {
     name: `${AMAZON_STOREFRONT_NAME}'s Amazon Storefront | DealZone`,
     description: `Curated Amazon home decor and kitchen finds by ${AMAZON_STOREFRONT_NAME}.`,
     url: `${siteUrl}/storefront`,
-    publisher: { "@type": "Organization", name: "DealZone" },
+    publisher: { "@type": "Organization", "@id": "https://www.freedealzone.biz/#organization", name: "DealZone", logo: "https://www.freedealzone.biz/brand/dz-logo.png" },
   };
 
   return (

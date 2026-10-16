@@ -2,9 +2,10 @@ import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { useAuth } from "../context/AuthContext";
+import BrandLogo from "../components/BrandLogo";
 import {
   LayoutDashboard, ShoppingBag, Tag, Star,
-  Mail, Settings, Users, LogOut, Menu, X, ChevronRight
+  Mail, Settings, Users, LogOut, Menu, ChevronRight
 } from "lucide-react";
 
 const NAV = [
@@ -42,9 +43,7 @@ export default function AdminLayout({ children, counts = {} }) {
       {/* Logo */}
       <div style={{ padding: "20px 20px 16px", borderBottom: `1px solid ${C.border}` }}>
         <a href="/" target="_blank" style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          <div style={{ width: 42, height: 42, borderRadius: 10, background: "linear-gradient(135deg,#00b4d8,#0077b6)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-            <span style={{ fontSize: "1.3rem" }}>⚡</span>
-          </div>
+          <BrandLogo />
           <div>
             <div style={{ fontSize: "1.1rem", fontWeight: 900, color: "#023e8a", lineHeight: 1 }}>DealZone</div>
             <div style={{ fontSize: ".58rem", color: "#4a7fa5", fontWeight: 500, letterSpacing: ".06em" }}>Affiliate Manager</div>

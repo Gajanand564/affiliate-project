@@ -1,4 +1,5 @@
-import { Camera, Heart, Share2, Zap } from "lucide-react";
+import { Camera, Heart, Share2 } from "lucide-react";
+import BrandLogo from "./BrandLogo";
 
 const cols = {
   Shop: [
@@ -31,9 +32,7 @@ export default function Footer() {
         <div className="footer-grid" style={{ display: "grid", gridTemplateColumns: "1fr auto", gap: 42, paddingBottom: 40, borderBottom: "1px solid rgba(255,255,255,.1)" }}>
           <div style={{ maxWidth: 330 }}>
             <a href="/" style={{ display: "flex", alignItems: "center", gap: 11, marginBottom: 14 }}>
-              <span style={{ width: 40, height: 40, borderRadius: 10, background: "linear-gradient(135deg,#00b4d8,#0077b6)", color: "#fff", display: "grid", placeItems: "center" }}>
-                <Zap size={21} fill="currentColor" />
-              </span>
+              <BrandLogo />
               <span>
                 <span style={{ display: "block", color: "#fff", fontWeight: 950, fontSize: "1.12rem", lineHeight: 1 }}>DealZone</span>
                 <span style={{ display: "block", color: "#90c4dd", fontWeight: 700, fontSize: ".68rem", marginTop: 3 }}>Affiliate Deals Hub</span>
