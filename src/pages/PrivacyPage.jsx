@@ -35,6 +35,8 @@ const sections = [
       "Google Analytics 4 - measures website visits, traffic sources and interactions such as page views, scrolling and link clicks. Google Analytics may use cookies and browser identifiers for this measurement.",
       "Amazon Associates - affiliate link tracking and commissions.",
       "Pinterest - publishing and distribution of our pins.",
+      "Facebook and Instagram - publishing and distribution of our home decor posts.",
+      "Session storage - retains campaign source labels for up to 30 minutes of inactivity as you browse product pages. Outbound click records may include the country supplied by our hosting service.",
     ],
   },
   {

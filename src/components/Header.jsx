@@ -4,6 +4,7 @@ import { Mail, Menu, X, Zap } from "lucide-react";
 
 const links = [
   { label: "All Deals", href: "/#deals" },
+  { label: "Shop our posts", href: "/finds" },
   { label: "Storefront", href: "/storefront" },
   { label: "Trends", href: "/trends/home-decor-inspo-finds" },
   { label: "Kitchen", href: "/kitchen" },

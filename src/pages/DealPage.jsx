@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, Navigate, useParams, useSearchParams } from "react-router-dom";
 import { ArrowLeft, CheckCircle2, ExternalLink, ShieldCheck, Sparkles, Star } from "lucide-react";
 import Header from "../components/Header";
@@ -7,6 +7,7 @@ import BackToTop from "../components/BackToTop";
 import DealCard from "../components/DealCard";
 import { dealRedirectUrl, getDealByAsin, getDeals, IMG_BASE } from "../services/api";
 import { useIsMobile } from "../hooks/useIsMobile";
+import { getAttribution, trackProduct } from "../services/attribution.mjs";
 
 const siteUrl = "https://www.freedealzone.biz";
 
@@ -77,6 +78,14 @@ export default function DealPage() {
   const [loading, setLoading] = useState(() => !cachedDeal(asin));
   const [missing, setMissing] = useState(false);
   const isMobile = useIsMobile();
+  const viewedAsin = useRef(null);
+
+  useEffect(() => {
+    if (deal?.asin === asin && viewedAsin.current !== asin) {
+      trackProduct('view_item', deal);
+      viewedAsin.current = asin;
+    }
+  }, [deal, asin]);
 
   useEffect(() => {
     let alive = true;
@@ -132,12 +141,13 @@ export default function DealPage() {
 
   const reasons = reasonList(deal);
   const category = categoryLabels[deal.category] || deal.category || "Deal";
-  const source = searchParams.get("utm_source") || searchParams.get("src") || "site";
+  const campaign = getAttribution();
+  const source = campaign.utm_source || searchParams.get("src") || "site";
   const redirect = dealRedirectUrl(deal.asin || asin, {
     src: source,
-    utm_medium: searchParams.get("utm_medium") || "deal_page",
-    utm_campaign: searchParams.get("utm_campaign") || deal.category || "dealzone",
-    utm_content: searchParams.get("utm_content") || deal.asin || asin,
+    utm_medium: campaign.utm_medium || "deal_page",
+    utm_campaign: campaign.utm_campaign || deal.category || "dealzone",
+    utm_content: campaign.utm_content || deal.asin || asin,
   });
 
   const jsonLd = {
@@ -201,13 +211,13 @@ export default function DealPage() {
                   {!!deal.reviews && <span style={{ color: "#7ca5bb", fontWeight: 700 }}>{Number(deal.reviews).toLocaleString()} reviews</span>}
                 </div>
 
-                <a href={redirect} target="_blank" rel="noopener noreferrer nofollow"
+                <a href={redirect} target="_blank" rel="noopener noreferrer nofollow sponsored" onClick={() => trackProduct('affiliate_click', deal)}
                   style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", gap: 9, width: isMobile ? "100%" : "auto", padding: "14px 24px", borderRadius: 8, background: "#023e8a", color: "#fff", fontWeight: 950, boxShadow: "0 14px 28px rgba(2,62,138,.22)" }}>
                   Check live price on Amazon <ExternalLink size={17} />
                 </a>
 
                 <p style={{ margin: "12px 0 0", color: "#64748b", fontSize: ".8rem", lineHeight: 1.55 }}>
-                  As an Amazon Associate I earn from qualifying purchases. Price and availability can change on Amazon.
+                  Amazon.com picks for US shoppers. Availability and shipping depend on your address. As an Amazon Associate I earn from qualifying purchases. Price and availability can change on Amazon.
                 </p>
               </div>
             </div>
@@ -236,7 +246,7 @@ export default function DealPage() {
                 </div>
                 <div style={{ display: "flex", gap: 10 }}>
                   <ShieldCheck size={18} color="#00a6d6" style={{ marginTop: 2, flexShrink: 0 }} />
-                  We route clicks through DealZone first so broken or old affiliate tags can be corrected centrally.
+                  Check the product dimensions, materials and delivery options on Amazon before ordering.
                 </div>
               </div>
             </div>

@@ -1,8 +1,9 @@
-import { Camera, Heart, PlayCircle, Share2, Zap } from "lucide-react";
+import { Camera, Heart, Share2, Zap } from "lucide-react";
 
 const cols = {
   Shop: [
     { label: "All Deals", href: "/#deals" },
+    { label: "Shop our posts", href: "/finds" },
     { label: "Amazon Storefront", href: "/storefront" },
     { label: "Newsletter", href: "/#newsletter" },
   ],
@@ -19,9 +20,8 @@ const cols = {
 };
 
 const socials = [
-  { icon: <Share2 size={17} />, label: "Twitter", href: "#" },
-  { icon: <Camera size={17} />, label: "Instagram", href: "#" },
-  { icon: <PlayCircle size={17} />, label: "YouTube", href: "#" },
+  { icon: <Camera size={17} />, label: "Instagram", href: "https://www.instagram.com/freedealzone/" },
+  { icon: <Share2 size={17} />, label: "Facebook", href: "https://www.facebook.com/profile.php?id=61595560464701" },
 ];
 
 export default function Footer() {

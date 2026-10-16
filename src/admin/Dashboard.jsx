@@ -46,6 +46,17 @@ export default function Dashboard() {
         <StatCard icon={<Users size={24} />}       label="Subscribers"       value={stats.totalSubscribers} sub={`+${stats.newSubscribers} this week`} color="#10b981" delay={0.15} />
       </div>
 
+      <section style={{ background: '#fff', borderRadius: 16, padding: 24, marginBottom: 24, overflowX: 'auto' }}>
+        <h2 style={{ color: '#023e8a', fontSize: '1.1rem', marginBottom: 8 }}>Amazon clicks by source · last 7 days</h2>
+        <p style={{ color: '#4a7fa5', fontSize: '.82rem', marginBottom: 16 }}>Outbound click events, not unique visitors or sales. Country is available only for newly recorded requests with hosting geography.</p>
+        {stats.trafficLast7Days?.length ? <table style={{ width: '100%', textAlign: 'left', borderCollapse: 'collapse' }}>
+          <thead><tr>{['Source', 'Amazon clicks', 'US clicks', 'Country unknown'].map((label) => <th key={label} style={{ padding: 10 }}>{label}</th>)}</tr></thead>
+          <tbody>{stats.trafficLast7Days.map((row) => <tr key={row.source}>
+            {[row.source, row.amazonClicks, row.usClicks, row.unknownCountryClicks].map((value, index) => <td key={index} style={{ padding: 10, borderTop: '1px solid #e0f2fe' }}>{value}</td>)}
+          </tr>)}</tbody>
+        </table> : <p>No outbound traffic data available for this period.</p>}
+      </section>
+
       {/* Category breakdown */}
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }} className="dash-grid">
         <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
