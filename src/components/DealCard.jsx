@@ -12,7 +12,7 @@ const categoryLabels = {
 };
 
 function StarRating({ rating }) {
-  const value = Number(rating) || 4.7;
+  const value = Number(rating);
   return (
     <div style={{ display: "flex", alignItems: "center", gap: 3 }}>
       {[1, 2, 3, 4, 5].map((s) => (
@@ -99,13 +99,13 @@ export default function DealCard({ deal, index = 0, compact = false, isMobile = 
             {deal.desc}
           </p>
         )}
-        <StarRating rating={deal.rating} />
+        {Number(deal.rating) > 0 && Number(deal.reviews) > 0 && <StarRating rating={deal.rating} />}
         <div style={{ marginTop: "auto", display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 8, flexWrap: "wrap" }}>
           <div>
             <span style={{ color: "#0077b6", fontSize: isCompact ? "1.04rem" : "1.18rem", fontWeight: 950 }}>{deal.price}</span>
             {deal.original && <span style={{ color: "#93b4c8", fontSize: ".75rem", textDecoration: "line-through", marginLeft: 6 }}>{deal.original}</span>}
           </div>
-          {!isCompact && <span style={{ color: "#93b4c8", fontSize: ".72rem" }}>{Number(deal.reviews || 0).toLocaleString()} reviews</span>}
+          {!isCompact && Number(deal.reviews) > 0 && <span style={{ color: "#93b4c8", fontSize: ".72rem" }}>{Number(deal.reviews).toLocaleString()} reviews</span>}
         </div>
       </div>
 

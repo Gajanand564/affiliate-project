@@ -157,7 +157,6 @@ export default function DealPage() {
     image: imgSrc ? [imgSrc] : undefined,
     description: cleanDescription(deal.desc),
     sku: deal.asin,
-    brand: { "@type": "Brand", name: "Amazon" },
     ...(Number(deal.rating) > 0 && Number(deal.reviews) > 0
       ? {
           aggregateRating: {
@@ -205,9 +204,9 @@ export default function DealPage() {
 
                 <div style={{ display: "flex", alignItems: "center", gap: 14, flexWrap: "wrap", marginBottom: 20 }}>
                   <strong style={{ color: "#0077b6", fontSize: "1.42rem" }}>{displayPrice(deal.price)}</strong>
-                  <span style={{ display: "inline-flex", alignItems: "center", gap: 5, color: "#4a7fa5", fontWeight: 800 }}>
-                    <Star size={16} fill="#00a6d6" color="#00a6d6" /> {Number(deal.rating || 4.5).toFixed(1)}
-                  </span>
+                  {Number(deal.rating) > 0 && Number(deal.reviews) > 0 && <span style={{ display: "inline-flex", alignItems: "center", gap: 5, color: "#4a7fa5", fontWeight: 800 }}>
+                    <Star size={16} fill="#00a6d6" color="#00a6d6" /> {Number(deal.rating).toFixed(1)}
+                  </span>}
                   {!!deal.reviews && <span style={{ color: "#7ca5bb", fontWeight: 700 }}>{Number(deal.reviews).toLocaleString()} reviews</span>}
                 </div>
 
