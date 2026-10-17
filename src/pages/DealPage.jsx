@@ -98,6 +98,8 @@ export default function DealPage() {
         setMeta("description", cleanDescription(item.desc).slice(0, 155) || `Shop ${item.title} with DealZone.`);
         setCanonical(`${siteUrl}/deal/${item.asin || asin}`);
         const metadata = productMetadata(item);
+        // The mounted product renders its current structured data below.
+        document.getElementById('initial-product-data')?.remove();
         for (const [property, value] of Object.entries({ 'og:type': 'product', 'og:title': metadata.title,
           'og:description': metadata.description, 'og:url': metadata.url, 'og:image': metadata.image, 'og:image:alt': metadata.name })) {
           let element = document.querySelector(`meta[property="${property}"]`);
