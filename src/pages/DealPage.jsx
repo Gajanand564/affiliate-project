@@ -8,6 +8,7 @@ import DealCard from "../components/DealCard";
 import { dealRedirectUrl, getDealByAsin, getDeals, IMG_BASE } from "../services/api";
 import { useIsMobile } from "../hooks/useIsMobile";
 import { getAttribution, trackProduct } from "../services/attribution.mjs";
+import { productMetadata } from "../../lib/product-page.mjs";
 
 const siteUrl = "https://www.freedealzone.biz";
 
@@ -96,6 +97,17 @@ export default function DealPage() {
         document.title = `${item.title} | DealZone`;
         setMeta("description", cleanDescription(item.desc).slice(0, 155) || `Shop ${item.title} with DealZone.`);
         setCanonical(`${siteUrl}/deal/${item.asin || asin}`);
+        const metadata = productMetadata(item);
+        for (const [property, value] of Object.entries({ 'og:type': 'product', 'og:title': metadata.title,
+          'og:description': metadata.description, 'og:url': metadata.url, 'og:image': metadata.image, 'og:image:alt': metadata.name })) {
+          let element = document.querySelector(`meta[property="${property}"]`);
+          if (!element) {
+            element = document.createElement('meta');
+            element.setAttribute('property', property);
+            document.head.appendChild(element);
+          }
+          element.setAttribute('content', value);
+        }
       })
       .catch(() => {
         if (alive) setMissing(true);

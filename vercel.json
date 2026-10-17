@@ -1,4 +1,8 @@
 {
   "cleanUrls": true,
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+  "functions": { "api/product-page.mjs": { "includeFiles": "dist/index.html" } },
+  "rewrites": [
+    { "source": "/deal/:asin", "destination": "/api/product-page?asin=:asin" },
+    { "source": "/(.*)", "destination": "/" }
+  ]
 }
