@@ -18,7 +18,7 @@ test('initial HTML has exact product metadata, content, canonical and escaped st
   assert.match(html, /rel="canonical" href="https:\/\/www.freedealzone.biz\/deal\/B009R2SWY8"/);
   assert.match(html, /<h1>Laundry cart &lt;\/script&gt;/);
   assert.doesNotMatch(html, /<script>alert\(1\)<\/script>/);
-  const json = [...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)]
+  const json = [...html.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>(.*?)<\/script>/gs)]
     .map((match) => JSON.parse(match[1])).find((item) => item['@type'] === 'Product');
   assert.equal(json.sku, deal.asin);
   assert.equal(json.name, deal.title);
