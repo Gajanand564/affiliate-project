@@ -24,6 +24,7 @@ api.interceptors.response.use(
 // Auth
 export const login = (creds) => api.post("/auth/login", creds).then((r) => r.data);
 export const getMe = () => api.get("/auth/me").then((r) => r.data);
+export const changePassword = (currentPassword, newPassword) => api.post("/auth/password", { currentPassword, newPassword }).then((r) => r.data);
 
 // Deals
 export const getDeals = (params) => api.get("/deals", { params }).then((r) => r.data);
