@@ -52,6 +52,7 @@ export const deleteSubscriber = (id) => api.delete(`/subscribers/${id}`).then((r
 
 // Stats
 export const getStats = () => api.get("/stats").then((r) => r.data);
+export const getVisitorJourneys = (days = 7) => api.get("/analytics/visitors", { params: { days } }).then((r) => r.data);
 
 // Image upload
 export const uploadImage = (file) => {

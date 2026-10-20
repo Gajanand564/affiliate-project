@@ -8,6 +8,7 @@ import DealCard from "../components/DealCard";
 import { dealRedirectUrl, getDealByAsin, getDeals, IMG_BASE } from "../services/api";
 import { useIsMobile } from "../hooks/useIsMobile";
 import { getAttribution, trackProduct } from "../services/attribution.mjs";
+import { journeyParams, trackVisit } from "../services/visitorTracking.mjs";
 import { productMetadata } from "../../lib/product-page.mjs";
 
 const siteUrl = "https://www.freedealzone.biz";
@@ -84,6 +85,7 @@ export default function DealPage() {
   useEffect(() => {
     if (deal?.asin === asin && viewedAsin.current !== asin) {
       trackProduct('view_item', deal);
+      trackVisit('product_view', { asin: deal.asin });
       viewedAsin.current = asin;
     }
   }, [deal, asin]);
@@ -162,6 +164,7 @@ export default function DealPage() {
     utm_medium: campaign.utm_medium || "deal_page",
     utm_campaign: campaign.utm_campaign || deal.category || "dealzone",
     utm_content: campaign.utm_content || deal.asin || asin,
+    ...journeyParams(),
   });
 
   const jsonLd = {

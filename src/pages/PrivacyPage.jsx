@@ -37,6 +37,7 @@ const sections = [
       "Pinterest - publishing and distribution of our pins.",
       "Facebook and Instagram - publishing and distribution of our home decor posts.",
       "Session storage - retains campaign source labels for up to 30 minutes of inactivity as you browse product pages. Outbound click records may include the country supplied by our hosting service.",
+      "First-party visit analytics - a random visitor ID in your browser's local storage and a session ID (renewed after 30 minutes of inactivity) let us see, in aggregate, which pages and products are viewed and clicked, the traffic source, device type and country supplied by our hosting service. These IDs are not linked to your name, email or IP address, are not shared or sold, and are not set if your browser sends Do Not Track. You can clear them by clearing this site's browser storage.",
     ],
   },
   {
@@ -61,7 +62,7 @@ export default function PrivacyPage() {
             Privacy Policy
           </h1>
           <p style={{ color: "#467ba4", fontSize: ".95rem", marginBottom: 44 }}>
-            Last updated: October 15, 2026. Effective for this site.
+            Last updated: October 21, 2026. Effective for this site.
           </p>
 
           <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>

@@ -5,11 +5,12 @@ import { useAuth } from "../context/AuthContext";
 import BrandLogo from "../components/BrandLogo";
 import {
   LayoutDashboard, ShoppingBag, Tag, Star,
-  Mail, Settings, Users, LogOut, Menu, ChevronRight
+  Mail, Settings, Users, LogOut, Menu, ChevronRight, Activity
 } from "lucide-react";
 
 const NAV = [
   { to: "/admin/dashboard",    label: "Dashboard",    icon: <LayoutDashboard size={19} />, badge: null },
+  { to: "/admin/visitors",     label: "Visitors",     icon: <Activity size={19} />,        badge: null },
   { to: "/admin/deals",        label: "Deals",        icon: <ShoppingBag size={19} />,     badge: "deals" },
   { to: "/admin/categories",   label: "Categories",   icon: <Tag size={19} />,             badge: null },
   { to: "/admin/featured",     label: "Featured",     icon: <Star size={19} />,            badge: null },

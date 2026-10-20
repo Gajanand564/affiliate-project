@@ -1,5 +1,5 @@
-import { lazy, Suspense, useState } from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { lazy, Suspense, useEffect, useState } from "react";
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext";
 import PrivateRoute from "./admin/PrivateRoute";
 
@@ -9,6 +9,7 @@ import Hero from "./components/Hero";
 import AllDeals from "./components/AllDeals";
 import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
+import { trackVisit } from "./services/visitorTracking.mjs";
 
 const Newsletter = lazy(() => import("./components/Newsletter"));
 const DealPage = lazy(() => import("./pages/DealPage"));
@@ -24,6 +25,7 @@ const CategoriesManager = lazy(() => import("./admin/CategoriesManager"));
 const FeaturedManager = lazy(() => import("./admin/FeaturedManager"));
 const Subscribers = lazy(() => import("./admin/Subscribers"));
 const Settings = lazy(() => import("./admin/Settings"));
+const Visitors = lazy(() => import("./admin/Visitors"));
 
 function PageFallback() {
   return (
@@ -73,11 +75,19 @@ function AdminPage({ children }) {
   );
 }
 
+// ── Anonymous page-view tracking (first-party, for the admin journeys page) ──
+function PageViewTracker() {
+  const location = useLocation();
+  useEffect(() => { trackVisit('page_view', { path: location.pathname }); }, [location.pathname]);
+  return null;
+}
+
 // ── App ──────────────────────────────────────────────
 export default function App() {
   return (
     <AuthProvider>
       <BrowserRouter>
+        <PageViewTracker />
         <Routes>
           {/* Public */}
           <Route path="/" element={<PublicSite />} />
@@ -101,6 +111,7 @@ export default function App() {
           <Route path="/admin/subscribers" element={<AdminPage><Subscribers /></AdminPage>} />
           <Route path="/admin/newsletter"  element={<AdminPage><Subscribers /></AdminPage>} />
           <Route path="/admin/settings"    element={<AdminPage><Settings /></AdminPage>} />
+          <Route path="/admin/visitors"    element={<AdminPage><Visitors /></AdminPage>} />
 
           {/* Fallback */}
           <Route path="*" element={<Navigate to="/" replace />} />
