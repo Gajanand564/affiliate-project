@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Star } from "lucide-react";
 import { IMG_BASE } from "../services/api";
+import { sizedImage } from "../services/images.mjs";
 import { attributedHref } from "../services/attribution.mjs";
 
 const categoryLabels = {
@@ -24,7 +25,7 @@ function StarRating({ rating }) {
 }
 
 export default function DealCard({ deal, index = 0, compact = false, isMobile = false }) {
-  const imgSrc = deal.image ? (/^https?:\/\//.test(deal.image) ? deal.image : IMG_BASE + deal.image) : null;
+  const imgSrc = deal.image ? (/^https?:\/\//.test(deal.image) ? sizedImage(deal.image, 500) : IMG_BASE + deal.image) : null;
   const isCompact = compact || isMobile;
   const detailsHref = deal.asin ? attributedHref(`/deal/${deal.asin}`) : deal.affiliateUrl;
   const category = categoryLabels[deal.category] || deal.category || "Deal";

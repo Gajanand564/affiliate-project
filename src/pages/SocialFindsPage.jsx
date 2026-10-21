@@ -17,7 +17,11 @@ export default function SocialFindsPage() {
     const canonical = document.querySelector('link[rel="canonical"]');
     if (canonical) canonical.href = 'https://www.freedealzone.biz/finds';
     let alive = true;
-    Promise.all([getDeals({ active: true }), getSocialPosts().catch(() => [])]).then(([items, feed]) => {
+    // Load the feed first, then only the products it shows (not the whole catalog).
+    getSocialPosts().catch(() => []).then((feed) => {
+      const shown = feed.length ? feed : published;
+      return getDeals({ active: true, asins: shown.map((p) => p.asin).join(',') }).then((items) => [items, feed]);
+    }).then(([items, feed]) => {
       if (alive) { setDeals(items); if (feed.length) setPosts(feed); setStatus('ready'); }
     }).catch(() => { if (alive) setStatus('error'); });
     return () => { alive = false; };

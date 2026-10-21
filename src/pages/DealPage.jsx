@@ -10,6 +10,7 @@ import { useIsMobile } from "../hooks/useIsMobile";
 import { getAttribution, trackProduct } from "../services/attribution.mjs";
 import { journeyParams, trackVisit } from "../services/visitorTracking.mjs";
 import { productMetadata } from "../../lib/product-page.mjs";
+import { sizedImage } from "../services/images.mjs";
 
 const siteUrl = "https://www.freedealzone.biz";
 
@@ -126,7 +127,8 @@ export default function DealPage() {
 
   useEffect(() => {
     if (!deal) return;
-    getDeals({ active: true })
+    // Only a few related products are fetched, not the whole catalog.
+    getDeals({ active: true, category: deal.category, exclude: deal.id, limit: 5 })
       .then((items) => {
         const same = items
           .filter((item) => item.id !== deal.id && item.category === deal.category)
@@ -138,7 +140,7 @@ export default function DealPage() {
 
   const imgSrc = useMemo(() => {
     if (!deal?.image) return null;
-    return /^https?:\/\//.test(deal.image) ? deal.image : IMG_BASE + deal.image;
+    return /^https?:\/\//.test(deal.image) ? sizedImage(deal.image, 800) : IMG_BASE + deal.image;
   }, [deal]);
 
   if (missing) return <Navigate to="/" replace />;

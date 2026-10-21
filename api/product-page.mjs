@@ -24,7 +24,8 @@ export function createHandler({ fetcher = fetch, readShell = () => readFile(path
         return res.status(404).end('Product not found');
       }
       const html = renderProductPage(await readShell(), deal);
-      res.setHeader('Cache-Control', 'public, max-age=0, s-maxage=300, stale-while-revalidate=600');
+      // Served from the CDN and refreshed in the background, so visitors rarely wait for a cold function.
+      res.setHeader('Cache-Control', 'public, max-age=0, s-maxage=3600, stale-while-revalidate=86400');
       return res.status(200).end(req.method === 'HEAD' ? undefined : html);
     } catch {
       res.setHeader('Cache-Control', 'no-store');
