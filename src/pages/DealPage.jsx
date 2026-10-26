@@ -46,7 +46,8 @@ function cleanDescription(text) {
   return String(text || "")
     .replace(/#\w+/g, "")
     .replace(/\s+/g, " ")
-    .trim();
+    .trim()
+    .replace(/^[|·:\-\s]+/, ""); // left over after removing a leading "#ad |"
 }
 
 function reasonList(deal) {

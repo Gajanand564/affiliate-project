@@ -39,7 +39,13 @@ try {
     html = html
       .replace(/<title>[^<]*<\/title>/, () => `<title>${escape(page.seoTitle)}</title>`)
       .replace(/<meta name="description"[^>]*>/, () => `<meta name="description" content="${escape(page.metaDescription)}" />`)
-      .replace(/<link rel="canonical"[^>]*>/, () => `<link rel="canonical" href="${site}${pathname}" />`);
+      .replace(/<link rel="canonical"[^>]*>/, () => `<link rel="canonical" href="${site}${pathname}" />`)
+      // Open Graph article tags in the static HTML: Pinterest (Rich Pins) and
+      // other crawlers read these without running JavaScript.
+      .replace("</head>", () => [
+        ["og:type", "article"], ["og:title", page.seoTitle], ["og:description", page.metaDescription],
+        ["og:url", `${site}${pathname}`],
+      ].map(([property, value]) => `<meta property="${property}" content="${escape(value)}" />`).join("") + "</head>");
     await writeFile(path.join(dist, "trends", `${page.slug}.html`), html);
   }
   console.log(`Pre-rendered ${pages.length} guides with content, links and individual canonicals.`);
