@@ -192,6 +192,16 @@ export default function TrendPage({ staticRender = false }) {
               </div>
             </div>
 
+            {(page.sections || []).map((section) => (
+              <div key={section.heading}>
+                <h2 style={{ color: "#023e8a", margin: "10px 0 12px", fontSize: isMobile ? "1.3rem" : "1.55rem" }}>{section.heading}</h2>
+                {section.paragraphs.map((paragraph) => (
+                  <p key={paragraph.slice(0, 40)} style={{ color: "#3d6a8f", lineHeight: 1.75, margin: "0 0 14px", fontSize: "1.02rem" }}>
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            ))}
           </div>
         </section>
 

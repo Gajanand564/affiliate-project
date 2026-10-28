@@ -21,7 +21,7 @@ const cols = {
 };
 
 const socials = [
-  { icon: <Camera size={17} />, label: "Instagram", href: "https://www.instagram.com/freedealzone/" },
+  { icon: <Camera size={17} />, label: "Instagram", href: "https://www.instagram.com/homedealzone/" },
   { icon: <Share2 size={17} />, label: "Facebook", href: "https://www.facebook.com/profile.php?id=61595560464701" },
 ];
 
