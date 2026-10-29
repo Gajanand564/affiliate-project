@@ -11,6 +11,7 @@ import { getAttribution, trackProduct } from "../services/attribution.mjs";
 import { journeyParams, trackVisit } from "../services/visitorTracking.mjs";
 import { productMetadata } from "../../lib/product-page.mjs";
 import { sizedImage } from "../services/images.mjs";
+import { amazonInSearchUrl, useVisitorCountry } from "../services/amazonIndia.mjs";
 
 const siteUrl = "https://www.freedealzone.biz";
 
@@ -82,6 +83,7 @@ export default function DealPage() {
   const [loading, setLoading] = useState(() => !cachedDeal(asin));
   const [missing, setMissing] = useState(false);
   const isMobile = useIsMobile();
+  const country = useVisitorCountry();
   const viewedAsin = useRef(null);
 
   useEffect(() => {
@@ -234,6 +236,18 @@ export default function DealPage() {
                   style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", gap: 9, width: isMobile ? "100%" : "auto", padding: "14px 24px", borderRadius: 8, background: "#023e8a", color: "#fff", fontWeight: 950, boxShadow: "0 14px 28px rgba(2,62,138,.22)" }}>
                   Check live price on Amazon <ExternalLink size={17} />
                 </a>
+
+                {country === "IN" && (
+                  <div style={{ marginTop: 12 }}>
+                    <a href={amazonInSearchUrl(deal.title)} target="_blank" rel="noopener noreferrer nofollow sponsored" onClick={() => trackProduct('affiliate_click_in', deal)}
+                      style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", gap: 9, width: isMobile ? "100%" : "auto", padding: "12px 22px", borderRadius: 8, background: "#fff", color: "#023e8a", fontWeight: 900, border: "2px solid #023e8a" }}>
+                      Shopping from India? Search on Amazon.in <ExternalLink size={16} />
+                    </a>
+                    <p style={{ margin: "8px 0 0", color: "#64748b", fontSize: ".8rem", lineHeight: 1.55 }}>
+                      Opens an Amazon.in search for this item; the exact listing, seller and price there may differ.
+                    </p>
+                  </div>
+                )}
 
                 <p style={{ margin: "12px 0 0", color: "#64748b", fontSize: ".8rem", lineHeight: 1.55 }}>
                   Amazon.com picks for US shoppers. Availability and shipping depend on your address. As an Amazon Associate I earn from qualifying purchases. Price and availability can change on Amazon.
