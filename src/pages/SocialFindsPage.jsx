@@ -30,9 +30,10 @@ export default function SocialFindsPage() {
     <Header />
     <main className="social-finds">
       <section className="finds-intro">
-        <p className="finds-eyebrow">SEEN ON @FREEDEALZONE</p>
+        <p className="finds-eyebrow">SEEN ON @HOMEDEALZONE</p>
         <h1>Find the piece you saved.</h1>
         <p>Shop the home decor finds from our Instagram and Facebook posts, with a styling idea for each one.</p>
+        <p>More room ideas every day: <a href="https://www.pinterest.com/homedealzone/" target="_blank" rel="noopener noreferrer">follow us on Pinterest ↗</a></p>
         <p className="finds-notice">Amazon.com picks for US shoppers. Prices, availability and delivery depend on your address. As an Amazon Associate I earn from qualifying purchases.</p>
       </section>
       <section className="finds-posts" aria-label="Products from our posts">

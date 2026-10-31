@@ -1,4 +1,4 @@
-import { Camera, Heart, Share2 } from "lucide-react";
+import { Camera, Heart, Pin, Share2 } from "lucide-react";
 import BrandLogo from "./BrandLogo";
 
 const cols = {
@@ -23,6 +23,7 @@ const cols = {
 const socials = [
   { icon: <Camera size={17} />, label: "Instagram", href: "https://www.instagram.com/homedealzone/" },
   { icon: <Share2 size={17} />, label: "Facebook", href: "https://www.facebook.com/profile.php?id=61595560464701" },
+  { icon: <Pin size={17} />, label: "Pinterest", href: "https://www.pinterest.com/homedealzone/" },
 ];
 
 export default function Footer() {
