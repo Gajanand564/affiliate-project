@@ -193,7 +193,7 @@ export default function DealPage() {
   return (
     <>
       <Header />
-      <main style={{ background: "#f8fdff", minHeight: "100vh" }}>
+      <main style={{ background: "#f8fdff", minHeight: "100vh", paddingBottom: isMobile ? 84 : 0 }}>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <section style={{ padding: isMobile ? "98px 16px 34px" : "126px 24px 54px", background: "#fff", borderBottom: "1px solid rgba(0,180,216,.14)" }}>
           <div style={{ maxWidth: 1160, margin: "0 auto" }}>
@@ -257,6 +257,18 @@ export default function DealPage() {
           </div>
         </section>
 
+        {/* On phones the main button sits below the photo, title and description,
+            so keep one Amazon button pinned to the bottom of the screen. */}
+        {isMobile && (
+          <div style={{ position: "fixed", left: 0, right: 0, bottom: 0, zIndex: 50, background: "#fff", borderTop: "1px solid rgba(0,180,216,.2)", boxShadow: "0 -8px 20px rgba(2,62,138,.10)", padding: "10px 16px calc(10px + env(safe-area-inset-bottom))" }}>
+            <a href={redirect} target="_blank" rel="noopener noreferrer nofollow sponsored" onClick={() => trackProduct('affiliate_click', deal)}
+              style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 9, padding: "13px 18px", borderRadius: 8, background: "#023e8a", color: "#fff", fontWeight: 950 }}>
+              Check live price on Amazon <ExternalLink size={17} />
+            </a>
+            <p style={{ margin: "5px 0 0", color: "#64748b", fontSize: ".72rem", textAlign: "center" }}>Affiliate link: we may earn a commission.</p>
+          </div>
+        )}
+
         <section style={{ padding: isMobile ? "28px 16px" : "46px 24px", background: "#d9f1fc" }}>
           <div style={{ maxWidth: 1160, margin: "0 auto", display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: 18 }}>
             <div style={{ background: "#fff", border: "1px solid rgba(0,180,216,.16)", borderRadius: 8, padding: 22 }}>
@@ -298,7 +310,7 @@ export default function DealPage() {
         )}
       </main>
       <Footer />
-      <BackToTop />
+      <BackToTop bottom={isMobile ? 104 : 28} />
     </>
   );
 }
