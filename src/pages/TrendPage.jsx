@@ -37,7 +37,14 @@ function textForDeal(deal) {
   return `${deal.title || ""} ${deal.desc || ""} ${deal.category || ""}`.toLowerCase();
 }
 
+// Products we pinned for this topic are listed by ASIN (matching
+// roundup_pins.guide_products in the Pinterest bot).
+function pinnedForPage(page, deal) {
+  return Boolean(deal.asin && (page.asins || []).includes(deal.asin));
+}
+
 function trendMatches(page, deal) {
+  if (pinnedForPage(page, deal)) return true;
   const haystack = textForDeal(deal);
   return page.matchTerms.some((term) => haystack.includes(term.toLowerCase()));
 }
@@ -46,7 +53,7 @@ function scoreDeal(page, deal) {
   const haystack = textForDeal(deal);
   return page.matchTerms.reduce((score, term) => (
     haystack.includes(term.toLowerCase()) ? score + 1 : score
-  ), 0);
+  ), pinnedForPage(page, deal) ? 1 : 0);
 }
 
 export default function TrendPage({ staticRender = false }) {
