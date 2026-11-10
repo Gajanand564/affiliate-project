@@ -2,7 +2,16 @@ import { motion } from "framer-motion";
 import { ArrowRight, Star } from "lucide-react";
 import { IMG_BASE } from "../services/api";
 import { sizedImage } from "../services/images.mjs";
-import { attributedHref } from "../services/attribution.mjs";
+import { attributedHref, getAttribution } from "../services/attribution.mjs";
+
+// One tap to Amazon from guide pages (audit 2026-11-10): /go/ASIN picks
+// Amazon.in for India and the tagged Amazon.com product for everyone else,
+// and keeps the visit's source (e.g. pinterest) for click reports.
+export function amazonGoHref(asin, medium = "trend_page") {
+  const campaign = getAttribution();
+  const params = new URLSearchParams({ src: "site", ...campaign, utm_medium: medium });
+  return `/go/${asin}?${params.toString()}`;
+}
 
 const categoryLabels = {
   decor: "Home Decor",
@@ -24,7 +33,7 @@ function StarRating({ rating }) {
   );
 }
 
-export default function DealCard({ deal, index = 0, compact = false, isMobile = false }) {
+export default function DealCard({ deal, index = 0, compact = false, isMobile = false, amazonButton = false }) {
   const imgSrc = deal.image ? (/^https?:\/\//.test(deal.image) ? sizedImage(deal.image, 500) : IMG_BASE + deal.image) : null;
   const isCompact = compact || isMobile;
   const detailsHref = deal.asin ? attributedHref(`/deal/${deal.asin}`) : deal.affiliateUrl;
@@ -103,15 +112,32 @@ export default function DealCard({ deal, index = 0, compact = false, isMobile = 
         {Number(deal.rating) > 0 && Number(deal.reviews) > 0 && <StarRating rating={deal.rating} />}
         <div style={{ marginTop: "auto", display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 8, flexWrap: "wrap" }}>
           <div>
-            <span style={{ color: "#0077b6", fontSize: isCompact ? "1.04rem" : "1.18rem", fontWeight: 950 }}>{deal.price}</span>
-            {deal.original && <span style={{ color: "#93b4c8", fontSize: ".75rem", textDecoration: "line-through", marginLeft: 6 }}>{deal.original}</span>}
+            {!amazonButton && <span style={{ color: "#0077b6", fontSize: isCompact ? "1.04rem" : "1.18rem", fontWeight: 950 }}>{deal.price}</span>}
+            {!amazonButton && deal.original && <span style={{ color: "#93b4c8", fontSize: ".75rem", textDecoration: "line-through", marginLeft: 6 }}>{deal.original}</span>}
           </div>
           {!isCompact && Number(deal.reviews) > 0 && <span style={{ color: "#93b4c8", fontSize: ".72rem" }}>{Number(deal.reviews).toLocaleString()} reviews</span>}
         </div>
       </div>
 
       <div style={{ padding: isCompact ? "0 10px 10px" : "0 15px 15px" }}>
-        <motion.a
+        {amazonButton && deal.asin && (
+          <>
+            <a
+              href={amazonGoHref(deal.asin)}
+              target="_blank"
+              rel="noopener noreferrer nofollow sponsored"
+              style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 7, width: "100%",
+                padding: isCompact ? "10px 7px" : "12px 10px", borderRadius: 8, background: "#ff9900", color: "#111",
+                fontWeight: 900, fontSize: isCompact ? ".8rem" : ".92rem" }}
+            >
+              Check price on Amazon <ArrowRight size={13} />
+            </a>
+            <a href={detailsHref} style={{ display: "block", textAlign: "center", marginTop: 7, color: "#0077b6", fontWeight: 800, fontSize: ".78rem" }}>
+              See Details
+            </a>
+          </>
+        )}
+        {!(amazonButton && deal.asin) && <motion.a
           href={detailsHref}
           whileTap={{ scale: 0.97 }}
           style={{
@@ -129,7 +155,7 @@ export default function DealCard({ deal, index = 0, compact = false, isMobile = 
           }}
         >
           See Details <ArrowRight size={13} />
-        </motion.a>
+        </motion.a>}
       </div>
     </motion.article>
   );

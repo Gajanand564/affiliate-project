@@ -86,6 +86,9 @@ export default function TrendPage({ staticRender = false }) {
 
     return exact.slice(0, 12);
   }, [deals, page]);
+  // Products saved with the guide render at once (and in the pre-rendered
+  // HTML); live catalog data replaces them when it loads. No prices shown.
+  const shownDeals = selectedDeals.length || !loading ? selectedDeals : (page?.products || []);
 
   if (!page) return <Navigate to="/trends/wainscoting-and-beadboard-styles" replace />;
 
@@ -116,7 +119,7 @@ export default function TrendPage({ staticRender = false }) {
       <main style={{ background: "#d9f1fc", minHeight: "100vh" }}>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-        <section style={{ padding: isMobile ? "104px 16px 34px" : "132px 24px 58px", background: "#ffffff" }}>
+        <section style={{ padding: isMobile ? "92px 16px 18px" : "120px 24px 40px", background: "#ffffff" }}>
           <div className="trend-hero-grid" style={{ maxWidth: 1160, margin: "0 auto", display: "grid", gridTemplateColumns: isMobile ? "1fr" : "minmax(0, 1.2fr) minmax(300px, .8fr)", gap: 28, alignItems: "center" }}>
             <div>
               <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 16 }}>
@@ -142,7 +145,7 @@ export default function TrendPage({ staticRender = false }) {
               </div>
             </div>
 
-            <div style={{ background: "#f0f9ff", border: "1px solid rgba(0,180,216,.18)", borderRadius: 8, padding: 22 }}>
+            {!isMobile && <div style={{ background: "#f0f9ff", border: "1px solid rgba(0,180,216,.18)", borderRadius: 8, padding: 22 }}>
               <h2 style={{ margin: "0 0 14px", color: "#023e8a", fontSize: "1.1rem" }}>What to look for</h2>
               <div style={{ display: "grid", gap: 10 }}>
                 {page.productAngles.map((angle) => (
@@ -151,7 +154,7 @@ export default function TrendPage({ staticRender = false }) {
                   </div>
                 ))}
               </div>
-            </div>
+            </div>}
           </div>
         </section>
 
@@ -164,13 +167,16 @@ export default function TrendPage({ staticRender = false }) {
                   Related finds for {page.title}
                 </h2>
               </div>
-              <span style={{ color: "#467ba4", fontWeight: 700 }}>{loading ? "Loading deals" : loadError ? "Products temporarily unavailable" : `${selectedDeals.length} finds`}</span>
+              <span style={{ color: "#467ba4", fontWeight: 700 }}>{shownDeals.length ? `${shownDeals.length} finds` : loading ? "Loading deals" : loadError ? "Products temporarily unavailable" : "0 finds"}</span>
             </div>
 
-            {selectedDeals.length > 0 ? (
+            <p style={{ color: "#467ba4", fontSize: ".78rem", margin: "0 0 12px" }}>
+              Affiliate links: as an Amazon Associate we earn from qualifying purchases. Prices and availability are shown on Amazon.
+            </p>
+            {shownDeals.length > 0 ? (
               <div style={{ display: "grid", gridTemplateColumns: isMobile ? "repeat(2, 1fr)" : "repeat(auto-fill, minmax(245px, 1fr))", gap: isMobile ? 10 : 16 }}>
-                {selectedDeals.map((deal, index) => (
-                  <DealCard key={deal.id} deal={deal} index={index} compact={isMobile} isMobile={isMobile} />
+                {shownDeals.map((deal, index) => (
+                  <DealCard key={deal.id || deal.asin} deal={deal} index={index} compact={isMobile} isMobile={isMobile} amazonButton />
                 ))}
               </div>
             ) : (
