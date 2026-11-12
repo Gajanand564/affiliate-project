@@ -10,4 +10,7 @@
 .finds-post-copy p{line-height:1.8;color:#467ba4;margin-bottom:18px}
 .finds-post-copy a,.finds-more a{color:#0077b6;font-weight:750;text-decoration:underline;text-underline-offset:4px}
 .finds-more{margin-top:36px}
+.finds-search{display:grid;gap:8px;color:#023e8a;font-weight:750}
+.finds-search input{width:100%;padding:13px 16px;border:2px solid #90e0ef;border-radius:10px;font-size:1rem;background:#fff;color:#023e8a}
+.finds-search input:focus{outline:none;border-color:#0077b6}
 @media(max-width:640px){.social-finds{padding:96px 16px 44px}.finds-post{grid-template-columns:1fr;gap:24px;padding:18px}.finds-post-copy h2{font-size:1.45rem}}

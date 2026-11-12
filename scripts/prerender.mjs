@@ -49,6 +49,38 @@ try {
     await writeFile(path.join(dist, "trends", `${page.slug}.html`), html);
   }
   console.log(`Pre-rendered ${pages.length} guides with content, links and individual canonicals.`);
+
+  // Homepage and /finds: crawlers used to get an empty loading skeleton (about
+  // 10 words, no H1) and /finds carried the homepage canonical. Give both the
+  // same visible starter content people see before React takes over.
+  const guideList = pages.map((page) => `<li><a href="/trends/${page.slug}">${escape(page.title)}</a> — ${escape(page.metaDescription)}</li>`).join("");
+  const disclosure = "<p>Amazon.com picks for US shoppers. Prices, availability and delivery depend on your address. As an Amazon Associate we earn from qualifying purchases.</p>";
+  const staticPage = ({ pathname, title, description, body }) => {
+    const html = shell.slice(0, start + rootStart.length)
+      + `<main style="max-width:1000px;margin:auto;padding:32px 20px;font-family:system-ui,sans-serif;color:#023e8a;line-height:1.6">${body}</main>`
+      + shell.slice(end);
+    return html
+      .replace(/<title>[^<]*<\/title>/, () => `<title>${escape(title)}</title>`)
+      .replace(/<meta name="description"[^>]*>/, () => `<meta name="description" content="${escape(description)}" />`)
+      .replace(/<link rel="canonical"[^>]*>/, () => `<link rel="canonical" href="${site}${pathname}" />`);
+  };
+  const homeTitle = (shell.match(/<title>([^<]*)<\/title>/) || [])[1] || "DealZone - Affordable Home Decor Finds and Amazon Picks";
+  const homeDescription = (shell.match(/<meta name="description" content="([^"]*)"/) || [])[1] || "";
+  await writeFile(path.join(dist, "index.html"), staticPage({
+    pathname: "/", title: homeTitle, description: homeDescription,
+    body: `<h1>Affordable home decor finds and Amazon buying guides</h1>
+      <p>DealZone shares practical home decor ideas for small spaces, apartments and cozy rooms, with hand-picked Amazon.com products for each idea.</p>
+      <p><a href="/finds">Shop the finds from our Instagram and Facebook posts</a></p>
+      <h2>Home decor buying guides</h2><ul>${guideList}</ul>${disclosure}`,
+  }));
+  await writeFile(path.join(dist, "finds.html"), staticPage({
+    pathname: "/finds", title: "Shop our Instagram & Facebook finds | DealZone",
+    description: "Find the home decor products from DealZone's Instagram and Facebook posts, with a styling idea for each one and a one-tap link to Amazon.com.",
+    body: `<p>SEEN ON @HOMEDEALZONE</p><h1>Find the piece you saved.</h1>
+      <p>Shop the home decor finds from our Instagram and Facebook posts, with a styling idea for each one.</p>${disclosure}
+      <h2>More home decor ideas</h2><ul>${guideList}</ul>`,
+  }));
+  console.log("Pre-rendered the homepage and /finds with starter content and their own canonicals.");
 } finally {
   await server.close();
 }

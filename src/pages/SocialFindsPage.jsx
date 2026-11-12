@@ -7,10 +7,19 @@ import { getAttribution, attributedHref } from '../services/attribution.mjs';
 import published from '../data/socialFinds.json';
 import './SocialFindsPage.css';
 
+function matches(post, deals, query) {
+  const words = query.toLowerCase().split(/\s+/).filter(Boolean);
+  if (!words.length) return true;
+  const deal = deals.find((item) => item.asin === post.asin);
+  const text = `${post.title} ${post.tip} ${deal?.title || ''}`.toLowerCase();
+  return words.every((word) => text.includes(word));
+}
+
 export default function SocialFindsPage() {
   const [deals, setDeals] = useState([]);
   const [status, setStatus] = useState('loading');
   const [posts, setPosts] = useState(published);
+  const [query, setQuery] = useState('');
   useEffect(() => {
     getAttribution();
     document.title = 'Shop our Instagram & Facebook finds | DealZone';
@@ -39,13 +48,18 @@ export default function SocialFindsPage() {
       <section className="finds-posts" aria-label="Products from our posts">
         {status === 'loading' && <p role="status">Loading our latest finds…</p>}
         {status === 'error' && <p role="alert">We could not load the products. Please refresh or <a href="/#deals">browse all finds</a>.</p>}
-        {status === 'ready' && posts.map((post) => {
+        {status === 'ready' && <label className="finds-search">
+          <span>Looking for something you saw?</span>
+          <input type="search" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search: lights, wreath, shelf…" aria-label="Search our finds" />
+        </label>}
+        {status === 'ready' && query.trim() && !posts.some((post) => matches(post, deals, query)) && <p role="status">No finds match “{query}”. <a href={attributedHref('/#deals')}>Browse all finds</a>.</p>}
+        {status === 'ready' && posts.filter((post) => matches(post, deals, query)).map((post) => {
           const deal = deals.find((item) => item.asin === post.asin && item.active !== false);
           return <article className="finds-post" key={post.asin}>
             <div className="finds-post-copy"><h2>{post.title}</h2><p>{post.tip}</p>
               <a href={post.instagram || post.facebook} target="_blank" rel="noopener noreferrer">See the {post.instagram ? 'Instagram' : 'Facebook'} post ↗</a>
             </div>
-            {deal ? <DealCard deal={deal} /> : <p>This find is currently unavailable. <a href={attributedHref('/#deals')}>Browse other finds</a>.</p>}
+            {deal ? <DealCard deal={deal} amazonButton /> : <p>This find is currently unavailable. <a href={attributedHref('/#deals')}>Browse other finds</a>.</p>}
           </article>;
         })}
       </section>
