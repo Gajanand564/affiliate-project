@@ -2,7 +2,16 @@ import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { api, renderProductPage } from '../lib/product-page.mjs';
 
-export function createHandler({ fetcher = fetch, readShell = () => readFile(path.join(process.cwd(), 'dist/index.html'), 'utf8') } = {}) {
+const readDetailsFile = async (asin) => {
+  try {
+    return JSON.parse(await readFile(path.join(process.cwd(), 'dist/product-details', `${asin}.json`), 'utf8'));
+  } catch {
+    return null; // not written yet: the page still renders without it
+  }
+};
+
+export function createHandler({ fetcher = fetch, readShell = () => readFile(path.join(process.cwd(), 'dist/index.html'), 'utf8'),
+  readDetails = readDetailsFile } = {}) {
   return async function handler(req, res) {
     res.setHeader('Content-Type', 'text/html; charset=utf-8');
     if (!['GET', 'HEAD'].includes(req.method)) {
@@ -23,7 +32,7 @@ export function createHandler({ fetcher = fetch, readShell = () => readFile(path
         res.setHeader('X-Robots-Tag', 'noindex');
         return res.status(404).end('Product not found');
       }
-      const html = renderProductPage(await readShell(), deal);
+      const html = renderProductPage(await readShell(), deal, await readDetails(asin));
       // Served from the CDN and refreshed in the background, so visitors rarely wait for a cold function.
       res.setHeader('Cache-Control', 'public, max-age=0, s-maxage=3600, stale-while-revalidate=86400');
       return res.status(200).end(req.method === 'HEAD' ? undefined : html);

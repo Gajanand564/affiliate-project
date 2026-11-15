@@ -56,3 +56,16 @@ test('unavailable catalog is retriable and not cached as a product', async () =>
   assert.equal(res.code, 503);
   assert.equal(res.headers['Cache-Control'], 'no-store');
 });
+
+test('listing details render as crawlable sections and replace the description', () => {
+  const details = { asin: 'B009R2SWY8', summary: 'A rolling cart for narrow laundry rooms.', highlights: ['Three <b>tiers</b>'],
+    bestFor: ['Laundry rooms'], stylingTips: ['Park it beside the washer.'], beforeYouBuy: ['Measure the gap.'],
+    faq: [{ question: 'Does it roll?', answer: 'Yes, per the listing.' }] };
+  const html = renderProductPage(shell, deal, details);
+  assert.match(html, /<h2>Styling tips<\/h2><ul><li>Park it beside the washer.<\/li>/);
+  assert.match(html, /<h3>Does it roll\?<\/h3>/);
+  assert.match(html, /Three &lt;b&gt;tiers/);
+  assert.match(html, /name="description" content="A rolling cart for narrow laundry rooms."/);
+  // Details for another product are ignored.
+  assert.doesNotMatch(renderProductPage(shell, deal, { ...details, asin: 'B000000000' }), /Styling tips/);
+});

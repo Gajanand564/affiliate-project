@@ -9,7 +9,7 @@ import { dealRedirectUrl, getDealByAsin, getDeals, IMG_BASE } from "../services/
 import { useIsMobile } from "../hooks/useIsMobile";
 import { getAttribution, trackProduct } from "../services/attribution.mjs";
 import { journeyParams, trackVisit } from "../services/visitorTracking.mjs";
-import { productMetadata } from "../../lib/product-page.mjs";
+import { cleanDetails, detailSections, productMetadata } from "../../lib/product-page.mjs";
 import { sizedImage } from "../services/images.mjs";
 import { amazonInSearchUrl, useVisitorCountry } from "../services/amazonIndia.mjs";
 
@@ -82,6 +82,8 @@ export default function DealPage() {
   const [related, setRelated] = useState([]);
   const [loading, setLoading] = useState(() => !cachedDeal(asin));
   const [missing, setMissing] = useState(false);
+  const [loadedDetails, setLoadedDetails] = useState({ asin: null, data: null });
+  const details = loadedDetails.asin === asin ? loadedDetails.data : null;
   const isMobile = useIsMobile();
   const country = useVisitorCountry();
   const viewedAsin = useRef(null);
@@ -127,6 +129,20 @@ export default function DealPage() {
       alive = false;
     };
   }, [asin]);
+
+  // Listing-based tips and FAQ (public/product-details/<ASIN>.json), when written.
+  useEffect(() => {
+    let alive = true;
+    fetch(`/product-details/${String(asin || "").toUpperCase()}.json`)
+      .then((response) => (response.ok && (response.headers.get("content-type") || "").includes("json") ? response.json() : null))
+      .then((data) => { if (alive) setLoadedDetails({ asin, data: cleanDetails(data, asin) }); })
+      .catch(() => {});
+    return () => { alive = false; };
+  }, [asin]);
+
+  useEffect(() => {
+    if (details) setMeta("description", details.summary.slice(0, 155));
+  }, [details]);
 
   useEffect(() => {
     if (!deal) return;
@@ -269,34 +285,73 @@ export default function DealPage() {
           </div>
         )}
 
-        <section style={{ padding: isMobile ? "28px 16px" : "46px 24px", background: "#d9f1fc" }}>
-          <div style={{ maxWidth: 1160, margin: "0 auto", display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: 18 }}>
-            <div style={{ background: "#fff", border: "1px solid rgba(0,180,216,.16)", borderRadius: 8, padding: 22 }}>
-              <h2 style={{ color: "#023e8a", margin: "0 0 14px", fontSize: "1.2rem" }}>Why it is worth a look</h2>
-              <div style={{ display: "grid", gap: 11 }}>
-                {reasons.map((reason) => (
-                  <div key={reason} style={{ display: "flex", gap: 10, color: "#467ba4", lineHeight: 1.6 }}>
-                    <CheckCircle2 size={18} color="#00a6d6" style={{ marginTop: 2, flexShrink: 0 }} /> {reason}
+        {details ? (
+          <section style={{ padding: isMobile ? "28px 16px" : "46px 24px", background: "#d9f1fc" }}>
+            <div style={{ maxWidth: 1160, margin: "0 auto", display: "grid", gap: 18 }}>
+              <div style={{ background: "#fff", border: "1px solid rgba(0,180,216,.16)", borderRadius: 8, padding: 22 }}>
+                <h2 style={{ color: "#023e8a", margin: "0 0 10px", fontSize: "1.2rem" }}>About this find</h2>
+                <p style={{ color: "#467ba4", lineHeight: 1.7, margin: 0 }}>{details.summary}</p>
+              </div>
+              <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: 18 }}>
+                {detailSections(details).map(([heading, items]) => (
+                  <div key={heading} style={{ background: "#fff", border: "1px solid rgba(0,180,216,.16)", borderRadius: 8, padding: 22 }}>
+                    <h2 style={{ color: "#023e8a", margin: "0 0 14px", fontSize: "1.2rem" }}>{heading}</h2>
+                    <div style={{ display: "grid", gap: 11 }}>
+                      {items.map((item) => (
+                        <div key={item} style={{ display: "flex", gap: 10, color: "#467ba4", lineHeight: 1.6 }}>
+                          <CheckCircle2 size={18} color="#00a6d6" style={{ marginTop: 2, flexShrink: 0 }} /> {item}
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 ))}
               </div>
-            </div>
-
-            <div style={{ background: "#fff", border: "1px solid rgba(0,180,216,.16)", borderRadius: 8, padding: 22 }}>
-              <h2 style={{ color: "#023e8a", margin: "0 0 14px", fontSize: "1.2rem" }}>Best fit</h2>
-              <div style={{ display: "grid", gap: 12, color: "#467ba4", lineHeight: 1.6 }}>
-                <div style={{ display: "flex", gap: 10 }}>
-                  <Sparkles size={18} color="#00a6d6" style={{ marginTop: 2, flexShrink: 0 }} />
-                  Use this when you want a quick {category.toLowerCase()} upgrade without rebuilding the whole room.
+              {details.faq.length > 0 && (
+                <div style={{ background: "#fff", border: "1px solid rgba(0,180,216,.16)", borderRadius: 8, padding: 22 }}>
+                  <h2 style={{ color: "#023e8a", margin: "0 0 14px", fontSize: "1.2rem" }}>Questions</h2>
+                  {details.faq.map((q) => (
+                    <div key={q.question} style={{ marginBottom: 14 }}>
+                      <h3 style={{ color: "#023e8a", fontSize: "1rem", margin: "0 0 4px" }}>{q.question}</h3>
+                      <p style={{ color: "#467ba4", lineHeight: 1.6, margin: 0 }}>{q.answer}</p>
+                    </div>
+                  ))}
                 </div>
-                <div style={{ display: "flex", gap: 10 }}>
-                  <ShieldCheck size={18} color="#00a6d6" style={{ marginTop: 2, flexShrink: 0 }} />
-                  Check the product dimensions, materials and delivery options on Amazon before ordering.
+              )}
+              <p style={{ color: "#64748b", fontSize: ".85rem", margin: 0 }}>
+                Based on the Amazon.com listing. Check current price, size and delivery on Amazon before ordering.
+              </p>
+            </div>
+          </section>
+        ) : (
+          <section style={{ padding: isMobile ? "28px 16px" : "46px 24px", background: "#d9f1fc" }}>
+            <div style={{ maxWidth: 1160, margin: "0 auto", display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: 18 }}>
+              <div style={{ background: "#fff", border: "1px solid rgba(0,180,216,.16)", borderRadius: 8, padding: 22 }}>
+                <h2 style={{ color: "#023e8a", margin: "0 0 14px", fontSize: "1.2rem" }}>Why it is worth a look</h2>
+                <div style={{ display: "grid", gap: 11 }}>
+                  {reasons.map((reason) => (
+                    <div key={reason} style={{ display: "flex", gap: 10, color: "#467ba4", lineHeight: 1.6 }}>
+                      <CheckCircle2 size={18} color="#00a6d6" style={{ marginTop: 2, flexShrink: 0 }} /> {reason}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div style={{ background: "#fff", border: "1px solid rgba(0,180,216,.16)", borderRadius: 8, padding: 22 }}>
+                <h2 style={{ color: "#023e8a", margin: "0 0 14px", fontSize: "1.2rem" }}>Best fit</h2>
+                <div style={{ display: "grid", gap: 12, color: "#467ba4", lineHeight: 1.6 }}>
+                  <div style={{ display: "flex", gap: 10 }}>
+                    <Sparkles size={18} color="#00a6d6" style={{ marginTop: 2, flexShrink: 0 }} />
+                    Use this when you want a quick {category.toLowerCase()} upgrade without rebuilding the whole room.
+                  </div>
+                  <div style={{ display: "flex", gap: 10 }}>
+                    <ShieldCheck size={18} color="#00a6d6" style={{ marginTop: 2, flexShrink: 0 }} />
+                    Check the product dimensions, materials and delivery options on Amazon before ordering.
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        )}
 
         {related.length > 0 && (
           <section style={{ padding: isMobile ? "28px 12px 56px" : "48px 24px 78px", background: "#fff" }}>
