@@ -135,19 +135,37 @@
         "reviews": 0
       },
       {
-        "id": "5e39348e-c842-44bc-8fb5-98e2474d9801",
-        "asin": "B0DG8FJ657",
-        "title": "Upgrade Your Gaming Room Setups with Modern 3D Wall Art",
-        "image": "https://m.media-amazon.com/images/I/61KZYiefSUL._AC_SL1500_.jpg",
+        "id": "0611040e-56ba-4b16-9e1d-821db93d8580",
+        "asin": "B07HN1KCZH",
+        "title": "Before You Buy: Talavera Peel & Stick for Southwestern Style Bathrooms",
+        "image": "https://m.media-amazon.com/images/I/81T5zJIKPvL._AC_SL1200_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
       },
       {
-        "id": "0611040e-56ba-4b16-9e1d-821db93d8580",
-        "asin": "B07HN1KCZH",
-        "title": "Before You Buy: Talavera Peel & Stick for Southwestern Style Bathrooms",
-        "image": "https://m.media-amazon.com/images/I/81T5zJIKPvL._AC_SL1200_.jpg",
+        "id": "c8329171-b8a0-420a-8a3f-8e5267187591",
+        "asin": "B0DG84QC32",
+        "title": "Transform Your Living Room with Stunning 3D Wall Panels Decor",
+        "image": "https://m.media-amazon.com/images/I/612EdRaU5SL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "dd91d75a-4978-41fd-80f2-3adebd996171",
+        "asin": "B0FCF84JMR",
+        "title": "Cozy Bedroom Makeover: Forest-themed Home Decor with Peel and Stick Wallpaper",
+        "image": "https://m.media-amazon.com/images/I/91OmN2YvB4L._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "5e39348e-c842-44bc-8fb5-98e2474d9801",
+        "asin": "B0DG8FJ657",
+        "title": "Upgrade Your Gaming Room Setups with Modern 3D Wall Art",
+        "image": "https://m.media-amazon.com/images/I/61KZYiefSUL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -162,19 +180,10 @@
         "reviews": 0
       },
       {
-        "id": "dd91d75a-4978-41fd-80f2-3adebd996171",
-        "asin": "B0FCF84JMR",
-        "title": "Cozy Bedroom Makeover: Forest-themed Home Decor with Peel and Stick Wallpaper",
-        "image": "https://m.media-amazon.com/images/I/91OmN2YvB4L._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "c8329171-b8a0-420a-8a3f-8e5267187591",
-        "asin": "B0DG84QC32",
-        "title": "Transform Your Living Room with Stunning 3D Wall Panels Decor",
-        "image": "https://m.media-amazon.com/images/I/612EdRaU5SL._AC_SL1500_.jpg",
+        "id": "9a01faaa-8457-4706-84b1-118c44107317",
+        "asin": "B08FKW9JRM",
+        "title": "Art3d Peel and Stick Wallpaper Smoothing Tool Kit for Budget Home Decorating",
+        "image": "https://m.media-amazon.com/images/I/61EtMxplMEL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -273,19 +282,19 @@
     ],
     "products": [
       {
-        "id": "9ef1881d-f129-4b05-886c-08aebe780893",
-        "asin": "B0C1W773F8",
-        "title": "Upgrade Your Minimalist Cozy Interiors with Chic Metal Wall Art",
-        "image": "https://m.media-amazon.com/images/I/71kA+j+-p0L._AC_SL1500_.jpg",
+        "id": "6b007b83-f4d5-4468-a551-36b22a41b46d",
+        "asin": "B0D2ZYXNT3",
+        "title": "Minimalist Cozy Interiors Dream: Soft Taupe Chenille Throw Blanket",
+        "image": "https://m.media-amazon.com/images/I/81ni+OlkDxL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
       },
       {
-        "id": "6b007b83-f4d5-4468-a551-36b22a41b46d",
-        "asin": "B0D2ZYXNT3",
-        "title": "Minimalist Cozy Interiors Dream: Soft Taupe Chenille Throw Blanket",
-        "image": "https://m.media-amazon.com/images/I/81ni+OlkDxL._AC_SL1500_.jpg",
+        "id": "9ef1881d-f129-4b05-886c-08aebe780893",
+        "asin": "B0C1W773F8",
+        "title": "Upgrade Your Minimalist Cozy Interiors with Chic Metal Wall Art",
+        "image": "https://m.media-amazon.com/images/I/71kA+j+-p0L._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -300,10 +309,10 @@
         "reviews": 0
       },
       {
-        "id": "a233be84-d91d-4de1-b5e9-5f34001e0f63",
-        "asin": "0800744748",
-        "title": "Mastering Minimalist Cozy Interiors: Decorate Any Home & Budget",
-        "image": "https://m.media-amazon.com/images/I/81aZJfa-O-L._SL1500_.jpg",
+        "id": "a7dfca0c-2390-4344-b8a0-763606c30089",
+        "asin": "B01JEAKSN0",
+        "title": "BOURINA Beige Throw Blanket for Minimalist Home Decor Sofa Styling",
+        "image": "https://m.media-amazon.com/images/I/71NyvhDfCML._AC_SL1000_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -318,6 +327,15 @@
         "reviews": 0
       },
       {
+        "id": "a233be84-d91d-4de1-b5e9-5f34001e0f63",
+        "asin": "0800744748",
+        "title": "Mastering Minimalist Cozy Interiors: Decorate Any Home & Budget",
+        "image": "https://m.media-amazon.com/images/I/81aZJfa-O-L._SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
         "id": "bd92bbd3-1f2e-4755-8b99-a5ce53f48b5a",
         "asin": "B0DKNWWYLK",
         "title": "Elevate Your Living Room: Chic 3-Piece Minimalist Line Art Print Set",
@@ -327,46 +345,19 @@
         "reviews": 0
       },
       {
-        "id": "a7dfca0c-2390-4344-b8a0-763606c30089",
-        "asin": "B01JEAKSN0",
-        "title": "BOURINA Beige Throw Blanket for Minimalist Home Decor Sofa Styling",
-        "image": "https://m.media-amazon.com/images/I/71NyvhDfCML._AC_SL1000_.jpg",
+        "id": "4867bafa-bd09-486b-af7c-801833b348bb",
+        "asin": "B0D3V281WP",
+        "title": "Metal Flowers Wall Art Ideas for Cozy Home Decor in a Small Living Room",
+        "image": "https://m.media-amazon.com/images/I/71c6XiR32iL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
       },
       {
-        "id": "9fe557cc-ba5c-4928-9a0d-14718ed8f703",
-        "asin": "B01IMZLNBE",
-        "title": "Bedding Set Ideas: Natural Linen Duvet Cover for a Cozy Bedroom",
-        "image": "https://m.media-amazon.com/images/I/81NUbEWbQXL._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "69f7f06a-11c4-4490-bb72-924123dad3ac",
-        "asin": "B0GDXDNRLB",
-        "title": "Transform Your Space with Neutral Abstract Wall Art Canvas",
-        "image": "https://m.media-amazon.com/images/I/616NdMtnkkL._AC_SL1024_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "17cabc56-5949-42dd-9030-757349f62faa",
-        "asin": "B0FNCSGJVK",
-        "title": "Create a Cozy Reading Nook with a Chic Boucle Accent Chair & Ottoman",
-        "image": "https://m.media-amazon.com/images/I/91vTSlmXsYL._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "3d4c641d-71f6-437d-bf7a-b67e6224e213",
-        "asin": "B0D8KGGNGD",
-        "title": "Elevate Your Living Room with a Stylish Neutral Area Rug",
-        "image": "https://m.media-amazon.com/images/I/91GD+XW+97L._AC_SL1500_.jpg",
+        "id": "249edc5a-7305-482a-b22b-c08c4946a8dc",
+        "asin": "B0C4NYY9Y7",
+        "title": "Couples' Bedroom Ideas: Liswit Framed Boho Wall Art Set of 4 ...",
+        "image": "https://m.media-amazon.com/images/I/81ID9fVcsHL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -377,6 +368,24 @@
         "title": "Bring Vintage Charm Home: Aesthetic Large Framed Wall Art",
         "image": "https://m.media-amazon.com/images/I/71cvowR5-nL._AC_SL1500_.jpg",
         "category": "wall-decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "622ba038-4d1f-41e3-afe8-8b8d0ad02128",
+        "asin": "B0BMLQK6Y5",
+        "title": "Chic Gold Metal Wall Art Decor: Abstract Lady Line Art for Modern Rooms",
+        "image": "https://m.media-amazon.com/images/I/719NgJkBAwL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "7763c1d8-4e66-44bf-8d0f-31420f04e0a2",
+        "asin": "B0CBR8CBRB",
+        "title": "Minimalist Home Decor Ideas: Metal Flower Wall Art for Your Living Room",
+        "image": "https://m.media-amazon.com/images/I/71Vq3ljrF6L._AC_SL1000_.jpg",
+        "category": "decor",
         "rating": 4.5,
         "reviews": 0
       }
@@ -484,10 +493,10 @@
         "reviews": 0
       },
       {
-        "id": "8f32d48e-5907-4955-916f-4d824c7283fb",
-        "asin": "B0BP23WWTV",
-        "title": "Cozy Reading Chairs for a Modern & Relaxing Living Room",
-        "image": "https://m.media-amazon.com/images/I/71RYUpXPFdL._AC_SL1500_.jpg",
+        "id": "dc70cd8f-f438-4ae9-87da-fdb1754e7d0c",
+        "asin": "B0DQD8FWHM",
+        "title": "Comfy Kids Bean Bag: The Best Cozy Reading Chair for Playrooms",
+        "image": "https://m.media-amazon.com/images/I/71LbXH5PbIL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -502,10 +511,10 @@
         "reviews": 0
       },
       {
-        "id": "17cabc56-5949-42dd-9030-757349f62faa",
-        "asin": "B0FNCSGJVK",
-        "title": "Create a Cozy Reading Nook with a Chic Boucle Accent Chair & Ottoman",
-        "image": "https://m.media-amazon.com/images/I/91vTSlmXsYL._AC_SL1500_.jpg",
+        "id": "8f32d48e-5907-4955-916f-4d824c7283fb",
+        "asin": "B0BP23WWTV",
+        "title": "Cozy Reading Chairs for a Modern & Relaxing Living Room",
+        "image": "https://m.media-amazon.com/images/I/71RYUpXPFdL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -520,28 +529,10 @@
         "reviews": 0
       },
       {
-        "id": "c9c1eec3-6d1e-43e8-bcff-9524d22f30f5",
-        "asin": "B0C7KQQ156",
-        "title": "Modern Black Arc Floor Lamp for Living Room | Dimmable & Remote Control",
-        "image": "https://m.media-amazon.com/images/I/71LVqmPNKzL._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "dc70cd8f-f438-4ae9-87da-fdb1754e7d0c",
-        "asin": "B0DQD8FWHM",
-        "title": "Comfy Kids Bean Bag: The Best Cozy Reading Chair for Playrooms",
-        "image": "https://m.media-amazon.com/images/I/71LbXH5PbIL._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "dd2ac661-399a-40e1-84a6-3ffb7bffa85d",
-        "asin": "B0D3MGX5NG",
-        "title": "Create Minimalist Cozy Interiors with a Chic Boucle Accent Chair",
-        "image": "https://m.media-amazon.com/images/I/81+bpHJ2Q1L._AC_SL1500_.jpg",
+        "id": "17cabc56-5949-42dd-9030-757349f62faa",
+        "asin": "B0FNCSGJVK",
+        "title": "Create a Cozy Reading Nook with a Chic Boucle Accent Chair & Ottoman",
+        "image": "https://m.media-amazon.com/images/I/91vTSlmXsYL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -556,10 +547,19 @@
         "reviews": 0
       },
       {
-        "id": "e3f54107-aa4d-4fe3-98e1-504385d500ca",
-        "asin": "B005HSGQM6",
-        "title": "Sleek C-Shaped Sofa Table for Contemporary Living Rooms",
-        "image": "https://m.media-amazon.com/images/I/61cY72MGnRL._AC_SL1500_.jpg",
+        "id": "c9c1eec3-6d1e-43e8-bcff-9524d22f30f5",
+        "asin": "B0C7KQQ156",
+        "title": "Modern Black Arc Floor Lamp for Living Room | Dimmable & Remote Control",
+        "image": "https://m.media-amazon.com/images/I/71LVqmPNKzL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "dd2ac661-399a-40e1-84a6-3ffb7bffa85d",
+        "asin": "B0D3MGX5NG",
+        "title": "Create Minimalist Cozy Interiors with a Chic Boucle Accent Chair",
+        "image": "https://m.media-amazon.com/images/I/81+bpHJ2Q1L._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -569,6 +569,15 @@
         "asin": "B0CSFXR3XH",
         "title": "Elevate Small Spaces with a Stylish Marble Top Accent Table",
         "image": "https://m.media-amazon.com/images/I/71yt7P2ia2L._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "5241151e-be9e-42d3-9d2e-57c91409dd54",
+        "asin": "B09MF72HG3",
+        "title": "Forest-themed Home Decor: Measure Up for Your Mushroom Nightlight",
+        "image": "https://m.media-amazon.com/images/I/61wKy+ulfCL._AC_SL1254_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -665,19 +674,10 @@
         "reviews": 0
       },
       {
-        "id": "1cf635a5-b124-46f7-80c3-5eb4fc9708ff",
-        "asin": "B0CKVZDGRB",
-        "title": "Create Beautiful Wedding Photo Displays with White Square Frames",
-        "image": "https://m.media-amazon.com/images/I/61LpdnMseyL._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "7e752461-bda3-42cb-a0c7-99b120339b60",
-        "asin": "B0DDPXM3M3",
-        "title": "Collage Picture Frame Set: Fixwal Collage Picture Frames Set 20 Pack PVC Brown 8x1...",
-        "image": "https://m.media-amazon.com/images/I/81md1MXfgLL._AC_SL1500_.jpg",
+        "id": "dff8c7bf-5fd7-438f-9160-4ad384b6eab7",
+        "asin": "B0B1J4KW75",
+        "title": "Elevate Your Space: Stylish 10-Pc Gallery Wall Frame Set",
+        "image": "https://m.media-amazon.com/images/I/71MkqpIbJzL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -692,10 +692,10 @@
         "reviews": 0
       },
       {
-        "id": "dff8c7bf-5fd7-438f-9160-4ad384b6eab7",
-        "asin": "B0B1J4KW75",
-        "title": "Elevate Your Space: Stylish 10-Pc Gallery Wall Frame Set",
-        "image": "https://m.media-amazon.com/images/I/71MkqpIbJzL._AC_SL1500_.jpg",
+        "id": "1cf635a5-b124-46f7-80c3-5eb4fc9708ff",
+        "asin": "B0CKVZDGRB",
+        "title": "Create Beautiful Wedding Photo Displays with White Square Frames",
+        "image": "https://m.media-amazon.com/images/I/61LpdnMseyL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -710,11 +710,11 @@
         "reviews": 0
       },
       {
-        "id": "c03244ce-a136-4f9e-bc5d-9c3425cc386f",
-        "asin": "B0C8J7ZB7L",
-        "title": "Gallery Wall Frame Set for a Cozy Living Room",
-        "image": "https://m.media-amazon.com/images/I/817XFnv+1gL._AC_SL1500_.jpg",
-        "category": "wall-decor",
+        "id": "7e752461-bda3-42cb-a0c7-99b120339b60",
+        "asin": "B0DDPXM3M3",
+        "title": "Collage Picture Frame Set: Fixwal Collage Picture Frames Set 20 Pack PVC Brown 8x1...",
+        "image": "https://m.media-amazon.com/images/I/81md1MXfgLL._AC_SL1500_.jpg",
+        "category": "decor",
         "rating": 4.5,
         "reviews": 0
       },
@@ -724,6 +724,15 @@
         "title": "Boho Floral Wood Frame Wall Art Set for a Stylish Room Refresh",
         "image": "https://m.media-amazon.com/images/I/81Zgn5eG-5L._AC_SL1500_.jpg",
         "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "c03244ce-a136-4f9e-bc5d-9c3425cc386f",
+        "asin": "B0C8J7ZB7L",
+        "title": "Gallery Wall Frame Set for a Cozy Living Room",
+        "image": "https://m.media-amazon.com/images/I/817XFnv+1gL._AC_SL1500_.jpg",
+        "category": "wall-decor",
         "rating": 4.5,
         "reviews": 0
       },
@@ -831,15 +840,6 @@
         "reviews": 0
       },
       {
-        "id": "22ce79fc-5dd0-4d3e-8a19-13d97977f5bb",
-        "asin": "B084JVLK17",
-        "title": "Corner Entryway Designs: Tall Shoe Rack Organizer for Smart Storage",
-        "image": "https://m.media-amazon.com/images/I/711iEZsPSSL._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
         "id": "1fdcb9f1-e969-4989-a008-673fabd36ea5",
         "asin": "B0FDQGW6JQ",
         "title": "Chic Entryway Key Holder Wall Organizer | Easy Stick-On Setup",
@@ -849,11 +849,11 @@
         "reviews": 0
       },
       {
-        "id": "1922d002-9a1c-4cc6-b521-9e1913655e7a",
-        "asin": "B0BLSCY6PR",
-        "title": "Small Bathroom Decorating Ideas: Maximize Storage with Adhesive Caddies",
-        "image": "https://m.media-amazon.com/images/I/81S6FPdEHWL._AC_SL1500_.jpg",
-        "category": "bathroom",
+        "id": "3a52dcc1-a0ff-44c2-8de9-e74498370771",
+        "asin": "B07PGFF7W2",
+        "title": "Corner Entryway Designs: Measure Your Cabinet for a Lazy Susan",
+        "image": "https://m.media-amazon.com/images/I/51vH+Zn3oIL._AC_SL1000_.jpg",
+        "category": "decor",
         "rating": 4.5,
         "reviews": 0
       },
@@ -885,11 +885,20 @@
         "reviews": 0
       },
       {
-        "id": "3a52dcc1-a0ff-44c2-8de9-e74498370771",
-        "asin": "B07PGFF7W2",
-        "title": "Corner Entryway Designs: Measure Your Cabinet for a Lazy Susan",
-        "image": "https://m.media-amazon.com/images/I/51vH+Zn3oIL._AC_SL1000_.jpg",
+        "id": "22ce79fc-5dd0-4d3e-8a19-13d97977f5bb",
+        "asin": "B084JVLK17",
+        "title": "Corner Entryway Designs: Tall Shoe Rack Organizer for Smart Storage",
+        "image": "https://m.media-amazon.com/images/I/711iEZsPSSL._AC_SL1500_.jpg",
         "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "1922d002-9a1c-4cc6-b521-9e1913655e7a",
+        "asin": "B0BLSCY6PR",
+        "title": "Small Bathroom Decorating Ideas: Maximize Storage with Adhesive Caddies",
+        "image": "https://m.media-amazon.com/images/I/81S6FPdEHWL._AC_SL1500_.jpg",
+        "category": "bathroom",
         "rating": 4.5,
         "reviews": 0
       },
@@ -898,6 +907,15 @@
         "asin": "B089YD445C",
         "title": "Kitchen Christmas Decor Ideas: Measure for Grey Floor Mats",
         "image": "https://m.media-amazon.com/images/I/813NcA0x9DL._AC_SL1500_.jpg",
+        "category": "kitchen",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "4926b06f-a102-4866-b6df-2b3c21bfd292",
+        "asin": "B08KXKVT4K",
+        "title": "Clear Plastic Drawer Organizers for a tidy kitchen table Christmas decor display",
+        "image": "https://m.media-amazon.com/images/I/81yj+PUYVxL._AC_SL1500_.jpg",
         "category": "kitchen",
         "rating": 4.5,
         "reviews": 0
@@ -995,19 +1013,19 @@
     ],
     "products": [
       {
-        "id": "73906773-9a2a-4c48-874c-ee950a16b4bd",
-        "asin": "B07D29P5Z1",
-        "title": "Forest-themed Home Decor: Plant Terrarium Checklist Before You Buy",
-        "image": "https://m.media-amazon.com/images/I/71GrAWYYDyL._AC_SL1500_.jpg",
+        "id": "5241151e-be9e-42d3-9d2e-57c91409dd54",
+        "asin": "B09MF72HG3",
+        "title": "Forest-themed Home Decor: Measure Up for Your Mushroom Nightlight",
+        "image": "https://m.media-amazon.com/images/I/61wKy+ulfCL._AC_SL1254_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
       },
       {
-        "id": "5241151e-be9e-42d3-9d2e-57c91409dd54",
-        "asin": "B09MF72HG3",
-        "title": "Forest-themed Home Decor: Measure Up for Your Mushroom Nightlight",
-        "image": "https://m.media-amazon.com/images/I/61wKy+ulfCL._AC_SL1254_.jpg",
+        "id": "73906773-9a2a-4c48-874c-ee950a16b4bd",
+        "asin": "B07D29P5Z1",
+        "title": "Forest-themed Home Decor: Plant Terrarium Checklist Before You Buy",
+        "image": "https://m.media-amazon.com/images/I/71GrAWYYDyL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -1022,10 +1040,46 @@
         "reviews": 0
       },
       {
-        "id": "67fb865b-bd30-4db5-bba6-c471bd54b1a4",
-        "asin": "B0DD6B5Y1Z",
-        "title": "Stylish Rustic Floating Wall Shelves Set of 4 for Any Room",
-        "image": "https://m.media-amazon.com/images/I/815EVWpy+hL._AC_SL1500_.jpg",
+        "id": "edaee355-4797-40d1-92a1-a0a3d7c42eda",
+        "asin": "B0BDR1X6PT",
+        "title": "Chic Modern Ceramic Vase Set for Stylish Shelf Decor",
+        "image": "https://m.media-amazon.com/images/I/71UQuGBkl4L._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "794d866a-0f04-4579-9d28-435aabd826bb",
+        "asin": "B0963M4H4J",
+        "title": "Small Bathroom Decorating Ideas: How to Place 3-Light Vanity Lights",
+        "image": "https://m.media-amazon.com/images/I/81tgTUO3ASL._AC_SL1000_.jpg",
+        "category": "bathroom",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "d69da642-9950-4606-82f2-014754f9bf94",
+        "asin": "B0FV7ZFGGR",
+        "title": "Kohree Outdoor Rug for Forest-themed Home Decor",
+        "image": "https://m.media-amazon.com/images/I/91cOPvxWL0L._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "af7b8639-a72d-4efe-a5d2-df0c8ac50183",
+        "asin": "B0BZXNSW5K",
+        "title": "Checklist for Picking a Bedside Table Lamp for Minimalist Home Decor",
+        "image": "https://m.media-amazon.com/images/I/71zreHoOzVL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "5d98d901-7478-4026-b189-41dfd9010396",
+        "asin": "B0FGJFSN72",
+        "title": "Create a Reading Nook: LED Lamp for Cozy Reading Chairs",
+        "image": "https://m.media-amazon.com/images/I/71yp0kVYcRL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -1040,46 +1094,10 @@
         "reviews": 0
       },
       {
-        "id": "edaee355-4797-40d1-92a1-a0a3d7c42eda",
-        "asin": "B0BDR1X6PT",
-        "title": "Chic Modern Ceramic Vase Set for Stylish Shelf Decor",
-        "image": "https://m.media-amazon.com/images/I/71UQuGBkl4L._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "09eb7a9c-4238-4c63-9c59-b89527e9970e",
-        "asin": "B0CXTDRT8K",
-        "title": "Forest-Themed Home Decor: Boho Rattan Arc Floor Lamp for Living Room",
-        "image": "https://m.media-amazon.com/images/I/71UvNJMfJ5L._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
         "id": "56a1b735-b605-446f-84da-2e2a99c3b6cb",
         "asin": "B096HNSRXX",
         "title": "Dreamy Round Rattan Mirror Aesthetic with Walnut Wood Frame",
         "image": "https://m.media-amazon.com/images/I/610p8BJwOlL._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "697d7524-e3c4-466a-a4d9-7271ab8ec4b5",
-        "asin": "B0CTS8VWZZ",
-        "title": "Transform Your Bathroom with a Sleek Black Arched Mirror",
-        "image": "https://m.media-amazon.com/images/I/81HngsdZEWL._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "0e42d3d5-7acf-4606-a3d7-d7aee9f8d3f8",
-        "asin": "B0888JVZH4",
-        "title": "Create Forest-themed Home Decor: Round Coffee Table Placement",
-        "image": "https://m.media-amazon.com/images/I/91tacYay1LL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -1094,11 +1112,11 @@
         "reviews": 0
       },
       {
-        "id": "89088f30-af70-4f9b-abd8-2ad47c1538f4",
-        "asin": "B00R3FTLMI",
-        "title": "Small Bathroom Decorating Ideas: Over-the-Toilet Storage Shelf Checklist",
-        "image": "https://m.media-amazon.com/images/I/61Lm0OqidYL._AC_SL1500_.jpg",
-        "category": "bathroom",
+        "id": "697d7524-e3c4-466a-a4d9-7271ab8ec4b5",
+        "asin": "B0CTS8VWZZ",
+        "title": "Transform Your Bathroom with a Sleek Black Arched Mirror",
+        "image": "https://m.media-amazon.com/images/I/81HngsdZEWL._AC_SL1500_.jpg",
+        "category": "decor",
         "rating": 4.5,
         "reviews": 0
       }
@@ -1206,20 +1224,20 @@
         "reviews": 0
       },
       {
-        "id": "0611040e-56ba-4b16-9e1d-821db93d8580",
-        "asin": "B07HN1KCZH",
-        "title": "Before You Buy: Talavera Peel & Stick for Southwestern Style Bathrooms",
-        "image": "https://m.media-amazon.com/images/I/81T5zJIKPvL._AC_SL1200_.jpg",
+        "id": "9a01faaa-8457-4706-84b1-118c44107317",
+        "asin": "B08FKW9JRM",
+        "title": "Art3d Peel and Stick Wallpaper Smoothing Tool Kit for Budget Home Decorating",
+        "image": "https://m.media-amazon.com/images/I/61EtMxplMEL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
       },
       {
-        "id": "59d84623-3c10-4573-9a2f-ba5137fc123d",
-        "asin": "B0D46VWV2N",
-        "title": "Small Bathroom Decorating Ideas: Plan Your Peel & Stick Tile",
-        "image": "https://m.media-amazon.com/images/I/81cS8GPv0EL._AC_SL1500_.jpg",
-        "category": "bathroom",
+        "id": "0611040e-56ba-4b16-9e1d-821db93d8580",
+        "asin": "B07HN1KCZH",
+        "title": "Before You Buy: Talavera Peel & Stick for Southwestern Style Bathrooms",
+        "image": "https://m.media-amazon.com/images/I/81T5zJIKPvL._AC_SL1200_.jpg",
+        "category": "decor",
         "rating": 4.5,
         "reviews": 0
       },
@@ -1242,6 +1260,15 @@
         "reviews": 0
       },
       {
+        "id": "59d84623-3c10-4573-9a2f-ba5137fc123d",
+        "asin": "B0D46VWV2N",
+        "title": "Small Bathroom Decorating Ideas: Plan Your Peel & Stick Tile",
+        "image": "https://m.media-amazon.com/images/I/81cS8GPv0EL._AC_SL1500_.jpg",
+        "category": "bathroom",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
         "id": "b2012af8-a698-41f8-ba51-b771b43190b3",
         "asin": "B0DG4QH1CL",
         "title": "DIY Wainscoting & Beadboard Styles: Easy Peel & Stick Wall Transformation",
@@ -1251,10 +1278,10 @@
         "reviews": 0
       },
       {
-        "id": "4c07a7c5-7e75-415d-b32d-dd79ec404ffc",
-        "asin": "B08HKXSFNN",
-        "title": "Christmas Wallpaper Ideas and Festive Snowflake Window Clings",
-        "image": "https://m.media-amazon.com/images/I/81rCApbWIBS._AC_SL1500_.jpg",
+        "id": "4e8f376e-7042-4257-b0ed-0797df7e77f9",
+        "asin": "B07VXSWNF9",
+        "title": "300 PCS Christmas Snowflake Window Cling Stickers for Glass: Your Christmas Wallpaper Ideas",
+        "image": "https://m.media-amazon.com/images/I/71-pxcF6o+L._AC_SL1500_.jpg",
         "category": "wall-decor",
         "rating": 4.5,
         "reviews": 0
@@ -1269,10 +1296,10 @@
         "reviews": 0
       },
       {
-        "id": "5758a170-7433-4b1f-ad8e-b9ac300f794f",
-        "asin": "B07JPYYMLK",
-        "title": "Considering Christmas Wallpaper Ideas? Measure Up for This Vintage Banner!",
-        "image": "https://m.media-amazon.com/images/I/81VvinzPlaL._AC_SL1500_.jpg",
+        "id": "4c07a7c5-7e75-415d-b32d-dd79ec404ffc",
+        "asin": "B08HKXSFNN",
+        "title": "Christmas Wallpaper Ideas and Festive Snowflake Window Clings",
+        "image": "https://m.media-amazon.com/images/I/81rCApbWIBS._AC_SL1500_.jpg",
         "category": "wall-decor",
         "rating": 4.5,
         "reviews": 0
@@ -1282,15 +1309,6 @@
         "asin": "B077N51CR2",
         "title": "Homall Recliner Chair for Adults: Cozy Christmas Wallpaper Vibes",
         "image": "https://m.media-amazon.com/images/I/61g3Cgbfe+L._AC_SL1500_.jpg",
-        "category": "wall-decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "4e8f376e-7042-4257-b0ed-0797df7e77f9",
-        "asin": "B07VXSWNF9",
-        "title": "300 PCS Christmas Snowflake Window Cling Stickers for Glass: Your Christmas Wallpaper Ideas",
-        "image": "https://m.media-amazon.com/images/I/71-pxcF6o+L._AC_SL1500_.jpg",
         "category": "wall-decor",
         "rating": 4.5,
         "reviews": 0
@@ -1382,33 +1400,6 @@
     ],
     "products": [
       {
-        "id": "f40c941e-0f60-40a9-91e7-9d79c492a7a8",
-        "asin": "B0G58ZJZW3",
-        "title": "Elevate Your Space with Asymmetrical Floating Shelves: Set of 2",
-        "image": "https://m.media-amazon.com/images/I/91gK5dGjygL._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "ec5182b3-66cb-4fff-8a1b-6201b3f9daf4",
-        "asin": "B09MT49KPB",
-        "title": "Forest-themed Home Decor Ideas with Floating Shelves",
-        "image": "https://m.media-amazon.com/images/I/71wAMBunVlL._AC_SL1000_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "67fb865b-bd30-4db5-bba6-c471bd54b1a4",
-        "asin": "B0DD6B5Y1Z",
-        "title": "Stylish Rustic Floating Wall Shelves Set of 4 for Any Room",
-        "image": "https://m.media-amazon.com/images/I/815EVWpy+hL._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
         "id": "edaee355-4797-40d1-92a1-a0a3d7c42eda",
         "asin": "B0BDR1X6PT",
         "title": "Chic Modern Ceramic Vase Set for Stylish Shelf Decor",
@@ -1423,15 +1414,6 @@
         "title": "Chic Entryway Key Holder Wall Organizer | Easy Stick-On Setup",
         "image": "https://m.media-amazon.com/images/I/71p42xJOKZL._AC_SL1500_.jpg",
         "category": "wall-decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "a7dca26e-1441-4c36-944c-13e127415a85",
-        "asin": "B0DL5JVPB6",
-        "title": "Elevate Your Walls with a Stylish Geometric Wall Shelf Set",
-        "image": "https://m.media-amazon.com/images/I/71djUO0wl3L._AC_SL1500_.jpg",
-        "category": "decor",
         "rating": 4.5,
         "reviews": 0
       },
@@ -1458,6 +1440,42 @@
         "asin": "B0DZWXJ9VZ",
         "title": "Southwestern Style Bathrooms: Rustic Floating Shelves for Small Spaces",
         "image": "https://m.media-amazon.com/images/I/81fvbETTD8L._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "a7dca26e-1441-4c36-944c-13e127415a85",
+        "asin": "B0DL5JVPB6",
+        "title": "Elevate Your Walls with a Stylish Geometric Wall Shelf Set",
+        "image": "https://m.media-amazon.com/images/I/71djUO0wl3L._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "f40c941e-0f60-40a9-91e7-9d79c492a7a8",
+        "asin": "B0G58ZJZW3",
+        "title": "Elevate Your Space with Asymmetrical Floating Shelves: Set of 2",
+        "image": "https://m.media-amazon.com/images/I/91gK5dGjygL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "67fb865b-bd30-4db5-bba6-c471bd54b1a4",
+        "asin": "B0DD6B5Y1Z",
+        "title": "Stylish Rustic Floating Wall Shelves Set of 4 for Any Room",
+        "image": "https://m.media-amazon.com/images/I/815EVWpy+hL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "ec5182b3-66cb-4fff-8a1b-6201b3f9daf4",
+        "asin": "B09MT49KPB",
+        "title": "Forest-themed Home Decor Ideas with Floating Shelves",
+        "image": "https://m.media-amazon.com/images/I/71wAMBunVlL._AC_SL1000_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -1567,19 +1585,10 @@
         "reviews": 0
       },
       {
-        "id": "5d98d901-7478-4026-b189-41dfd9010396",
-        "asin": "B0FGJFSN72",
-        "title": "Create a Reading Nook: LED Lamp for Cozy Reading Chairs",
-        "image": "https://m.media-amazon.com/images/I/71yp0kVYcRL._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "58dbfbc5-dc95-44d4-9567-59d1e3c8a8dc",
-        "asin": "B0CZMPX2PW",
-        "title": "Transform Your Desk: Modern Edge-lit LED Lamp for Home Office Style",
-        "image": "https://m.media-amazon.com/images/I/71bsih1Q6jL._AC_SL1500_.jpg",
+        "id": "e4fc2e27-5f26-4114-a7f3-a368e904b205",
+        "asin": "B0F9X3PC9T",
+        "title": "Couples' Bedroom Ideas: Dimmable Nightstand Lamps for Cozy Spaces",
+        "image": "https://m.media-amazon.com/images/I/71b+uZFjT-L._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -1594,19 +1603,19 @@
         "reviews": 0
       },
       {
-        "id": "e4fc2e27-5f26-4114-a7f3-a368e904b205",
-        "asin": "B0F9X3PC9T",
-        "title": "Couples' Bedroom Ideas: Dimmable Nightstand Lamps for Cozy Spaces",
-        "image": "https://m.media-amazon.com/images/I/71b+uZFjT-L._AC_SL1500_.jpg",
+        "id": "af7b8639-a72d-4efe-a5d2-df0c8ac50183",
+        "asin": "B0BZXNSW5K",
+        "title": "Checklist for Picking a Bedside Table Lamp for Minimalist Home Decor",
+        "image": "https://m.media-amazon.com/images/I/71zreHoOzVL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
       },
       {
-        "id": "af7b8639-a72d-4efe-a5d2-df0c8ac50183",
-        "asin": "B0BZXNSW5K",
-        "title": "Checklist for Picking a Bedside Table Lamp for Minimalist Home Decor",
-        "image": "https://m.media-amazon.com/images/I/71zreHoOzVL._AC_SL1500_.jpg",
+        "id": "5d98d901-7478-4026-b189-41dfd9010396",
+        "asin": "B0FGJFSN72",
+        "title": "Create a Reading Nook: LED Lamp for Cozy Reading Chairs",
+        "image": "https://m.media-amazon.com/images/I/71yp0kVYcRL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -1621,19 +1630,28 @@
         "reviews": 0
       },
       {
-        "id": "faaf0af7-5142-4503-b543-80748111995d",
-        "asin": "B0CDQDYJC3",
-        "title": "Modern Office Upgrade: Adjustable Desk Lamp for Perfect Task Lighting",
-        "image": "https://m.media-amazon.com/images/I/71M3tMXvzrL._AC_SL1500_.jpg",
+        "id": "58dbfbc5-dc95-44d4-9567-59d1e3c8a8dc",
+        "asin": "B0CZMPX2PW",
+        "title": "Transform Your Desk: Modern Edge-lit LED Lamp for Home Office Style",
+        "image": "https://m.media-amazon.com/images/I/71bsih1Q6jL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
       },
       {
-        "id": "09eb7a9c-4238-4c63-9c59-b89527e9970e",
-        "asin": "B0CXTDRT8K",
-        "title": "Forest-Themed Home Decor: Boho Rattan Arc Floor Lamp for Living Room",
-        "image": "https://m.media-amazon.com/images/I/71UvNJMfJ5L._AC_SL1500_.jpg",
+        "id": "8eaec943-61c1-4523-85a5-5abbe7837911",
+        "asin": "B0BR5JHB3Z",
+        "title": "Bedside Table LED Lamp for Cozy Home Decor: Measure Your Space",
+        "image": "https://m.media-amazon.com/images/I/51F1eWcmohL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "5241151e-be9e-42d3-9d2e-57c91409dd54",
+        "asin": "B09MF72HG3",
+        "title": "Forest-themed Home Decor: Measure Up for Your Mushroom Nightlight",
+        "image": "https://m.media-amazon.com/images/I/61wKy+ulfCL._AC_SL1254_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -1648,19 +1666,19 @@
         "reviews": 0
       },
       {
-        "id": "c9c1eec3-6d1e-43e8-bcff-9524d22f30f5",
-        "asin": "B0C7KQQ156",
-        "title": "Modern Black Arc Floor Lamp for Living Room | Dimmable & Remote Control",
-        "image": "https://m.media-amazon.com/images/I/71LVqmPNKzL._AC_SL1500_.jpg",
+        "id": "805682cc-f3e0-4249-83d3-31671e4d8506",
+        "asin": "B0CKL4RBY3",
+        "title": "Upgrade Your Space: Dimmable LED Floor Lamp for Reading & Ambiance",
+        "image": "https://m.media-amazon.com/images/I/61m0IP+z2jL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
       },
       {
-        "id": "20ed3906-1b9b-4985-ace1-ea75c6a062a2",
-        "asin": "B0B148T94L",
-        "title": "Corner Entryway Designs: Cordless LED Sconces for Flexible Lighting",
-        "image": "https://m.media-amazon.com/images/I/51lhkDpWRLL._AC_SL1500_.jpg",
+        "id": "faaf0af7-5142-4503-b543-80748111995d",
+        "asin": "B0CDQDYJC3",
+        "title": "Modern Office Upgrade: Adjustable Desk Lamp for Perfect Task Lighting",
+        "image": "https://m.media-amazon.com/images/I/71M3tMXvzrL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -1757,6 +1775,15 @@
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
+      },
+      {
+        "id": "9a01faaa-8457-4706-84b1-118c44107317",
+        "asin": "B08FKW9JRM",
+        "title": "Art3d Peel and Stick Wallpaper Smoothing Tool Kit for Budget Home Decorating",
+        "image": "https://m.media-amazon.com/images/I/61EtMxplMEL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
       }
     ]
   },
@@ -1845,6 +1872,24 @@
     ],
     "products": [
       {
+        "id": "d69da642-9950-4606-82f2-014754f9bf94",
+        "asin": "B0FV7ZFGGR",
+        "title": "Kohree Outdoor Rug for Forest-themed Home Decor",
+        "image": "https://m.media-amazon.com/images/I/91cOPvxWL0L._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "6630c3f9-6055-49f5-91f3-93cc58ae4a53",
+        "asin": "B095M36F61",
+        "title": "Upgrade Your Southwestern Style Bathrooms: Small Rug Checklist",
+        "image": "https://m.media-amazon.com/images/I/91N+2szNq1L._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
         "id": "e45cbbb0-b48f-4b37-ab4a-6709fbef0917",
         "asin": "B00YDFLQAG",
         "title": "Maximize Small Spaces: Apartment Laundry Room Ideas with Tabletop Ironing Board",
@@ -1854,11 +1899,29 @@
         "reviews": 0
       },
       {
-        "id": "3d4c641d-71f6-437d-bf7a-b67e6224e213",
-        "asin": "B0D8KGGNGD",
-        "title": "Elevate Your Living Room with a Stylish Neutral Area Rug",
-        "image": "https://m.media-amazon.com/images/I/91GD+XW+97L._AC_SL1500_.jpg",
+        "id": "becb59c5-45ce-4259-b664-fa0c559497eb",
+        "asin": "B07FPQZG6V",
+        "title": "Small Bathroom Decorating Ideas: Cozy Entry Rug Placement",
+        "image": "https://m.media-amazon.com/images/I/71BhYC75D4L._AC_SL1000_.jpg",
+        "category": "bathroom",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "48dd560f-1da3-46a3-85ad-183a09683255",
+        "asin": "B0DRC3286X",
+        "title": "Bedding Set Ideas: Create a Seamless Bedroom Look with a Queen Duvet Cover",
+        "image": "https://m.media-amazon.com/images/I/81SMAvwsy8L._AC_SL1500_.jpg",
         "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "44a80841-34dc-4298-bf5f-d94f058b562f",
+        "asin": "B0BRXX2DRD",
+        "title": "Cute Fat Chef Kitchen Decor Rugs: Absorbent & Non-Slip Set of 2",
+        "image": "https://m.media-amazon.com/images/I/71p0JkVN0OL._AC_SL1500_.jpg",
+        "category": "kitchen",
         "rating": 4.5,
         "reviews": 0
       },
@@ -1881,47 +1944,11 @@
         "reviews": 0
       },
       {
-        "id": "becb59c5-45ce-4259-b664-fa0c559497eb",
-        "asin": "B07FPQZG6V",
-        "title": "Small Bathroom Decorating Ideas: Cozy Entry Rug Placement",
-        "image": "https://m.media-amazon.com/images/I/71BhYC75D4L._AC_SL1000_.jpg",
-        "category": "bathroom",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "6630c3f9-6055-49f5-91f3-93cc58ae4a53",
-        "asin": "B095M36F61",
-        "title": "Upgrade Your Southwestern Style Bathrooms: Small Rug Checklist",
-        "image": "https://m.media-amazon.com/images/I/91N+2szNq1L._AC_SL1500_.jpg",
+        "id": "3d4c641d-71f6-437d-bf7a-b67e6224e213",
+        "asin": "B0D8KGGNGD",
+        "title": "Elevate Your Living Room with a Stylish Neutral Area Rug",
+        "image": "https://m.media-amazon.com/images/I/91GD+XW+97L._AC_SL1500_.jpg",
         "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "48dd560f-1da3-46a3-85ad-183a09683255",
-        "asin": "B0DRC3286X",
-        "title": "Bedding Set Ideas: Create a Seamless Bedroom Look with a Queen Duvet Cover",
-        "image": "https://m.media-amazon.com/images/I/81SMAvwsy8L._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "d69da642-9950-4606-82f2-014754f9bf94",
-        "asin": "B0FV7ZFGGR",
-        "title": "Kohree Outdoor Rug for Forest-themed Home Decor",
-        "image": "https://m.media-amazon.com/images/I/91cOPvxWL0L._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "44a80841-34dc-4298-bf5f-d94f058b562f",
-        "asin": "B0BRXX2DRD",
-        "title": "Cute Fat Chef Kitchen Decor Rugs: Absorbent & Non-Slip Set of 2",
-        "image": "https://m.media-amazon.com/images/I/71p0JkVN0OL._AC_SL1500_.jpg",
-        "category": "kitchen",
         "rating": 4.5,
         "reviews": 0
       },
@@ -2110,6 +2137,15 @@
     ],
     "products": [
       {
+        "id": "93dafd11-2999-45c6-829f-c5c44f426e05",
+        "asin": "B00B0ZSMO0",
+        "title": "Greet Guests with Charming Fat Chef Kitchen Decor",
+        "image": "https://m.media-amazon.com/images/I/61lgwD2LpGL._AC_SL1126_.jpg",
+        "category": "kitchen",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
         "id": "7c339c9c-c0af-4cea-8f04-7855d84d5a8d",
         "asin": "B00BEKYFME",
         "title": "Add Whimsy with Adorable Fat Chef Kitchen Decor Figurine",
@@ -2128,15 +2164,6 @@
         "reviews": 0
       },
       {
-        "id": "93dafd11-2999-45c6-829f-c5c44f426e05",
-        "asin": "B00B0ZSMO0",
-        "title": "Greet Guests with Charming Fat Chef Kitchen Decor",
-        "image": "https://m.media-amazon.com/images/I/61lgwD2LpGL._AC_SL1126_.jpg",
-        "category": "kitchen",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
         "id": "e3174fcf-a478-433b-b619-676e6f58a03a",
         "asin": "B0C6QQL4FK",
         "title": "Elevate Your Dining: Italian Fat Chef Kitchen Decor Placemats (Set of 4)",
@@ -2146,10 +2173,10 @@
         "reviews": 0
       },
       {
-        "id": "6e6c9e30-a21b-4926-ac8a-8f1af7609c94",
-        "asin": "B07238M1HK",
-        "title": "Smarter Cooking! Keep Counters Clean with Fat Chef Kitchen Decor Spoon Rest",
-        "image": "https://m.media-amazon.com/images/I/511s1dcfoHL._AC_SL1500_.jpg",
+        "id": "44a80841-34dc-4298-bf5f-d94f058b562f",
+        "asin": "B0BRXX2DRD",
+        "title": "Cute Fat Chef Kitchen Decor Rugs: Absorbent & Non-Slip Set of 2",
+        "image": "https://m.media-amazon.com/images/I/71p0JkVN0OL._AC_SL1500_.jpg",
         "category": "kitchen",
         "rating": 4.5,
         "reviews": 0
@@ -2164,10 +2191,10 @@
         "reviews": 0
       },
       {
-        "id": "44a80841-34dc-4298-bf5f-d94f058b562f",
-        "asin": "B0BRXX2DRD",
-        "title": "Cute Fat Chef Kitchen Decor Rugs: Absorbent & Non-Slip Set of 2",
-        "image": "https://m.media-amazon.com/images/I/71p0JkVN0OL._AC_SL1500_.jpg",
+        "id": "6e6c9e30-a21b-4926-ac8a-8f1af7609c94",
+        "asin": "B07238M1HK",
+        "title": "Smarter Cooking! Keep Counters Clean with Fat Chef Kitchen Decor Spoon Rest",
+        "image": "https://m.media-amazon.com/images/I/511s1dcfoHL._AC_SL1500_.jpg",
         "category": "kitchen",
         "rating": 4.5,
         "reviews": 0
@@ -2663,64 +2690,10 @@
     ],
     "products": [
       {
-        "id": "0611040e-56ba-4b16-9e1d-821db93d8580",
-        "asin": "B07HN1KCZH",
-        "title": "Before You Buy: Talavera Peel & Stick for Southwestern Style Bathrooms",
-        "image": "https://m.media-amazon.com/images/I/81T5zJIKPvL._AC_SL1200_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "ec210ab4-8c99-4d7f-b100-ab8fd537b9ae",
-        "asin": "B088D5JWCP",
-        "title": "Southwestern Style Bathrooms: 8 Inch Clay Pot for Plants with Saucer",
-        "image": "https://m.media-amazon.com/images/I/61eL8jxOqmL._AC_SL1000_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "63c27750-0eab-4eb3-99a4-983b38df8d13",
-        "asin": "B0C16KGS79",
-        "title": "Southwestern Style Bathrooms: Toilet Paper Holder with Shelf Rustic Decor",
-        "image": "https://m.media-amazon.com/images/I/71tVulqUT4L._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "c511327d-5b85-41ff-812a-ba20855181d1",
-        "asin": "B0H26B8CC1",
-        "title": "Elevate Your Southwestern Style Bathrooms with Burnt Orange Boho Hand Towels",
-        "image": "https://m.media-amazon.com/images/I/81d3Q+KbclL._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "6630c3f9-6055-49f5-91f3-93cc58ae4a53",
-        "asin": "B095M36F61",
-        "title": "Upgrade Your Southwestern Style Bathrooms: Small Rug Checklist",
-        "image": "https://m.media-amazon.com/images/I/91N+2szNq1L._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "ddb724a3-4c74-4d73-af26-190e5a18a945",
-        "asin": "B07BSSBF5H",
-        "title": "Southwestern Style Bathrooms: Luxe Decor with Oversized Spa Towel",
-        "image": "https://m.media-amazon.com/images/I/81k4Q+rOc0L._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "7d842fe1-d522-49bc-899e-2ada5f974adf",
-        "asin": "B09GV8V693",
-        "title": "Southwestern Style Bathrooms: Woven Baskets for Chic Storage",
-        "image": "https://m.media-amazon.com/images/I/71CzykfTDiL._AC_SL1500_.jpg",
+        "id": "b88f9b5e-d696-4c65-bdab-2b3c6425f695",
+        "asin": "B087WK2FKV",
+        "title": "Southwestern Style Bathrooms: RosieLily Cactus Shower Curtain Succu...",
+        "image": "https://m.media-amazon.com/images/I/91Imw6MquVL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -2735,19 +2708,19 @@
         "reviews": 0
       },
       {
-        "id": "b88f9b5e-d696-4c65-bdab-2b3c6425f695",
-        "asin": "B087WK2FKV",
-        "title": "Southwestern Style Bathrooms: RosieLily Cactus Shower Curtain Succu...",
-        "image": "https://m.media-amazon.com/images/I/91Imw6MquVL._AC_SL1500_.jpg",
+        "id": "241ee12e-35e3-4eb2-9489-5236b173a0d4",
+        "asin": "B0CYBPB6Y4",
+        "title": "Southwestern Style Bathrooms: 3-Light Vanity Light Placement Idea",
+        "image": "https://m.media-amazon.com/images/I/71C2R5rJy9L._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
       },
       {
-        "id": "492b69d7-b413-4be6-8ad5-1540f27cb81d",
-        "asin": "B0GR8MVLZK",
-        "title": "Southwestern Style Bathrooms: Measure for VIYYIEA Cactus Desert Art",
-        "image": "https://m.media-amazon.com/images/I/716jPPpzW7L._AC_SL1500_.jpg",
+        "id": "0611040e-56ba-4b16-9e1d-821db93d8580",
+        "asin": "B07HN1KCZH",
+        "title": "Before You Buy: Talavera Peel & Stick for Southwestern Style Bathrooms",
+        "image": "https://m.media-amazon.com/images/I/81T5zJIKPvL._AC_SL1200_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -2762,10 +2735,64 @@
         "reviews": 0
       },
       {
-        "id": "241ee12e-35e3-4eb2-9489-5236b173a0d4",
-        "asin": "B0CYBPB6Y4",
-        "title": "Southwestern Style Bathrooms: 3-Light Vanity Light Placement Idea",
-        "image": "https://m.media-amazon.com/images/I/71C2R5rJy9L._AC_SL1500_.jpg",
+        "id": "ddb724a3-4c74-4d73-af26-190e5a18a945",
+        "asin": "B07BSSBF5H",
+        "title": "Southwestern Style Bathrooms: Luxe Decor with Oversized Spa Towel",
+        "image": "https://m.media-amazon.com/images/I/81k4Q+rOc0L._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "6630c3f9-6055-49f5-91f3-93cc58ae4a53",
+        "asin": "B095M36F61",
+        "title": "Upgrade Your Southwestern Style Bathrooms: Small Rug Checklist",
+        "image": "https://m.media-amazon.com/images/I/91N+2szNq1L._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "63c27750-0eab-4eb3-99a4-983b38df8d13",
+        "asin": "B0C16KGS79",
+        "title": "Southwestern Style Bathrooms: Toilet Paper Holder with Shelf Rustic Decor",
+        "image": "https://m.media-amazon.com/images/I/71tVulqUT4L._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "7d842fe1-d522-49bc-899e-2ada5f974adf",
+        "asin": "B09GV8V693",
+        "title": "Southwestern Style Bathrooms: Woven Baskets for Chic Storage",
+        "image": "https://m.media-amazon.com/images/I/71CzykfTDiL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "ec210ab4-8c99-4d7f-b100-ab8fd537b9ae",
+        "asin": "B088D5JWCP",
+        "title": "Southwestern Style Bathrooms: 8 Inch Clay Pot for Plants with Saucer",
+        "image": "https://m.media-amazon.com/images/I/61eL8jxOqmL._AC_SL1000_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "c511327d-5b85-41ff-812a-ba20855181d1",
+        "asin": "B0H26B8CC1",
+        "title": "Elevate Your Southwestern Style Bathrooms with Burnt Orange Boho Hand Towels",
+        "image": "https://m.media-amazon.com/images/I/81d3Q+KbclL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "492b69d7-b413-4be6-8ad5-1540f27cb81d",
+        "asin": "B0GR8MVLZK",
+        "title": "Southwestern Style Bathrooms: Measure for VIYYIEA Cactus Desert Art",
+        "image": "https://m.media-amazon.com/images/I/716jPPpzW7L._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -2832,15 +2859,6 @@
     ],
     "products": [
       {
-        "id": "e45cbbb0-b48f-4b37-ab4a-6709fbef0917",
-        "asin": "B00YDFLQAG",
-        "title": "Maximize Small Spaces: Apartment Laundry Room Ideas with Tabletop Ironing Board",
-        "image": "https://m.media-amazon.com/images/I/81QRaLg0xQL._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
         "id": "6d1d95e3-48f4-4b5c-83e7-607d1366040a",
         "asin": "B09XPWGFTV",
         "title": "Apartment Laundry Room Ideas: Clothesline Setup Checklist Before You Buy",
@@ -2850,10 +2868,37 @@
         "reviews": 0
       },
       {
-        "id": "76a4c2ac-21be-4633-9ed4-1d7e26a5e234",
-        "asin": "B0B7JGC67R",
-        "title": "Apartment Laundry Room Ideas: Measure Your Space for Large Laundry Baskets",
-        "image": "https://m.media-amazon.com/images/I/71DAS4Em7ZL._AC_SL1500_.jpg",
+        "id": "e45cbbb0-b48f-4b37-ab4a-6709fbef0917",
+        "asin": "B00YDFLQAG",
+        "title": "Maximize Small Spaces: Apartment Laundry Room Ideas with Tabletop Ironing Board",
+        "image": "https://m.media-amazon.com/images/I/81QRaLg0xQL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "9cf320f4-0331-4962-869c-fdf36ef9704b",
+        "asin": "B0BRTRJGTD",
+        "title": "Apartment Laundry Room Ideas: 4-Section Hamper Sorter Cart",
+        "image": "https://m.media-amazon.com/images/I/81n1wTh2cRL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "6588e3c3-4737-463f-abca-ea32009b3982",
+        "asin": "B0C9QC64HV",
+        "title": "Apartment Laundry Room Ideas: How to Measure for a 3-Section Laundry Sorter",
+        "image": "https://m.media-amazon.com/images/I/71AwK2HQ+ML._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "a91de9bc-86b2-4cfb-8c15-787c12035051",
+        "asin": "B0924XY3GH",
+        "title": "Apartment Laundry Room Ideas: Tabletop Ironing Board",
+        "image": "https://m.media-amazon.com/images/I/618liIZxJ5L._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -2868,55 +2913,10 @@
         "reviews": 0
       },
       {
-        "id": "4901c2bc-7035-466d-915f-a77a2284a84a",
-        "asin": "B09PRGXY3Y",
-        "title": "Apartment Laundry Room Ideas: How to Measure for an Under Sink Mat",
-        "image": "https://m.media-amazon.com/images/I/719SguKGBSL._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
         "id": "3879fdc8-d03c-49f0-842b-260bcac8b69c",
         "asin": "B00P4FUD7G",
         "title": "Apartment Laundry Room Ideas: Brighten Up with Low-Profile LED Light Fixture",
         "image": "https://m.media-amazon.com/images/I/511RT-7BzrL._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "15fc4abf-9cfc-4138-9265-60de40657bad",
-        "asin": "B09WT52HKZ",
-        "title": "Apartment Laundry Room Ideas: Clothes Sock Drying Hanger with 24 Clips",
-        "image": "https://m.media-amazon.com/images/I/61j8q09-siL._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "f5e04bfa-6832-4758-8947-ecc953502802",
-        "asin": "B0D89V1RX1",
-        "title": "Apartment Laundry Room Ideas: Pick a 2x6 Washable Runner Rug",
-        "image": "https://m.media-amazon.com/images/I/71UddNOmg5L._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "238cd077-1683-4939-bec6-5ad0ba0ccb31",
-        "asin": "B09C6HM41P",
-        "title": "Apartment Laundry Room Ideas: Clear Plastic Storage Bins for Organization",
-        "image": "https://m.media-amazon.com/images/I/81O2O4O5lBL._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "49406bc5-55b3-462e-8e12-817723096060",
-        "asin": "B081DQ6KXK",
-        "title": "Apartment Laundry Room Ideas: Magnetic Lint Bin Small Waste Bin for...",
-        "image": "https://m.media-amazon.com/images/I/51Ah4o9hV9L._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -2931,10 +2931,37 @@
         "reviews": 0
       },
       {
-        "id": "0a4772d9-c0c3-4eb6-9458-fee0dab4c4f2",
-        "asin": "B0CBWTQLH3",
-        "title": "Smart Apartment Laundry Room Ideas for Organizing Detergent",
-        "image": "https://m.media-amazon.com/images/I/71I1x8mYDbL._AC_SL1500_.jpg",
+        "id": "8d743022-fc7b-42f4-8c0b-ef4ef21816a5",
+        "asin": "B07KJCC6RK",
+        "title": "Apartment Laundry Room Ideas: Retractable Clothesline",
+        "image": "https://m.media-amazon.com/images/I/51udd2Fq9WL._AC_SL1022_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "4901c2bc-7035-466d-915f-a77a2284a84a",
+        "asin": "B09PRGXY3Y",
+        "title": "Apartment Laundry Room Ideas: How to Measure for an Under Sink Mat",
+        "image": "https://m.media-amazon.com/images/I/719SguKGBSL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "f5e04bfa-6832-4758-8947-ecc953502802",
+        "asin": "B0D89V1RX1",
+        "title": "Apartment Laundry Room Ideas: Pick a 2x6 Washable Runner Rug",
+        "image": "https://m.media-amazon.com/images/I/71UddNOmg5L._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "76a4c2ac-21be-4633-9ed4-1d7e26a5e234",
+        "asin": "B0B7JGC67R",
+        "title": "Apartment Laundry Room Ideas: Measure Your Space for Large Laundry Baskets",
+        "image": "https://m.media-amazon.com/images/I/71DAS4Em7ZL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -3033,46 +3060,19 @@
         "reviews": 0
       },
       {
-        "id": "9fe557cc-ba5c-4928-9a0d-14718ed8f703",
-        "asin": "B01IMZLNBE",
-        "title": "Bedding Set Ideas: Natural Linen Duvet Cover for a Cozy Bedroom",
-        "image": "https://m.media-amazon.com/images/I/81NUbEWbQXL._AC_SL1500_.jpg",
+        "id": "13a2bda5-c0cf-4a46-8b33-9a43e7bb756c",
+        "asin": "B06WWRCZXX",
+        "title": "Dark Grey Queen Size Sheet Set: Bedding Set Ideas for a Modern Bedroom",
+        "image": "https://m.media-amazon.com/images/I/813JS2zoiPL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
       },
       {
-        "id": "d4958e38-7be1-4b97-b2e1-8a98004b41c7",
-        "asin": "B07S6N5C5P",
-        "title": "Grey Bedding Set Ideas: Measure Your Full/Queen Quilt Fit",
-        "image": "https://m.media-amazon.com/images/I/81j7fsOEGfL._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "185adb0b-8135-4547-9bd3-882f7f1bd0b2",
-        "asin": "B0F59PSTCC",
-        "title": "Black and Gray Quilt Set: Modern Bedding Set Ideas",
-        "image": "https://m.media-amazon.com/images/I/81+MtOdkmNL._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "c70c7790-697b-4616-b2d0-df4d14262a0b",
-        "asin": "B072LPPLGF",
-        "title": "Fresh White Bedding Set Ideas: How to Style Standard Pillow Shams",
-        "image": "https://m.media-amazon.com/images/I/61DUyBKPqHL._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "08c4ec6e-d3a5-48b8-adea-346860734775",
-        "asin": "B0DZ1RF3RP",
-        "title": "Bedding Set Ideas: SheRest King Quilt Bedding Set - Soft...",
-        "image": "https://m.media-amazon.com/images/I/816yAFWzn+L._AC_SL1500_.jpg",
+        "id": "c4d2d467-12b6-4c87-a940-5d1fad3fbf9c",
+        "asin": "B07VDKHLJQ",
+        "title": "Bedding Set Ideas: EDOW Throw Pillow Inserts for Couch Cushion",
+        "image": "https://m.media-amazon.com/images/I/51j6kc4rl7L._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -3087,10 +3087,19 @@
         "reviews": 0
       },
       {
-        "id": "13a2bda5-c0cf-4a46-8b33-9a43e7bb756c",
-        "asin": "B06WWRCZXX",
-        "title": "Dark Grey Queen Size Sheet Set: Bedding Set Ideas for a Modern Bedroom",
-        "image": "https://m.media-amazon.com/images/I/813JS2zoiPL._AC_SL1500_.jpg",
+        "id": "9fe557cc-ba5c-4928-9a0d-14718ed8f703",
+        "asin": "B01IMZLNBE",
+        "title": "Bedding Set Ideas: Natural Linen Duvet Cover for a Cozy Bedroom",
+        "image": "https://m.media-amazon.com/images/I/81NUbEWbQXL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "c70c7790-697b-4616-b2d0-df4d14262a0b",
+        "asin": "B072LPPLGF",
+        "title": "Fresh White Bedding Set Ideas: How to Style Standard Pillow Shams",
+        "image": "https://m.media-amazon.com/images/I/61DUyBKPqHL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -3109,6 +3118,24 @@
         "asin": "B07NYR18X4",
         "title": "Bedsure 7-Piece Grey Bedding Set Ideas: Before You Buy",
         "image": "https://m.media-amazon.com/images/I/817TKtr-x5L._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "d4958e38-7be1-4b97-b2e1-8a98004b41c7",
+        "asin": "B07S6N5C5P",
+        "title": "Grey Bedding Set Ideas: Measure Your Full/Queen Quilt Fit",
+        "image": "https://m.media-amazon.com/images/I/81j7fsOEGfL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "08c4ec6e-d3a5-48b8-adea-346860734775",
+        "asin": "B0DZ1RF3RP",
+        "title": "Bedding Set Ideas: SheRest King Quilt Bedding Set - Soft...",
+        "image": "https://m.media-amazon.com/images/I/816yAFWzn+L._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -3241,46 +3268,19 @@
         "reviews": 0
       },
       {
-        "id": "60a11268-4c14-47b9-b9c2-97f5d8cde2af",
-        "asin": "B0F6574ST3",
-        "title": "Couples' Bedroom Ideas: Design a Cozy Reading Nook with an Accent Chair",
-        "image": "https://m.media-amazon.com/images/I/51Cb4tCBs3L._AC_SL1500_.jpg",
+        "id": "e4fc2e27-5f26-4114-a7f3-a368e904b205",
+        "asin": "B0F9X3PC9T",
+        "title": "Couples' Bedroom Ideas: Dimmable Nightstand Lamps for Cozy Spaces",
+        "image": "https://m.media-amazon.com/images/I/71b+uZFjT-L._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
       },
       {
-        "id": "a7ae85c5-fd28-4ccf-b3dd-56dff5113cf8",
-        "asin": "B0BRPWXL8L",
-        "title": "WLIVE 8 Drawer Dresser: Couples' Bedroom Ideas & Storage",
-        "image": "https://m.media-amazon.com/images/I/61ssk0UWW7L._AC_SL1000_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "ea6488a9-6ac3-444b-8697-1aacf1272ca0",
-        "asin": "B0GGBBLHRT",
-        "title": "Couples' Bedroom Ideas: Anchor Your Space with an 8x10 Area Rug",
-        "image": "https://m.media-amazon.com/images/I/81X-zJ7JM3L._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "964fef2d-28e0-4176-a125-17ad3c4e34f0",
-        "asin": "B0CQT8HSVW",
-        "title": "Couples' Bedroom Ideas: Wireless Gold Wall Sconces for Cozy Ambiance",
-        "image": "https://m.media-amazon.com/images/I/61Dtaa5M08L._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "a0613bdc-e434-4260-8de8-237a0a4e3313",
-        "asin": "B0CHJ5WDG2",
-        "title": "Couples' Bedroom Ideas: Farmhouse Nightstands with Charging Station",
-        "image": "https://m.media-amazon.com/images/I/71L5IpAngmL._AC_SL1500_.jpg",
+        "id": "ddacfbed-4952-43e6-8ad2-b715046355b6",
+        "asin": "B0FN7NY7X8",
+        "title": "Couples' Bedroom Ideas: Green Floral Cotton Duvet Cover",
+        "image": "https://m.media-amazon.com/images/I/81pI6PIPVEL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -3295,6 +3295,24 @@
         "reviews": 0
       },
       {
+        "id": "964fef2d-28e0-4176-a125-17ad3c4e34f0",
+        "asin": "B0CQT8HSVW",
+        "title": "Couples' Bedroom Ideas: Wireless Gold Wall Sconces for Cozy Ambiance",
+        "image": "https://m.media-amazon.com/images/I/61Dtaa5M08L._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "60a11268-4c14-47b9-b9c2-97f5d8cde2af",
+        "asin": "B0F6574ST3",
+        "title": "Couples' Bedroom Ideas: Design a Cozy Reading Nook with an Accent Chair",
+        "image": "https://m.media-amazon.com/images/I/51Cb4tCBs3L._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
         "id": "0e68af3b-68d9-4bab-ab3d-bfa7fcdca290",
         "asin": "B01CS31R94",
         "title": "Couples' Bedroom Ideas: Blackout Curtain Sizing Checklist",
@@ -3304,28 +3322,37 @@
         "reviews": 0
       },
       {
+        "id": "ea6488a9-6ac3-444b-8697-1aacf1272ca0",
+        "asin": "B0GGBBLHRT",
+        "title": "Couples' Bedroom Ideas: Anchor Your Space with an 8x10 Area Rug",
+        "image": "https://m.media-amazon.com/images/I/81X-zJ7JM3L._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "a0613bdc-e434-4260-8de8-237a0a4e3313",
+        "asin": "B0CHJ5WDG2",
+        "title": "Couples' Bedroom Ideas: Farmhouse Nightstands with Charging Station",
+        "image": "https://m.media-amazon.com/images/I/71L5IpAngmL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "a7ae85c5-fd28-4ccf-b3dd-56dff5113cf8",
+        "asin": "B0BRPWXL8L",
+        "title": "WLIVE 8 Drawer Dresser: Couples' Bedroom Ideas & Storage",
+        "image": "https://m.media-amazon.com/images/I/61ssk0UWW7L._AC_SL1000_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
         "id": "ed7a3ce0-934d-4b74-aa74-48bf2cfe6b2c",
         "asin": "B0158EQJSY",
         "title": "Couples' Bedroom Ideas: Cozy Sherpa Throw for Warmth & Style",
         "image": "https://m.media-amazon.com/images/I/91h2n60bxLL._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "e4fc2e27-5f26-4114-a7f3-a368e904b205",
-        "asin": "B0F9X3PC9T",
-        "title": "Couples' Bedroom Ideas: Dimmable Nightstand Lamps for Cozy Spaces",
-        "image": "https://m.media-amazon.com/images/I/71b+uZFjT-L._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "ddacfbed-4952-43e6-8ad2-b715046355b6",
-        "asin": "B0FN7NY7X8",
-        "title": "Couples' Bedroom Ideas: Green Floral Cotton Duvet Cover",
-        "image": "https://m.media-amazon.com/images/I/81pI6PIPVEL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -3392,10 +3419,10 @@
     ],
     "products": [
       {
-        "id": "d74a379c-0e17-46cd-9f79-b3014cd4e5ac",
-        "asin": "B0716KSYKS",
-        "title": "Crochet Table Decorations: Measuring for a 33-Inch Square Tablecloth",
-        "image": "https://m.media-amazon.com/images/I/71R7Pd6UiBL._AC_SL1080_.jpg",
+        "id": "2e5ad03e-e062-4aba-845a-66f4d2768ad3",
+        "asin": "B07RQ6VD6N",
+        "title": "Charming Crochet Table Decorations for an Inviting Dining Room",
+        "image": "https://m.media-amazon.com/images/I/91IdYhIYRpL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -3410,19 +3437,19 @@
         "reviews": 0
       },
       {
-        "id": "2e5ad03e-e062-4aba-845a-66f4d2768ad3",
-        "asin": "B07RQ6VD6N",
-        "title": "Charming Crochet Table Decorations for an Inviting Dining Room",
-        "image": "https://m.media-amazon.com/images/I/91IdYhIYRpL._AC_SL1500_.jpg",
+        "id": "62b443b8-802d-43a8-8e2a-8d51c7ac2786",
+        "asin": "B0FCYGS7VT",
+        "title": "Crochet Table Decorations: Beige Woven Farmhouse Table Runner 12x72 Inch",
+        "image": "https://m.media-amazon.com/images/I/91Iberw-sgL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
       },
       {
-        "id": "62b443b8-802d-43a8-8e2a-8d51c7ac2786",
-        "asin": "B0FCYGS7VT",
-        "title": "Crochet Table Decorations: Beige Woven Farmhouse Table Runner 12x72 Inch",
-        "image": "https://m.media-amazon.com/images/I/91Iberw-sgL._AC_SL1500_.jpg",
+        "id": "d74a379c-0e17-46cd-9f79-b3014cd4e5ac",
+        "asin": "B0716KSYKS",
+        "title": "Crochet Table Decorations: Measuring for a 33-Inch Square Tablecloth",
+        "image": "https://m.media-amazon.com/images/I/71R7Pd6UiBL._AC_SL1080_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -3437,19 +3464,19 @@
         "reviews": 0
       },
       {
-        "id": "89ac494e-2350-411b-918a-fb27ce6bd40d",
-        "asin": "B07PCRBBFP",
-        "title": "Crochet Table Decorations: Beige Lace Runner",
-        "image": "https://m.media-amazon.com/images/I/7156LLmhiTL._AC_SL1000_.jpg",
+        "id": "7b6bcc4a-f43d-48f2-95b7-67546c752af5",
+        "asin": "B082NRPWG5",
+        "title": "Crochet Table Decorations: Measure Your Dresser for Perfect Lace Style",
+        "image": "https://m.media-amazon.com/images/I/71QGhMskUNL._AC_SL1000_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
       },
       {
-        "id": "7b6bcc4a-f43d-48f2-95b7-67546c752af5",
-        "asin": "B082NRPWG5",
-        "title": "Crochet Table Decorations: Measure Your Dresser for Perfect Lace Style",
-        "image": "https://m.media-amazon.com/images/I/71QGhMskUNL._AC_SL1000_.jpg",
+        "id": "89ac494e-2350-411b-918a-fb27ce6bd40d",
+        "asin": "B07PCRBBFP",
+        "title": "Crochet Table Decorations: Beige Lace Runner",
+        "image": "https://m.media-amazon.com/images/I/7156LLmhiTL._AC_SL1000_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -3584,69 +3611,6 @@
     ],
     "products": [
       {
-        "id": "14acac4b-682d-4772-8275-72810c41a2a6",
-        "asin": "B0C8S6JNZF",
-        "title": "Forest-themed Home Decor: DIY Reindeer Moss Wall Art Kit Ideas",
-        "image": "https://m.media-amazon.com/images/I/81pF3G89a8L._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "73906773-9a2a-4c48-874c-ee950a16b4bd",
-        "asin": "B07D29P5Z1",
-        "title": "Forest-themed Home Decor: Plant Terrarium Checklist Before You Buy",
-        "image": "https://m.media-amazon.com/images/I/71GrAWYYDyL._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "0f37c723-d5a1-44ca-ab05-8fd313667738",
-        "asin": "B08L5NT1X8",
-        "title": "Bamboo Bath Mat for Forest-themed Home Decor & Spa Bathroom",
-        "image": "https://m.media-amazon.com/images/I/71s0kVOi3zL._AC_SL1000_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "09eb7a9c-4238-4c63-9c59-b89527e9970e",
-        "asin": "B0CXTDRT8K",
-        "title": "Forest-Themed Home Decor: Boho Rattan Arc Floor Lamp for Living Room",
-        "image": "https://m.media-amazon.com/images/I/71UvNJMfJ5L._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "f3e54cf9-0cb0-42bb-a4f3-571c54d13a7e",
-        "asin": "B0D5HK2KHW",
-        "title": "Forest-themed Home Decor: Where to Place Your Artificial Olive Tree",
-        "image": "https://m.media-amazon.com/images/I/61B8HvkGQ0L._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "0e42d3d5-7acf-4606-a3d7-d7aee9f8d3f8",
-        "asin": "B0888JVZH4",
-        "title": "Create Forest-themed Home Decor: Round Coffee Table Placement",
-        "image": "https://m.media-amazon.com/images/I/91tacYay1LL._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "dd91d75a-4978-41fd-80f2-3adebd996171",
-        "asin": "B0FCF84JMR",
-        "title": "Cozy Bedroom Makeover: Forest-themed Home Decor with Peel and Stick Wallpaper",
-        "image": "https://m.media-amazon.com/images/I/91OmN2YvB4L._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
         "id": "5241151e-be9e-42d3-9d2e-57c91409dd54",
         "asin": "B09MF72HG3",
         "title": "Forest-themed Home Decor: Measure Up for Your Mushroom Nightlight",
@@ -3674,10 +3638,73 @@
         "reviews": 0
       },
       {
+        "id": "73906773-9a2a-4c48-874c-ee950a16b4bd",
+        "asin": "B07D29P5Z1",
+        "title": "Forest-themed Home Decor: Plant Terrarium Checklist Before You Buy",
+        "image": "https://m.media-amazon.com/images/I/71GrAWYYDyL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "14acac4b-682d-4772-8275-72810c41a2a6",
+        "asin": "B0C8S6JNZF",
+        "title": "Forest-themed Home Decor: DIY Reindeer Moss Wall Art Kit Ideas",
+        "image": "https://m.media-amazon.com/images/I/81pF3G89a8L._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "0e42d3d5-7acf-4606-a3d7-d7aee9f8d3f8",
+        "asin": "B0888JVZH4",
+        "title": "Create Forest-themed Home Decor: Round Coffee Table Placement",
+        "image": "https://m.media-amazon.com/images/I/91tacYay1LL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "dd91d75a-4978-41fd-80f2-3adebd996171",
+        "asin": "B0FCF84JMR",
+        "title": "Cozy Bedroom Makeover: Forest-themed Home Decor with Peel and Stick Wallpaper",
+        "image": "https://m.media-amazon.com/images/I/91OmN2YvB4L._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "0f37c723-d5a1-44ca-ab05-8fd313667738",
+        "asin": "B08L5NT1X8",
+        "title": "Bamboo Bath Mat for Forest-themed Home Decor & Spa Bathroom",
+        "image": "https://m.media-amazon.com/images/I/71s0kVOi3zL._AC_SL1000_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
         "id": "0ee4785c-8729-4859-a3a5-9cb795ae6320",
         "asin": "B01EWBD0PE",
         "title": "Forest-themed Home Decor: Measuring for 84-Inch Blackout Curtains",
         "image": "https://m.media-amazon.com/images/I/71Z0o8AGCAL._AC_SL1000_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "09eb7a9c-4238-4c63-9c59-b89527e9970e",
+        "asin": "B0CXTDRT8K",
+        "title": "Forest-Themed Home Decor: Boho Rattan Arc Floor Lamp for Living Room",
+        "image": "https://m.media-amazon.com/images/I/71UvNJMfJ5L._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "f3e54cf9-0cb0-42bb-a4f3-571c54d13a7e",
+        "asin": "B0D5HK2KHW",
+        "title": "Forest-themed Home Decor: Where to Place Your Artificial Olive Tree",
+        "image": "https://m.media-amazon.com/images/I/61B8HvkGQ0L._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -3799,82 +3826,10 @@
     ],
     "products": [
       {
-        "id": "69b20ef6-6ec8-45d3-b3d0-0f26b5f42e16",
-        "asin": "B08BYT42P4",
-        "title": "Corner Entryway Designs: Organizing with a Wooden Coat Rack",
-        "image": "https://m.media-amazon.com/images/I/512MHssRezL._AC_SL1000_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
         "id": "5d9486d9-5394-4723-9683-86cea7f47fec",
         "asin": "B076CSR3PQ",
         "title": "Corner Entryway Designs: Add a Sleek Wall Mail Holder Organizer",
         "image": "https://m.media-amazon.com/images/I/91nHKF9Xr2L._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "22ce79fc-5dd0-4d3e-8a19-13d97977f5bb",
-        "asin": "B084JVLK17",
-        "title": "Corner Entryway Designs: Tall Shoe Rack Organizer for Smart Storage",
-        "image": "https://m.media-amazon.com/images/I/711iEZsPSSL._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "bfab8aa0-10b7-47fc-8adb-8d22babd4e42",
-        "asin": "B09ZRQKGQ3",
-        "title": "Smart Corner Entryway Designs: Measure for Your Key & Mail Holder",
-        "image": "https://m.media-amazon.com/images/I/71ydaomFArL._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "b4d410cc-ba95-4fd5-b811-af5e2cbf3d56",
-        "asin": "B09234GQXV",
-        "title": "Corner Entryway Designs: Bamworld Wood Plant Rack for Entryway",
-        "image": "https://m.media-amazon.com/images/I/91uZi7zRBuL._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "f2c4b0ac-c35f-4999-ae27-be956111539f",
-        "asin": "B0BFMKYN12",
-        "title": "Corner Entryway Designs: DDMY Adhesive Hooks for Heavy Duty Hanging",
-        "image": "https://m.media-amazon.com/images/I/61cYCOvzuIL._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "20ed3906-1b9b-4985-ace1-ea75c6a062a2",
-        "asin": "B0B148T94L",
-        "title": "Corner Entryway Designs: Cordless LED Sconces for Flexible Lighting",
-        "image": "https://m.media-amazon.com/images/I/51lhkDpWRLL._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "9da9c5b1-1e42-4fc7-bd3d-fb1748a103ed",
-        "asin": "B099WTN2TR",
-        "title": "Corner Entryway Designs: Govee RGBIC Floor Lamp Basic",
-        "image": "https://m.media-amazon.com/images/I/61Y5alS50HL._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
-        "id": "21d54ac9-7cd8-4d63-b64b-2bd9d92b7cd9",
-        "asin": "B079KCDNJ3",
-        "title": "Corner Entryway Designs: Mind Reader Umbrella Stand for Organized Entryways",
-        "image": "https://m.media-amazon.com/images/I/81eVW-YFJ5L._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -3898,10 +3853,82 @@
         "reviews": 0
       },
       {
+        "id": "b4d410cc-ba95-4fd5-b811-af5e2cbf3d56",
+        "asin": "B09234GQXV",
+        "title": "Corner Entryway Designs: Bamworld Wood Plant Rack for Entryway",
+        "image": "https://m.media-amazon.com/images/I/91uZi7zRBuL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "21d54ac9-7cd8-4d63-b64b-2bd9d92b7cd9",
+        "asin": "B079KCDNJ3",
+        "title": "Corner Entryway Designs: Mind Reader Umbrella Stand for Organized Entryways",
+        "image": "https://m.media-amazon.com/images/I/81eVW-YFJ5L._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "9da9c5b1-1e42-4fc7-bd3d-fb1748a103ed",
+        "asin": "B099WTN2TR",
+        "title": "Corner Entryway Designs: Govee RGBIC Floor Lamp Basic",
+        "image": "https://m.media-amazon.com/images/I/61Y5alS50HL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "20ed3906-1b9b-4985-ace1-ea75c6a062a2",
+        "asin": "B0B148T94L",
+        "title": "Corner Entryway Designs: Cordless LED Sconces for Flexible Lighting",
+        "image": "https://m.media-amazon.com/images/I/51lhkDpWRLL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "22ce79fc-5dd0-4d3e-8a19-13d97977f5bb",
+        "asin": "B084JVLK17",
+        "title": "Corner Entryway Designs: Tall Shoe Rack Organizer for Smart Storage",
+        "image": "https://m.media-amazon.com/images/I/711iEZsPSSL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "69b20ef6-6ec8-45d3-b3d0-0f26b5f42e16",
+        "asin": "B08BYT42P4",
+        "title": "Corner Entryway Designs: Organizing with a Wooden Coat Rack",
+        "image": "https://m.media-amazon.com/images/I/512MHssRezL._AC_SL1000_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "f2c4b0ac-c35f-4999-ae27-be956111539f",
+        "asin": "B0BFMKYN12",
+        "title": "Corner Entryway Designs: DDMY Adhesive Hooks for Heavy Duty Hanging",
+        "image": "https://m.media-amazon.com/images/I/61cYCOvzuIL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
         "id": "d331acfc-0fc7-4b88-9db4-5621c61b6099",
         "asin": "B0D285W4LG",
         "title": "Corner Entryway Designs: Fit a 5-Shelf Tower Storage Unit Perfectly",
         "image": "https://m.media-amazon.com/images/I/71Qjgsx2HYL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "bfab8aa0-10b7-47fc-8adb-8d22babd4e42",
+        "asin": "B09ZRQKGQ3",
+        "title": "Smart Corner Entryway Designs: Measure for Your Key & Mail Holder",
+        "image": "https://m.media-amazon.com/images/I/71ydaomFArL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -4000,10 +4027,10 @@
     ],
     "products": [
       {
-        "id": "99325885-1b5b-4f2a-8fed-d0125a84c7b1",
-        "asin": "B0BG8B89BP",
-        "title": "Minimalist Home Decor: Tiita Lazy Chair with Ottoman Comfy R...",
-        "image": "https://m.media-amazon.com/images/I/61lZUO7uEPL._AC_SL1500_.jpg",
+        "id": "a7dfca0c-2390-4344-b8a0-763606c30089",
+        "asin": "B01JEAKSN0",
+        "title": "BOURINA Beige Throw Blanket for Minimalist Home Decor Sofa Styling",
+        "image": "https://m.media-amazon.com/images/I/71NyvhDfCML._AC_SL1000_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -4018,19 +4045,19 @@
         "reviews": 0
       },
       {
-        "id": "7763c1d8-4e66-44bf-8d0f-31420f04e0a2",
-        "asin": "B0CBR8CBRB",
-        "title": "Minimalist Home Decor Ideas: Metal Flower Wall Art for Your Living Room",
-        "image": "https://m.media-amazon.com/images/I/71Vq3ljrF6L._AC_SL1000_.jpg",
+        "id": "99325885-1b5b-4f2a-8fed-d0125a84c7b1",
+        "asin": "B0BG8B89BP",
+        "title": "Minimalist Home Decor: Tiita Lazy Chair with Ottoman Comfy R...",
+        "image": "https://m.media-amazon.com/images/I/61lZUO7uEPL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
       },
       {
-        "id": "a7dfca0c-2390-4344-b8a0-763606c30089",
-        "asin": "B01JEAKSN0",
-        "title": "BOURINA Beige Throw Blanket for Minimalist Home Decor Sofa Styling",
-        "image": "https://m.media-amazon.com/images/I/71NyvhDfCML._AC_SL1000_.jpg",
+        "id": "7763c1d8-4e66-44bf-8d0f-31420f04e0a2",
+        "asin": "B0CBR8CBRB",
+        "title": "Minimalist Home Decor Ideas: Metal Flower Wall Art for Your Living Room",
+        "image": "https://m.media-amazon.com/images/I/71Vq3ljrF6L._AC_SL1000_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -4153,11 +4180,11 @@
         "reviews": 0
       },
       {
-        "id": "d4714fa2-69d8-4685-b21b-fad7a67b6819",
-        "asin": "B0964MKX2M",
-        "title": "Elegant Gold Christmas Tree Bow Topper for Festive Home Decor",
-        "image": "https://m.media-amazon.com/images/I/71WC-SRxnLL._AC_SL1000_.jpg",
-        "category": "decor",
+        "id": "2dde7cdf-4b09-4a9d-aa21-47fe2ec9a275",
+        "asin": "B07KCNYMC7",
+        "title": "Santa Toilet Seat Cover Set for Xmas for Bathroom Christmas Decor",
+        "image": "https://m.media-amazon.com/images/I/5169SbSFU8L._AC_SL1000_.jpg",
+        "category": "bathroom",
         "rating": 4.5,
         "reviews": 0
       },
@@ -4166,6 +4193,15 @@
         "asin": "B07G7YMB9B",
         "title": "Christmas Chalkboard Ideas: Coogam Stencils for Holiday Art & Decor",
         "image": "https://m.media-amazon.com/images/I/815iQZgmRdL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "d4714fa2-69d8-4685-b21b-fad7a67b6819",
+        "asin": "B0964MKX2M",
+        "title": "Elegant Gold Christmas Tree Bow Topper for Festive Home Decor",
+        "image": "https://m.media-amazon.com/images/I/71WC-SRxnLL._AC_SL1000_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -4180,15 +4216,6 @@
         "reviews": 0
       },
       {
-        "id": "d1bc767d-5342-4151-8cb6-bf79de374b99",
-        "asin": "B07XLBYSQ4",
-        "title": "Christmas Coffee Table Decor Tips: Measuring for a Red Linen Runner",
-        "image": "https://m.media-amazon.com/images/I/71RMUxOo86L._AC_SL1000_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
         "id": "b8bbb27d-c400-48b8-88cd-6c0fb4eafd7b",
         "asin": "B0CC8HH1F3",
         "title": "Minimalist Christmas Mantel Decor: Mini Tree with Silver & Pinecone Accents",
@@ -4198,10 +4225,10 @@
         "reviews": 0
       },
       {
-        "id": "0992fe89-6d73-4bad-b655-45c1a1b9bc2b",
-        "asin": "B01LQQQENS",
-        "title": "Cozy Forest-themed Home Decor: Smokey Pine Garland Mantel Styling",
-        "image": "https://m.media-amazon.com/images/I/81QN3reJb7L._AC_SL1500_.jpg",
+        "id": "d1bc767d-5342-4151-8cb6-bf79de374b99",
+        "asin": "B07XLBYSQ4",
+        "title": "Christmas Coffee Table Decor Tips: Measuring for a Red Linen Runner",
+        "image": "https://m.media-amazon.com/images/I/71RMUxOo86L._AC_SL1000_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -4216,29 +4243,29 @@
         "reviews": 0
       },
       {
-        "id": "f66f8ad6-1967-4db8-a887-ffb2b5ba09ef",
-        "asin": "B00MVAE5MG",
-        "title": "Christmas Coffee Table Decor: 3ft Pre-Lit Cedar Mini Tree Checklist",
-        "image": "https://m.media-amazon.com/images/I/71+kIow1jqL._AC_SL1499_.jpg",
+        "id": "0992fe89-6d73-4bad-b655-45c1a1b9bc2b",
+        "asin": "B01LQQQENS",
+        "title": "Cozy Forest-themed Home Decor: Smokey Pine Garland Mantel Styling",
+        "image": "https://m.media-amazon.com/images/I/81QN3reJb7L._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
       },
       {
-        "id": "5b50c359-84c2-4ff0-9694-b8f413268768",
-        "asin": "B013LSNDY2",
-        "title": "Dorm Christmas Decor Checklist: Pre-Lit Majestic Fir Mini Tree",
-        "image": "https://m.media-amazon.com/images/I/81A50rWQf5L._AC_SL1500_.jpg",
+        "id": "87ee4985-97dd-4902-b2a5-feb094f55a7e",
+        "asin": "B0CL4NCP7L",
+        "title": "Best Burgundy Table Runner Length for Christmas Coffee Table Decor",
+        "image": "https://m.media-amazon.com/images/I/81NJfB2g1zL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
       },
       {
-        "id": "017c3e0e-902f-4221-92d4-bea35ac41931",
-        "asin": "B08X19C6N4",
-        "title": "Festive Bathroom Christmas Decor with Green Tree Towels",
-        "image": "https://m.media-amazon.com/images/I/81P0G43pcoL._AC_SL1500_.jpg",
-        "category": "bathroom",
+        "id": "191a09bf-9699-4c19-a869-03a703f5344c",
+        "asin": "B0BDF8CVBN",
+        "title": "Kitchen Christmas Decor Ideas: Under Cabinet Lighting Setup",
+        "image": "https://m.media-amazon.com/images/I/61x62WLGvNL._AC_SL1500_.jpg",
+        "category": "kitchen",
         "rating": 4.5,
         "reviews": 0
       }
@@ -4425,7 +4452,10 @@
       "B0771MJHKT",
       "B0B49PMPL9",
       "B00MVAE5MG",
-      "B07XLBYSQ4"
+      "B07XLBYSQ4",
+      "B0BSXXBFMD",
+      "B0CL4NCP7L",
+      "B07S2PVJKJ"
     ],
     "products": [
       {
@@ -4433,6 +4463,24 @@
         "asin": "B07XLBYSQ4",
         "title": "Christmas Coffee Table Decor Tips: Measuring for a Red Linen Runner",
         "image": "https://m.media-amazon.com/images/I/71RMUxOo86L._AC_SL1000_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "87ee4985-97dd-4902-b2a5-feb094f55a7e",
+        "asin": "B0CL4NCP7L",
+        "title": "Best Burgundy Table Runner Length for Christmas Coffee Table Decor",
+        "image": "https://m.media-amazon.com/images/I/81NJfB2g1zL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "4285a552-ab14-4a82-a1f1-90b0a616afb8",
+        "asin": "B07S2PVJKJ",
+        "title": "Christmas coffee table decor with battery operated fairy lights",
+        "image": "https://m.media-amazon.com/images/I/71hzo6MekYL._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -4447,19 +4495,19 @@
         "reviews": 0
       },
       {
-        "id": "3c9d5d32-654a-4857-b7c1-ad9ab7f7a4b3",
-        "asin": "B0B49PMPL9",
-        "title": "Cozy Christmas Coffee Table Decor with Tealight Holders",
-        "image": "https://m.media-amazon.com/images/I/71my0YuKh2L._AC_SL1500_.jpg",
+        "id": "01ee1452-f331-4658-b7f6-20a6a977f3eb",
+        "asin": "B08WHHHNTZ",
+        "title": "Christmas Coffee Table Decor: Measure Space for Serving Tray",
+        "image": "https://m.media-amazon.com/images/I/81wDjPpIt1L._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
       },
       {
-        "id": "01ee1452-f331-4658-b7f6-20a6a977f3eb",
-        "asin": "B08WHHHNTZ",
-        "title": "Christmas Coffee Table Decor: Measure Space for Serving Tray",
-        "image": "https://m.media-amazon.com/images/I/81wDjPpIt1L._AC_SL1500_.jpg",
+        "id": "3c9d5d32-654a-4857-b7c1-ad9ab7f7a4b3",
+        "asin": "B0B49PMPL9",
+        "title": "Cozy Christmas Coffee Table Decor with Tealight Holders",
+        "image": "https://m.media-amazon.com/images/I/71my0YuKh2L._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -4478,6 +4526,15 @@
         "asin": "B07DJ2GH2S",
         "title": "WoodWick Fraser Fir Candle for Coffee Table Christmas Decor",
         "image": "https://m.media-amazon.com/images/I/71IcVxUlpQL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "705f799b-628b-4c14-8ee9-ada5274f111d",
+        "asin": "B0BSXXBFMD",
+        "title": "Charming Coffee Table Christmas Decor with Reindeer Figurine",
+        "image": "https://m.media-amazon.com/images/I/61PTpcolK1L._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -4583,15 +4640,6 @@
     ],
     "products": [
       {
-        "id": "edea3900-1567-458a-a84b-94a497f9e902",
-        "asin": "B081N895PP",
-        "title": "Christmas Home Screen Cozy Couch Look: Upgrade Your Throw Pillow Inserts",
-        "image": "https://m.media-amazon.com/images/I/61YUOLcZM5L._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
-        "reviews": 0
-      },
-      {
         "id": "99fe128c-7e85-4611-bf9a-3f9df7e12344",
         "asin": "B01N0I95PO",
         "title": "Create a Festive Christmas Home Screen with a Tabletop Ceramic Tree",
@@ -4614,6 +4662,15 @@
         "asin": "B002YX0GEQ",
         "title": "Cozy Christmas Home Screen: Measure for Your Balsam Fir Candle",
         "image": "https://m.media-amazon.com/images/I/71qs8SKVwBL._AC_SL1200_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "edea3900-1567-458a-a84b-94a497f9e902",
+        "asin": "B081N895PP",
+        "title": "Christmas Home Screen Cozy Couch Look: Upgrade Your Throw Pillow Inserts",
+        "image": "https://m.media-amazon.com/images/I/61YUOLcZM5L._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -4714,14 +4771,16 @@
     "asins": [
       "B0HHRFFQY3",
       "B07S3R6MKJ",
-      "B013LSNDY2"
+      "B013LSNDY2",
+      "B0CFZQWDVY",
+      "B0FNLJW859"
     ],
     "products": [
       {
-        "id": "5b50c359-84c2-4ff0-9694-b8f413268768",
-        "asin": "B013LSNDY2",
-        "title": "Dorm Christmas Decor Checklist: Pre-Lit Majestic Fir Mini Tree",
-        "image": "https://m.media-amazon.com/images/I/81A50rWQf5L._AC_SL1500_.jpg",
+        "id": "34fb1393-c1ba-4f50-9fb1-205745392ff2",
+        "asin": "B0HHRFFQY3",
+        "title": "Dorm Christmas Decor: Measure Your Wall Space for a Bohemian Tapestry",
+        "image": "https://m.media-amazon.com/images/I/81XhBvdVfML._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -4736,10 +4795,37 @@
         "reviews": 0
       },
       {
-        "id": "34fb1393-c1ba-4f50-9fb1-205745392ff2",
-        "asin": "B0HHRFFQY3",
-        "title": "Dorm Christmas Decor: Measure Your Wall Space for a Bohemian Tapestry",
-        "image": "https://m.media-amazon.com/images/I/81XhBvdVfML._AC_SL1500_.jpg",
+        "id": "059b9b46-f636-4285-a471-876cca34f6fc",
+        "asin": "B0CFZQWDVY",
+        "title": "Unlit Artificial Christmas Tree for Cute Dorm Christmas Decor",
+        "image": "https://m.media-amazon.com/images/I/71Tgtga7ETL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "5b50c359-84c2-4ff0-9694-b8f413268768",
+        "asin": "B013LSNDY2",
+        "title": "Dorm Christmas Decor Checklist: Pre-Lit Majestic Fir Mini Tree",
+        "image": "https://m.media-amazon.com/images/I/81A50rWQf5L._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "66749fb8-e8b5-4228-97b9-478b4d38e488",
+        "asin": "B0FNLJW859",
+        "title": "Mini Candle Rings for Dorm Christmas Decor Ideas",
+        "image": "https://m.media-amazon.com/images/I/91Xdp9eQ1wL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "21749753-cfce-4559-a986-1bb90fa2a7d5",
+        "asin": "B0771MJHKT",
+        "title": "Coffee Table Christmas Decor: How to Choose a Mini Christmas Tree",
+        "image": "https://m.media-amazon.com/images/I/81UYM+y1O3L._AC_SL1500_.jpg",
         "category": "decor",
         "rating": 4.5,
         "reviews": 0
@@ -4759,15 +4845,6 @@
         "title": "Joiedomi 24\" Mini Christmas Tree with Clear LED Lights",
         "image": "https://m.media-amazon.com/images/I/91uD1qY8uxL._AC_SL1500_.jpg",
         "category": "decor",
-        "reviews": 0
-      },
-      {
-        "id": "21749753-cfce-4559-a986-1bb90fa2a7d5",
-        "asin": "B0771MJHKT",
-        "title": "Coffee Table Christmas Decor: How to Choose a Mini Christmas Tree",
-        "image": "https://m.media-amazon.com/images/I/81UYM+y1O3L._AC_SL1500_.jpg",
-        "category": "decor",
-        "rating": 4.5,
         "reviews": 0
       }
     ]
@@ -4873,6 +4950,15 @@
     ],
     "products": [
       {
+        "id": "4e8f376e-7042-4257-b0ed-0797df7e77f9",
+        "asin": "B07VXSWNF9",
+        "title": "300 PCS Christmas Snowflake Window Cling Stickers for Glass: Your Christmas Wallpaper Ideas",
+        "image": "https://m.media-amazon.com/images/I/71-pxcF6o+L._AC_SL1500_.jpg",
+        "category": "wall-decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
         "id": "4c07a7c5-7e75-415d-b32d-dd79ec404ffc",
         "asin": "B08HKXSFNN",
         "title": "Christmas Wallpaper Ideas and Festive Snowflake Window Clings",
@@ -4889,13 +4975,423 @@
         "category": "wall-decor",
         "rating": 4.5,
         "reviews": 0
+      }
+    ]
+  },
+  {
+    "title": "Creating a Cozy Home: Decorating on a Budget",
+    "seoTitle": "Cozy Home Decor: Affordable Finds for a Warm Space",
+    "metaDescription": "Transform your living space into a warm and inviting sanctuary with affordable cozy home decor. Discover budget-friendly Amazon finds to enhance comfort.",
+    "intro": "Before purchasing, measure your space to ensure new items fit well and don't overcrowd the room. Consider how different textures and lighting elements will layer together to create a cohesive feel. Think about the primary function of each area and select pieces that enhance both comfort and practicality.",
+    "searchIntent": "cozy home decor, warm room ideas, comfortable living space",
+    "discoverAngle": "Soft textures and warm lighting",
+    "matchTerms": [
+      "cozy home decor"
+    ],
+    "productAngles": [
+      "Chunky knit throw blankets",
+      "Faux fur pillow covers",
+      "Dimmable table lamps",
+      "Flameless LED candles",
+      "Shaggy area rugs",
+      "Macrame wall hangings"
+    ],
+    "buyingTips": [
+      "Always check product dimensions against your available space to prevent overcrowding.",
+      "Opt for durable, easy-to-clean materials like machine-washable cotton or synthetic blends for everyday items.",
+      "Read care instructions carefully for textiles to maintain their softness and appearance over time.",
+      "Ensure the color and texture of new decor pieces complement your existing furniture and wall colors."
+    ],
+    "faq": [
+      {
+        "question": "What are key elements for a cozy room?",
+        "answer": "Key elements include soft textiles like blankets and pillows, warm lighting, natural materials, and personal touches."
       },
       {
-        "id": "4e8f376e-7042-4257-b0ed-0797df7e77f9",
-        "asin": "B07VXSWNF9",
-        "title": "300 PCS Christmas Snowflake Window Cling Stickers for Glass: Your Christmas Wallpaper Ideas",
-        "image": "https://m.media-amazon.com/images/I/71-pxcF6o+L._AC_SL1500_.jpg",
-        "category": "wall-decor",
+        "question": "How can I make a small room feel cozier?",
+        "answer": "In a small room, use lighter colors, incorporate mirrors to expand the space, and choose multi-functional furniture while adding soft textures and warm lighting."
+      },
+      {
+        "question": "What kind of lighting creates a cozy atmosphere?",
+        "answer": "Warm, dimmable lighting from multiple sources like lamps, string lights, and candles creates a cozy and inviting atmosphere."
+      },
+      {
+        "question": "How should I effectively clean a shaggy area rug to maintain its fluffiness?",
+        "answer": "For daily maintenance, vacuum your shaggy area rug regularly using a vacuum cleaner without a beater bar, or set it to a high pile setting to avoid damaging fibers. For deeper cleaning, spot clean spills immediately with a mild detergent and a damp cloth, blotting gently. Periodically, take the rug outdoors to shake out loose dirt. Always refer to the specific care label, as some shaggy rugs may require professional cleaning to preserve their texture and fluffiness."
+      },
+      {
+        "question": "Are flameless LED candles safe to use around pets and young children?",
+        "answer": "Yes, flameless LED candles are a much safer alternative to traditional wax candles, especially in homes with pets or young children. They eliminate the risk of open flames, hot wax spills, and smoke, significantly reducing fire hazards. Their cool-to-the-touch surface prevents accidental burns, making them ideal for placement on low tables or shelves where curious hands or paws might reach. Ensure battery compartments are securely closed to prevent ingestion of small parts."
+      },
+      {
+        "question": "Can macrame wall hangings be displayed in high-humidity areas like bathrooms or covered outdoor spaces?",
+        "answer": "While macrame wall hangings are generally durable, displaying them in high-humidity environments like bathrooms or uncovered outdoor areas is not recommended. Constant moisture can cause natural fibers to mildew, warp, or lose their shape over time. If using macrame in a bathroom, ensure it's a well-ventilated space and consider smaller pieces that can be easily moved. For covered outdoor areas, choose a location protected from direct rain and excessive dampness to prolong its lifespan."
+      }
+    ],
+    "slug": "cozy-home-decor",
+    "eyebrow": "Home decor buying guide",
+    "priority": "P1",
+    "sections": [
+      {
+        "heading": "Choosing Your Comfort Pieces: Blankets, Pillows, and Lamps",
+        "paragraphs": [
+          "When selecting a chunky knit throw, consider materials like acrylic or a soft chenille blend for warmth and durability. A common size of 50x60 inches is versatile for a sofa, while larger options around 60x80 inches are ideal for a bed. Examine the weave density in product images; a tighter knit often indicates better resilience against snags. Look for throws that are machine washable on a gentle cycle, ensuring easy care and longevity of their plush texture.",
+          "Faux fur pillow covers instantly add luxury and softness. Opt for polyester or acrylic blends, known for their realistic feel, durability, and ease of maintenance. Standard sizes like 18x18 or 20x20 inches are widely available and fit most inserts. Check for a sturdy, hidden zipper closure, making changes straightforward and maintaining a clean aesthetic. Many faux fur covers can be spot cleaned or gently hand washed, extending their lifespan and plush appearance.",
+          "Dimmable table lamps offer flexible lighting for any mood. Look for sturdy bases made from ceramic, metal, or wood, ensuring stability. A lamp height between 18 to 24 inches is generally suitable for side tables, providing ample light without overwhelming. Verify that the lamp includes a dimmer switch or is compatible with dimmable LED bulbs for energy efficiency and customizable ambiance. Consider a fabric shade, such as linen, which diffuses light softly for a cozy glow."
+        ]
+      },
+      {
+        "heading": "Smart Planning: Measuring for a Harmonious Space",
+        "paragraphs": [
+          "Proper rug sizing is crucial for anchoring a room. For living areas, a rug measuring at least 6x9 feet or 8x10 feet allows the front legs of your sofa and armchairs to rest on it, creating a cohesive look. In bedrooms, a 5x7 feet or 6x9 feet rug placed under the lower two-thirds of your bed frame adds warmth and defines the space. Measure your room and furniture layout, leaving at least 12-18 inches of exposed flooring around the rug's perimeter for balance.",
+          "Before selecting a macrame wall hanging, measure the available wall space carefully, considering both width and height. For a striking focal point, choose a piece roughly two-thirds the width of the furniture below it, such as a sofa or console table. If hanging above a bed, ensure it clears the headboard by several inches. For renters, consider lightweight options that can be hung with damage-free adhesive hooks, avoiding wall damage.",
+          "Visualize your decor items within the room before purchasing. Use painter's tape on the floor to outline potential rug sizes or on walls to mark wall hanging dimensions. This simple step confirms scale and placement, preventing overcrowding or items appearing too small. Consider traffic flow around furniture and ensure lamps are positioned where outlets are easily accessible. A well-planned layout ensures every piece contributes to a comfortable and functional environment."
+        ]
+      },
+      {
+        "heading": "Transforming Rooms: Styling Tips for Every Space",
+        "paragraphs": [
+          "In the living room, layering textures creates depth and coziness. Drape a chunky knit throw blanket casually over a sofa arm or in a large woven basket. Introduce faux fur pillow covers in varying sizes and shades to add plush comfort to your seating. Position a dimmable table lamp on an end table for soft, ambient lighting, perfect for evening relaxation. An appropriately sized shaggy area rug will define the seating area, adding warmth underfoot and visual interest.",
+          "Elevate your bedroom's comfort with thoughtful styling. A large chunky knit throw blanket draped across the foot of your bed adds a luxurious touch and extra warmth. Incorporate one or two faux fur pillow covers among your standard pillows for an inviting, layered look. Place a small, shaggy area rug on one or both sides of the bed to greet your feet with softness each morning. Flameless LED candles on your nightstand offer a safe, serene glow for winding down.",
+          "Extend cozy touches beyond main living areas. A macrame wall hanging can serve as an artistic focal point in an entryway or above a console table, adding bohemian charm. In a dining room, flameless LED candles arranged as a centerpiece create a warm, inviting atmosphere without the worry of open flames. Even a small chunky knit throw blanket folded neatly over an accent chair in a reading nook can enhance the feeling of comfort and style throughout your home."
+        ]
+      },
+      {
+        "heading": "Common Decorating Pitfalls and How to Sidestep Them",
+        "paragraphs": [
+          "A common mistake is selecting decor items disproportionate to your space or existing furniture. For instance, a small 3x5 foot rug in a large living room will look lost, failing to anchor the space. Similarly, a tiny table lamp on a grand sideboard can appear insignificant. Always check product dimensions against your available space to prevent overcrowding or under-filling. Use planning tips to ensure each piece contributes positively to the overall balance and harmony of the room.",
+          "Overlooking how new decor pieces interact with your existing color palette and textures can lead to a disjointed look. Introducing too many competing patterns or textures, such as multiple types of faux fur or highly contrasting knits, can create visual clutter instead of cohesion. Before purchasing, take photos of your room in different lighting to assess current colors and textures. Aim for pieces that complement rather than clash, building a harmonious and inviting aesthetic.",
+          "Prioritizing aesthetics over practicality can lead to frustration. For example, placing a delicate, high-maintenance shaggy rug in a high-traffic entryway will quickly show wear. Similarly, choosing a lamp without considering the nearest power outlet can limit placement options. Always read care instructions carefully for textiles to maintain their softness and appearance. Opt for durable, easy-to-clean materials like machine-washable cotton or synthetic blends for everyday items, ensuring lasting enjoyment."
+        ]
+      }
+    ],
+    "asins": [
+      "B07P8X935L",
+      "B0BR5JHB3Z",
+      "B0D3V281WP",
+      "B0BFCY4KNZ"
+    ],
+    "products": [
+      {
+        "id": "4867bafa-bd09-486b-af7c-801833b348bb",
+        "asin": "B0D3V281WP",
+        "title": "Metal Flowers Wall Art Ideas for Cozy Home Decor in a Small Living Room",
+        "image": "https://m.media-amazon.com/images/I/71c6XiR32iL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "8eaec943-61c1-4523-85a5-5abbe7837911",
+        "asin": "B0BR5JHB3Z",
+        "title": "Bedside Table LED Lamp for Cozy Home Decor: Measure Your Space",
+        "image": "https://m.media-amazon.com/images/I/51F1eWcmohL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "4a7aac0c-c96d-444e-afe4-6ddbb961b7bf",
+        "asin": "B0BFCY4KNZ",
+        "title": "Cozy Home Decor Ideas for Styling a Throw Blanket on Your Sofa",
+        "image": "https://m.media-amazon.com/images/I/81Lb2UZsa7L._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "5920e290-b528-4994-b59b-09ea4a94a5c7",
+        "asin": "B07P8X935L",
+        "title": "Measure Your Space Before Buying for Cozy Home Decor Accent Chair",
+        "image": "https://m.media-amazon.com/images/I/91SQ4lLnzqL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      }
+    ]
+  },
+  {
+    "title": "Brighten Your Holidays: A Guide to Christmas Window Lights",
+    "seoTitle": "Christmas Window Lights: Decorate Your Home",
+    "metaDescription": "Discover festive Christmas window lights on Amazon to add sparkle to your home's exterior. Find icicle lights, silhouettes, candles, and more.",
+    "intro": "Before buying, measure your window frames to ensure lights will fit properly and create the desired effect. Consider how different light types can complement each other, perhaps combining static silhouettes with cascading icicle lights. Think about the overall ambiance you want to achieve, from a cozy glow to a vibrant display.",
+    "searchIntent": "festive window decorations, holiday lights for glass, indoor outdoor Christmas lights",
+    "discoverAngle": "Creating a magical winter wonderland visible from inside and out.",
+    "matchTerms": [
+      "christmas window lights",
+      "window icicle lights",
+      "christmas silhouette lights",
+      "battery window candles",
+      "suction cup lights",
+      "window projector lights",
+      "window curtain lights",
+      "lighted window wreaths"
+    ],
+    "productAngles": [
+      "Cascading icicle lights for a frosty effect",
+      "Charming silhouette lights for festive scenes",
+      "Classic battery-operated window candles",
+      "Versatile suction cup lights for easy placement",
+      "Enchanting window projector lights for dynamic displays",
+      "Cozy window curtain lights for a warm glow"
+    ],
+    "buyingTips": [
+      "Ensure the length of string lights is adequate for your window width and desired drape.",
+      "Choose durable materials that can withstand indoor temperature fluctuations.",
+      "Look for lights with easy-to-use power sources, such as battery packs or long cords.",
+      "Confirm that suction cup lights come with strong, reliable suction cups for secure attachment."
+    ],
+    "faq": [
+      {
+        "question": "What are the best Christmas window lights for a cozy feel?",
+        "answer": "Battery-operated window candles and warm white curtain lights often create a cozy and inviting atmosphere."
+      },
+      {
+        "question": "How do I hang lights in my window without damaging the frame?",
+        "answer": "Many lights come with suction cups, adhesive hooks, or clips designed for damage-free window hanging."
+      },
+      {
+        "question": "Can I use outdoor Christmas lights inside my windows?",
+        "answer": "While possible, indoor-specific window lights are often designed with safety features and aesthetics suited for interior use."
+      },
+      {
+        "question": "How do I make my window lights visible from outside during the day?",
+        "answer": "For daytime visibility, focus on silhouette lights with bold designs and vibrant colors, or consider larger window clings that incorporate light elements. Battery-operated candles or small, decorative suction cup lights can also add subtle daytime charm when placed strategically, especially if they have an attractive unlit appearance."
+      },
+      {
+        "question": "Can I use outdoor lights indoors, or vice versa?",
+        "answer": "While many outdoor-rated lights can be used indoors, they might be bulkier or have thicker wiring than necessary. Indoor-only lights should never be used outdoors as they lack the necessary weatherproofing, posing safety risks from moisture and temperature fluctuations. Always check the product's UL listing or description for its intended use to ensure safety."
+      },
+      {
+        "question": "What are some renter-friendly options for hanging window lights without damaging frames or walls?",
+        "answer": "For renters, suction cups are ideal for glass surfaces and are easily removable. Command hooks or removable adhesive strips work well on window frames or sills for lighter items like string lights or small silhouettes. Tension rods can support curtain lights without drilling. Battery-operated options eliminate the need for nearby outlets, further simplifying placement."
+      }
+    ],
+    "slug": "christmas-window-lights",
+    "eyebrow": "Home decor buying guide",
+    "priority": "P1",
+    "sections": [
+      {
+        "heading": "Choosing the Perfect Christmas Window Lights for Your Home",
+        "paragraphs": [
+          "For an elegant look, cascading icicle or cozy curtain lights are ideal. Measure your window's width and height carefully; icicle strands are typically 6-10 feet with 1-2 foot drops, while curtain lights match window dimensions. Look for LED options for efficiency and long lifespan. Ensure flexible wiring for easy draping and check for connectors if linking multiple sets for wider windows, creating a seamless and beautiful display.",
+          "To create festive scenes, charming silhouette lights offer a delightful focal point. Available in various shapes like stars or holiday figures, check their exact dimensions to fit your window pane without obstruction. Versatile suction cup lights, often small decorative items, are perfect for individual touches. Verify that suction cups are robust and clear, designed for secure attachment to glass, reliably holding the light's weight.",
+          "For a traditional, warm glow, classic battery-operated window candles are timeless. Seek models with built-in timers (e.g., 6 hours on, 18 hours off) for convenience and battery conservation. Consider flicker effects for realism. Enchanting window projector lights offer dynamic, animated displays. Check projection distance and clarity, ensuring it suits your window size, and look for adjustable angles to direct the display precisely."
+        ]
+      },
+      {
+        "heading": "Essential Measurements and Planning for a Dazzling Display",
+        "paragraphs": [
+          "Before purchasing, meticulously measure the width and height of each window. For string lights, consider desired drape; a 3-foot wide window might need 6-9 feet for a graceful swag. For curtain lights, match height accurately, typically 3-6 feet. Silhouette lights require precise pane measurements for a snug fit. Record these dimensions to avoid buying lights that are too short, too long, or disproportionate to your window opening.",
+          "Identify the proximity of power outlets. For plug-in lights, plan for discreet, indoor-rated extension cords, avoiding tripping hazards. Battery-operated lights offer flexibility, but confirm required battery type (e.g., AA, C) and quantity. For attachment, evaluate your window type: suction cups work on glass, while small, removable adhesive hooks or tension rods are excellent renter-friendly options for frames or sills.",
+          "Consider the overall aesthetic you wish to achieve. Will all windows feature the same light style for a unified look, or will different rooms have distinct themes? Sketching a simple diagram of your home's exterior and interior window placements helps visualize the final effect. Decide on a consistent light color temperature, such as warm white or cool white, to ensure harmony, especially for windows visible together from outside."
+        ]
+      },
+      {
+        "heading": "Creative Styling Ideas for Every Room's Window",
+        "paragraphs": [
+          "In communal areas like the living or dining room, aim for an elegant, inviting ambiance. Cascading icicle lights or warm curtain lights across larger windows create a sophisticated backdrop. For tradition, place classic battery-operated window candles on each sill, perhaps with a gentle flicker. Silhouette lights depicting a stately reindeer or festive star can serve as a charming focal point, visible both from inside and out, enhancing the room's appeal.",
+          "For children's bedrooms, embrace playful, whimsical designs. Small, colorful suction cup lights shaped like ornaments or characters can be directly affixed to the glass. Fun silhouette lights featuring Santa or snowmen add a magical touch. Prioritize battery-operated options for safety and ease of placement, minimizing cords. For adult bedrooms, subtle curtain lights or a single, elegant silhouette light can provide a serene, cozy glow without being overly stimulating.",
+          "In practical spaces like the kitchen or bathroom, opt for simple, functional designs that don't interfere with daily tasks. Small window candles or clear suction cup lights offer subtle sparkle. Ensure any lights in these areas are made from durable materials to withstand potential humidity. For the entryway, create a grand welcome with bright, visible silhouette lights or dynamic window projector lights that cast festive patterns, setting a joyful tone for guests."
+        ]
+      },
+      {
+        "heading": "Common Pitfalls to Sidestep for a Stress-Free Setup",
+        "paragraphs": [
+          "A common mistake is underestimating power requirements or overloading electrical outlets. Always check the total wattage of string lights if linking multiple sets, ensuring your circuit can handle the load to prevent tripping breakers. For battery-operated lights, neglecting spare batteries can lead to a prematurely dark display. Prioritize energy-efficient LED bulbs to minimize power consumption and extend battery life for a reliable setup.",
+          "Mixing different light color temperatures, such as warm white and cool white, creates a visually jarring effect. Strive for consistency across all windows visible together for a cohesive, polished look. Another pitfall is using inadequate attachment methods; weak suction cups or flimsy adhesive can result in lights falling. Always clean glass surfaces thoroughly before applying suction cups and consider sturdy, removable hooks for heavier items.",
+          "Neglecting proper care and storage significantly shortens the lifespan of your window lights. Leaving lights exposed to harsh elements or tangled haphazardly leads to damaged wiring and broken bulbs. After the holidays, carefully coil string lights around cardboard or a dedicated spool to prevent tangles. Store all lights in a dry, cool place, preferably in original packaging or a sturdy container, protecting them until next season."
+        ]
+      }
+    ],
+    "asins": [
+      "B01LLSNG1E",
+      "B0B4518KC2",
+      "B07G5L1L8V",
+      "B07CJ2V1LR"
+    ],
+    "products": [
+      {
+        "id": "ecad8e81-99f6-4a76-b54c-ee4eb8220971",
+        "asin": "B07G5L1L8V",
+        "title": "Battery Operated Christmas Window Lights for a Festive Dining Room",
+        "image": "https://m.media-amazon.com/images/I/71CizK8b5LL._AC_SL1000_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "d528da8d-e771-4c05-bf87-2ec9f1d9fd3c",
+        "asin": "B0B4518KC2",
+        "title": "Northern Galaxy Light Projector for Magical Christmas Window Lights",
+        "image": "https://m.media-amazon.com/images/I/81q7oy6dBFL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "1af162cf-795c-4ffd-b194-25cf91e2cf92",
+        "asin": "B07CJ2V1LR",
+        "title": "Christmas Window Lights for Cozy Holiday Decor",
+        "image": "https://m.media-amazon.com/images/I/91Gb9QSnBbL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "a8068f04-25a0-4ac2-9270-971456e5ed89",
+        "asin": "B01LLSNG1E",
+        "title": "What to Check Before Hanging Curtain String Lights for Christmas Window Lights",
+        "image": "https://m.media-amazon.com/images/I/81SeihZDOGL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      }
+    ]
+  },
+  {
+    "title": "Charming Vintage Entryway Furniture for Your Home",
+    "seoTitle": "Vintage Entryway Furniture for a Stylish Welcome",
+    "metaDescription": "Discover vintage entryway furniture on Amazon to create a welcoming space. Find console tables, coat racks, benches, mirrors, and more.",
+    "intro": "Before selecting vintage entryway furniture, measure your available space carefully to ensure a proper fit. Consider how each piece will function, from storing coats to displaying decor, to create a cohesive and practical setup. Think about the overall flow of your entryway and how the furniture will guide guests into your home.",
+    "searchIntent": "vintage entryway furniture, antique hall table, retro coat rack, old bench",
+    "discoverAngle": "Timeless charm and character",
+    "matchTerms": [
+      "vintage entryway furniture",
+      "entryway console table",
+      "vintage coat rack",
+      "wood entryway bench",
+      "ornate wall mirror",
+      "vintage shoe cabinet",
+      "vintage umbrella stand",
+      "vintage wall sconce"
+    ],
+    "productAngles": [
+      "Console Tables",
+      "Coat Racks",
+      "Entryway Benches",
+      "Wall Mirrors",
+      "Shoe Cabinets",
+      "Umbrella Stands"
+    ],
+    "buyingTips": [
+      "Ensure the dimensions of the furniture fit comfortably within your entryway without obstructing traffic flow.",
+      "Look for pieces made from durable materials like solid wood or cast iron that can withstand daily use.",
+      "Consider the ease of cleaning and maintenance for the chosen materials to keep your entryway looking its best.",
+      "Select items that complement your home's existing decor style for a harmonious and inviting atmosphere."
+    ],
+    "faq": [
+      {
+        "question": "What are the key pieces of vintage entryway furniture?",
+        "answer": "Key pieces often include a console table for keys and mail, a coat rack or hooks for outerwear, a bench for sitting, and a mirror for last-minute checks."
+      },
+      {
+        "question": "How can I incorporate vintage furniture into a modern entryway?",
+        "answer": "Mix vintage pieces with modern elements to create a balanced look. For example, pair an antique console table with contemporary lighting or a sleek mirror."
+      },
+      {
+        "question": "What materials are common in vintage entryway furniture?",
+        "answer": "Common materials include solid wood (like oak, pine, or mahogany), wrought iron, brass, and sometimes distressed painted finishes."
+      },
+      {
+        "question": "How much weight can individual coat hooks typically hold on a vintage-style rack?",
+        "answer": "Most vintage-style coat racks or hall trees feature hooks rated for 5 to 10 pounds each. To avoid bending the metal or stripping the screws from the wood frame, distribute heavy winter coats across multiple hooks and reserve single hooks for lighter items like hats, scarves, or empty bags."
+      },
+      {
+        "question": "Can I use a vintage console table in a damp environment like a mudroom?",
+        "answer": "If the mudroom is not climate-controlled, look for furniture specifically labeled for high humidity use. Standard indoor vintage furniture made of MDF or certain veneers may swell or warp if exposed to constant moisture or extreme temperature fluctuations near an exterior door that is frequently opened in wet weather."
+      },
+      {
+        "question": "What is the best way to clean the glass on a vintage-style wall mirror without damaging the frame?",
+        "answer": "To protect the frame's finish, spray a glass cleaner onto a microfiber cloth rather than directly onto the mirror. This prevents the liquid from seeping behind the frame, which can cause the silvering on the back of the glass to develop black spots or desilver over time."
+      }
+    ],
+    "slug": "vintage-entryway-furniture",
+    "eyebrow": "Home decor buying guide",
+    "priority": "P1",
+    "sections": [
+      {
+        "heading": "Selecting Authentic Vintage Textures and Finishes",
+        "paragraphs": [
+          "When browsing for vintage-style console tables or benches, prioritize the material composition listed in the product specifications. Solid wood options like pine or acacia offer the most authentic feel and superior longevity compared to particle board. Look closely at the distressed finish descriptions; high-quality pieces often feature hand-applied wire brushing or rubbed edges that reveal a secondary color underneath. Avoid pieces that use paper-thin laminates, as these can peel at the corners over time. Aim for a finish that matches the undertones of your existing flooring to ensure a cohesive look.",
+          "The hardware on your entryway furniture serves as the jewelry of the piece. For a true vintage aesthetic, seek out items featuring antique brass, oil-rubbed bronze, or wrought iron handles and hooks. Check the product photos for the sheen of the metal; matte or weathered finishes are more forgiving with fingerprints and daily wear than high-polish chrome. If you are purchasing a shoe cabinet or a console with drawers, ensure the pulls are bolted through the wood rather than just glued, as repetitive pulling requires a mechanical connection for long-term durability.",
+          "For items like coat racks and umbrella stands, the weight of the base is the most critical factor for safety and functionality. A cast iron base provides the necessary ballast to prevent a tall rack from toppling when loaded with heavy winter coats or damp trench coats. If the product listing does not specify the base weight, look for a wide tripod design or a weighted disc at the bottom. For umbrella stands, ensure there is a removable drip tray made of plastic or treated metal to prevent water from soaking into your hardwood or laminate floors."
+        ]
+      },
+      {
+        "heading": "Spatial Planning for High-Traffic Entryways",
+        "paragraphs": [
+          "Measuring your entryway is the most vital step before purchasing. Most standard hallways require a console table with a slim profile, typically between 10 and 14 inches in depth. A table that is too deep will make the space feel cramped and impede the movement of guests. Height is also a factor; a standard 30-inch height works well for most decorative displays, but if you intend to use the table as a landing pad for mail and keys, a slightly taller 32-inch model might be more ergonomic.",
+          "Wall mirrors are essential for vintage entryways as they bounce light into often-dark corridors. When selecting a mirror to hang above a console table, aim for a width that is approximately two-thirds the width of the table itself. For instance, a 48-inch table pairs beautifully with a 32-inch round or rectangular mirror. Ensure the mirror's frame material complements the table's finish. If the table is dark walnut, a weathered gold or cream-painted frame can provide a sophisticated contrast. Always verify the hanging hardware included to ensure it can support the weight.",
+          "Clearance zones are frequently overlooked in entryway planning. You should maintain at least 36 inches of unobstructed walking space throughout the primary path. Before purchasing a bench or shoe cabinet, use painter's tape to outline the footprint on your floor. Open your front door fully to ensure it does not strike the new furniture. If your door swings inward, you may need to place your coat rack or umbrella stand on the hinge side of the door to maximize the available square footage without creating a physical bottleneck for entering guests."
+        ]
+      },
+      {
+        "heading": "Maximizing Utility with Benches and Shoe Storage",
+        "paragraphs": [
+          "An entryway bench serves as both a focal point and a functional seat for putting on shoes. Look for a seat height of approximately 18 inches, which is the standard for comfortable sitting. Check the weight capacity in the product description; a reliable bench should support at least 250 to 300 pounds. If the bench includes a cushion, verify if the fabric is performance grade or removable for washing. For a vintage look, tufted upholstery or linen-look polyester provides the right texture while offering the durability needed for high-traffic zones.",
+          "Shoe cabinets are a brilliant way to hide clutter, but they require specific internal dimensions. If you or your family members wear larger sizes, such as a US men's 12 or 13, ensure the internal shelf depth is at least 13.5 inches. Many slim-profile vintage cabinets use flip-down drawers that save space but may struggle with high-top sneakers or boots. Look for cabinets with adjustable or removable internal shelves to accommodate different footwear heights. Additionally, check for ventilation holes or slatted door designs to prevent odors from becoming trapped inside the wooden unit.",
+          "Umbrella stands are often an afterthought, but they are essential for protecting your home from water damage. When choosing a vintage-style stand, consider the height of the umbrellas you own. A stand that is 18 to 22 inches tall is ideal for full-sized walking umbrellas, preventing them from flopping over the sides. If you primarily use small, collapsible umbrellas, look for a model that includes internal hooks or a tiered design. Ensure the material is rust-resistant, especially if it is made of metal, to maintain that charming appearance despite exposure to moisture."
+        ]
+      },
+      {
+        "heading": "Ensuring Longevity and Safety in Your Selection",
+        "paragraphs": [
+          "Most furniture purchased online requires some level of home assembly. Before you begin, inventory all hardware pieces against the instruction manual. For vintage-style pieces made of engineered wood or MDF, be careful not to over-tighten screws, which can strip the material. Using a manual screwdriver instead of a high-powered drill is often safer for these materials. If the piece feels slightly wobbly after assembly, check if it includes adjustable leveling feet. These are small screw-in components at the base of the legs that allow you to compensate for uneven flooring.",
+          "Safety is paramount, especially with tall or heavy items like hall trees and shoe cabinets. Always use the anti-tip kits provided by the manufacturer to secure the furniture to a wall stud. This is particularly important in households with children or pets who might climb on the furniture. If you are a renter and cannot drill into the walls, look for freestanding pieces with a wider, heavier base or use heavy-duty adhesive furniture straps designed for earthquake safety. Check the back panel material; solid wood provides more structural integrity than thin cardboard.",
+          "To keep your vintage entryway furniture looking its best, implement a simple maintenance routine. For wood surfaces, avoid harsh chemical cleaners that can strip the distressed patina; instead, use a soft, damp microfiber cloth followed by a dry one. If the piece has a wax finish, a light re-application of furniture wax every six months can maintain the luster. Protect your floors by applying heavy-duty felt pads to the bottom of every leg. This prevents scratches when the furniture is moved for cleaning and reduces the noise of benches being moved."
+        ]
+      }
+    ],
+    "asins": [
+      "B08VS74BZZ",
+      "B07SSWHJJ2",
+      "B07HM15VQV",
+      "B0C1P1XWCT"
+    ],
+    "products": [
+      {
+        "id": "b66e08f0-4092-420d-90e3-ad4e4bbabcdd",
+        "asin": "B08VS74BZZ",
+        "title": "Vintage Entryway Furniture and Ornate Wall Mirror Styling",
+        "image": "https://m.media-amazon.com/images/I/71sscUaygZL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "0d2f1fec-bb0d-4287-823d-d48a1a0abf52",
+        "asin": "B07HM15VQV",
+        "title": "Vintage Entryway Furniture: Hall Tree Checklist for a Perfect Fit",
+        "image": "https://m.media-amazon.com/images/I/61ElXZVKFkL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "c6ed2dbc-2f27-4284-9347-72bd57cf2f24",
+        "asin": "B07SSWHJJ2",
+        "title": "Shoe Rack Bench for a Perfect Fit for Vintage Entryway Furniture",
+        "image": "https://m.media-amazon.com/images/I/71wzqn0w0BL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "7f5bd130-a1a5-422f-ae52-e0f4bd979246",
+        "asin": "B0C1P1XWCT",
+        "title": "Vintage Entryway Furniture: Measure for Your Narrow Console Table",
+        "image": "https://m.media-amazon.com/images/I/81lQAEtCybL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "da3b86b7-4b96-471b-bc9f-b816cfce480c",
+        "asin": "B0BYSF63GV",
+        "title": "Entryway Console Table: Industrial Style & Smart Storage Ideas",
+        "image": "https://m.media-amazon.com/images/I/715fAzmIBCL._AC_SL1500_.jpg",
+        "category": "decor",
         "rating": 4.5,
         "reviews": 0
       }
