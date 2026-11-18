@@ -5396,5 +5396,257 @@
         "reviews": 0
       }
     ]
+  },
+  {
+    "title": "Cozy Home Gift Ideas for the Holidays",
+    "seoTitle": "Cozy Home Gift Ideas: Candles, Throws and Soft Lighting",
+    "metaDescription": "Cozy home gift ideas for the holidays: scented candles, soft throw blankets, pillow covers and battery fairy lights from Amazon.com, with tips for choosing each one.",
+    "intro": "Cozy gifts work best when they fit the person's space and style. Before you choose, think about the colors in their living room, whether they prefer scented or unscented candles, and if they have outlets near the spot where a light would go. Small, soft and warm pieces are easy to place in any home, including small apartments.",
+    "searchIntent": "cozy gift ideas, cozy home gifts, gifts for homebodies, holiday home gifts",
+    "discoverAngle": "Warm, soft gifts that fit any room",
+    "matchTerms": [
+      "cozy gift ideas",
+      "cozy home gifts",
+      "gifts for homebodies",
+      "throw blanket gift",
+      "candle gift",
+      "fairy lights gift",
+      "black friday cozy home"
+    ],
+    "productAngles": [
+      "Scented Candles",
+      "Throw Blankets",
+      "Pillow Covers",
+      "Fairy Lights"
+    ],
+    "buyingTips": [
+      "Check the throw blanket size and fabric on the listing so it suits a sofa, armchair or bed.",
+      "For pillow covers, confirm the cover size matches the pillow inserts they already have.",
+      "Battery fairy lights are useful where there is no outlet; check the battery type and timer details on the listing.",
+      "If you are unsure about scent, pick a neutral or seasonal scent and check the candle size and burn notes."
+    ],
+    "faq": [
+      {
+        "question": "What makes a good cozy home gift?",
+        "answer": "Something soft, warm or softly lit that fits easily into an existing room, such as a throw blanket, a candle, pillow covers or small string lights."
+      },
+      {
+        "question": "Are these gifts good for small apartments?",
+        "answer": "Yes. Throws, pillow covers, candles and battery lights take almost no space and do not need installation."
+      },
+      {
+        "question": "Do prices on this page include deals?",
+        "answer": "No prices are shown here because they change often. Tap the Amazon button to see the current price, delivery and return details for your ZIP code."
+      }
+    ],
+    "slug": "cozy-home-gift-ideas",
+    "eyebrow": "Holiday gift guide",
+    "priority": "P1",
+    "sections": [
+      {
+        "heading": "Soft textures: throws and pillow covers",
+        "paragraphs": [
+          "A throw blanket is one of the easiest cozy gifts because it works on a sofa, a reading chair or the end of a bed. Neutral shades like beige and taupe blend with most rooms, while a chenille or knit texture adds warmth you can see. Check the listed size and care instructions before ordering.",
+          "Pillow covers refresh a room without new furniture. Measure or ask about the pillow insert size first, and choose a color that picks up something already in the room, like a plant, a rug or artwork."
+        ]
+      },
+      {
+        "heading": "Warm light without the wiring",
+        "paragraphs": [
+          "Battery fairy lights add a soft glow to a shelf, a coffee table centerpiece, a jar or a window, and they work where there is no outlet nearby. Look at the listing for the number of lights, timer and battery details.",
+          "Candles set a cozy mood in seconds. Seasonal scents like fir and balsam feel festive through winter. Remind the recipient to keep candles away from curtains and never leave them burning unattended."
+        ]
+      }
+    ],
+    "asins": [
+      "B07DJ2GH2S",
+      "B01JEAKSN0",
+      "B0D7ZNGN91",
+      "B07S2PVJKJ",
+      "B002YX0GEQ",
+      "B0D2ZYXNT3"
+    ],
+    "products": [
+      {
+        "id": "395cb245-4f39-46d6-b730-e730f8aad7ad",
+        "asin": "B07DJ2GH2S",
+        "title": "WoodWick Fraser Fir Candle for a Cozy Coffee Table",
+        "image": "https://m.media-amazon.com/images/I/71IcVxUlpQL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "a7dfca0c-2390-4344-b8a0-763606c30089",
+        "asin": "B01JEAKSN0",
+        "title": "BOURINA Beige Knit Throw Blanket",
+        "image": "https://m.media-amazon.com/images/I/71NyvhDfCML._AC_SL1000_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "5642a861-8b4b-4f27-a135-ad9ae4fdc1e4",
+        "asin": "B0D7ZNGN91",
+        "title": "Dark Green Boho Throw Pillow Covers",
+        "image": "https://m.media-amazon.com/images/I/819ARk9tjDL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "4285a552-ab14-4a82-a1f1-90b0a616afb8",
+        "asin": "B07S2PVJKJ",
+        "title": "Battery Operated Copper Wire Fairy Lights",
+        "image": "https://m.media-amazon.com/images/I/71hzo6MekYL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "f966e19a-1b3a-471e-8a95-1aaf25895b3d",
+        "asin": "B002YX0GEQ",
+        "title": "Balsam Fir Scented Candle",
+        "image": "https://m.media-amazon.com/images/I/71qs8SKVwBL._AC_SL1200_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "6b007b83-f4d5-4468-a551-36b22a41b46d",
+        "asin": "B0D2ZYXNT3",
+        "title": "Soft Taupe Chenille Throw Blanket",
+        "image": "https://m.media-amazon.com/images/I/81ni+OlkDxL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      }
+    ]
+  },
+  {
+    "title": "Small Apartment Gift Ideas That Save Space",
+    "seoTitle": "Small Apartment Gift Ideas: Renter-Friendly Organizing Finds",
+    "metaDescription": "Practical small apartment gift ideas from Amazon.com: stick-on key holders, under-cabinet lights, drawer organizers, storage baskets and a pull-out spice rack.",
+    "intro": "The best gifts for a small apartment solve a daily problem without taking up floor space. Before you choose, think about where the person struggles most: the entryway, kitchen cabinets, drawers or open shelves. Renter-friendly picks that stick on, slide in or sit on a shelf are easier to use than anything that needs drilling.",
+    "searchIntent": "small apartment gift ideas, gifts for renters, housewarming gifts small space, apartment organizing gifts",
+    "discoverAngle": "Useful gifts for tight spaces",
+    "matchTerms": [
+      "small apartment gift ideas",
+      "gifts for renters",
+      "housewarming gift small apartment",
+      "apartment organizing gifts",
+      "space saving gifts",
+      "black friday small apartment"
+    ],
+    "productAngles": [
+      "Entryway Organizers",
+      "Under-Cabinet Lights",
+      "Drawer Organizers",
+      "Storage Baskets",
+      "Spice Racks"
+    ],
+    "buyingTips": [
+      "For stick-on items, check the listing for surface types and weight limits, and remind renters to test the adhesive on a hidden spot.",
+      "Measure cabinet width and depth before choosing a pull-out spice rack or drawer organizers.",
+      "Under-cabinet lights should fit behind the cabinet trim; check length and charging details on the listing.",
+      "Storage baskets are most useful when they fit an existing shelf, so check the listed dimensions."
+    ],
+    "faq": [
+      {
+        "question": "What is a good gift for someone in a small apartment?",
+        "answer": "Practical organizers that free up counters, drawers and floor space, such as a stick-on key holder, drawer organizers, storage baskets or rechargeable under-cabinet lights."
+      },
+      {
+        "question": "Are these gifts renter-friendly?",
+        "answer": "Most of them stick on, slide into cabinets or sit on shelves. Check each listing for installation details, as some items may include optional screws."
+      },
+      {
+        "question": "Why are there no prices here?",
+        "answer": "Prices change often, so they are not shown. Tap the Amazon button for the current price, delivery and return details for your ZIP code."
+      }
+    ],
+    "slug": "small-apartment-gift-ideas",
+    "eyebrow": "Holiday gift guide",
+    "priority": "P1",
+    "sections": [
+      {
+        "heading": "Entryway and wall: grab-and-go spots",
+        "paragraphs": [
+          "A stick-on key holder by the door gives keys, leashes and small items a home without drilling. It is a simple gift that helps every single day. Check the number of hooks and the surface it is designed for on the listing.",
+          "Woven storage baskets turn open shelves into neat storage for blankets, chargers or toys, and they look warm enough to leave on display."
+        ]
+      },
+      {
+        "heading": "Kitchen and drawers: less clutter, more counter",
+        "paragraphs": [
+          "Clear drawer organizers keep utensils and small tools sorted, and they can move between kitchen, bathroom and desk drawers. A pull-out spice rack makes deep cabinets easier to use, so spices stop disappearing at the back.",
+          "Rechargeable under-cabinet lights brighten a dark counter for cooking without new wiring. Measure the cabinet edge first so the lights stay hidden behind the trim."
+        ]
+      }
+    ],
+    "asins": [
+      "B0FDQGW6JQ",
+      "B0BDF8CVBN",
+      "B08KXKVT4K",
+      "B0BZVHMLKC",
+      "B0F8NGPH76",
+      "B0CBWTQLH3"
+    ],
+    "products": [
+      {
+        "id": "1fdcb9f1-e969-4989-a008-673fabd36ea5",
+        "asin": "B0FDQGW6JQ",
+        "title": "Stick-On Entryway Key Holder with 4 Hooks",
+        "image": "https://m.media-amazon.com/images/I/71p42xJOKZL._AC_SL1500_.jpg",
+        "category": "wall-decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "191a09bf-9699-4c19-a869-03a703f5344c",
+        "asin": "B0BDF8CVBN",
+        "title": "Rechargeable Wireless Under-Cabinet Lights",
+        "image": "https://m.media-amazon.com/images/I/61x62WLGvNL._AC_SL1500_.jpg",
+        "category": "kitchen",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "4926b06f-a102-4866-b6df-2b3c21bfd292",
+        "asin": "B08KXKVT4K",
+        "title": "Clear Plastic Drawer Organizers",
+        "image": "https://m.media-amazon.com/images/I/81yj+PUYVxL._AC_SL1500_.jpg",
+        "category": "kitchen",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "980778fe-71d3-4327-9911-79ebc8166f26",
+        "asin": "B0BZVHMLKC",
+        "title": "Woven Storage Baskets for Shelves",
+        "image": "https://m.media-amazon.com/images/I/91qKYyY+hLL._AC_SL1000_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "b6820eba-66c7-4203-a6a2-4470f3da24b6",
+        "asin": "B0F8NGPH76",
+        "title": "Bamboo Pull-Out Spice Rack Organizer",
+        "image": "https://m.media-amazon.com/images/I/71qVkT+f1DL._AC_SL1500_.jpg",
+        "category": "kitchen",
+        "rating": 4.5,
+        "reviews": 0
+      },
+      {
+        "id": "0a4772d9-c0c3-4eb6-9458-fee0dab4c4f2",
+        "asin": "B0CBWTQLH3",
+        "title": "Laundry Detergent Dispenser Set",
+        "image": "https://m.media-amazon.com/images/I/71I1x8mYDbL._AC_SL1500_.jpg",
+        "category": "decor",
+        "rating": 4.5,
+        "reviews": 0
+      }
+    ]
   }
 ]
