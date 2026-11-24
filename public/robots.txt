@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+# Tracked Amazon redirects are not pages; crawlers following them inflated click counts.
+Disallow: /go/
+Disallow: /api/go
 
 Sitemap: https://www.freedealzone.biz/sitemap.xml
