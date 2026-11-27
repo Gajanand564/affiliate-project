@@ -80,7 +80,14 @@ try {
       <p>Shop the home decor finds from our Instagram and Facebook posts, with a styling idea for each one.</p>${disclosure}
       <h2>More home decor ideas</h2><ul>${guideList}</ul>`,
   }));
-  console.log("Pre-rendered the homepage and /finds with starter content and their own canonicals.");
+  await writeFile(path.join(dist, "trends.html"), staticPage({
+    pathname: "/trends", title: "Home Decor Buying Guides and Trend Ideas | DealZone",
+    description: "Every DealZone home decor guide in one place: wall decor, lighting, storage, cozy rooms and holiday ideas, each with practical buying tips and Amazon.com picks.",
+    body: `<h1>Home decor buying guides</h1>
+      <p>Practical ideas for apartments, small spaces and cozy rooms, with Amazon.com picks for each one.</p>
+      <ul>${guideList}</ul>${disclosure}`,
+  }));
+  console.log("Pre-rendered the homepage, /finds and the /trends hub with starter content and their own canonicals.");
 } finally {
   await server.close();
 }
